@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<style>
+	<info>
+		<name>gk_sporter2</name>
+		<author>GavickPro</author>
+		<desc>Second Image Show GK4 style for Sporter template.</desc>
+		<version>1.0</version>
+	</info>
+	<config>
+		<field type="text" name="image_width" label="Image width" desc="Full size image width in pixels" default="600" unit="px" />
+		<field type="text" name="image_height" label="Image height" desc="Full size image height in pixels" default="600" unit="px" />
+		<field type="text" name="thumb_width" label="Thumbnail width" desc="Thumbnail image width in pixels" default="70" unit="px" />
+		<field type="text" name="thumb_height" label="Thumbnail height" desc="Thumbnail image height in pixels" default="70" unit="px" />
+		<field type="text" name="image_bg" label="Image background color" desc="Image background as hexdecimal value" default="#ffffff" unit="" />	
+		<field type="text" name="quality" label="Image quality" desc="Quality of images (used in the JPG images) - percentage value between 0 and 100." default="95" unit="%" />	
+
+		<field type="text" name="image_rows" label="Image rows" default="3" desc="Amount of rows with images" unit="" />
+		<field type="text" name="image_cols" label="Image cols" default="3" desc="Amount of cols with images" unit="" />
+		<field type="text" name="image_margin" label="Image margin" default="0" desc="Values of margin" unit="" />
+		<field type="text" name="image_padding" label="Image padding" default="0" desc="Values of padding" unit="" />
+		<field type="text" name="image_border" label="Image border" default="0" desc="Values of border width" unit="" />
+		<field type="switch" name="slide_popups" label="Slide popups" default="1" desc="Enable/disable showing popup with full size image" class="gk_switch" />
+		<field type="switch" name="overlay" label="Overlay" default="1" desc="Enable/disable showing overlay under the popup" class="gk_switch" />
+		<field type="switch" name="show_text_block" label="Show text block" default="1" desc="Enable/disable showing text block in the popup" class="gk_switch" />
+		<field type="text" name="text_block_height" label="Text block height" default="100" desc="Height of the text block area" unit="px" />	
+		<field type="switch" name="clean_xhtml" label="Clean (X)HTML" desc="Enable/disable cleaning of XHTML tags in article content" default="1" class="gk_switch" />	
+		<field type="text" name="readmore_text" label="Readmore text" default="Read more" desc="Text used in readmore button" unit="" />
+		<field type="text" name="title_char_amount" label="Title char amount" default="30" desc="Amount of chars in the slide title" unit="" />
+		<field type="text" name="text_wordcount" label="Text wordcount" default="30" desc="Amount of words in the slide text" unit="" />
+	</config>
+</style>

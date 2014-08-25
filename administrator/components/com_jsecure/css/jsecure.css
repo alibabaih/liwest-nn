@@ -1,0 +1,11 @@
+.icon-48-generic {
+	background: url(../images/jSecure_icon_48x48.png) no-repeat !important;
+	text-indent: 10px; 
+}
+.icon-32-login{
+	background: url(../images/login.gif) no-repeat !important;
+	text-indent: 10px; 
+}
+table.admintable td.key, table.admintable td.paramlist_key {
+	width:200px !important;
+}

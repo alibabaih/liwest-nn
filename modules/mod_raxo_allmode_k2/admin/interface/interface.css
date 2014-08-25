@@ -1,0 +1,156 @@
+/*
+ * =============================================================
+ * RAXO All-mode K2 J2.5 - Interface CSS
+ * -------------------------------------------------------------
+ * @package		RAXO All-mode K2
+ * @copyright	Copyright (C) 2009-2012 RAXO Group
+ * @license		RAXO Commercial Licence
+ * 				This file is forbidden for redistribution
+ * @link		http://raxo.org
+ * =============================================================
+ */
+
+
+#module-form div.width-40 {width: 44%;}
+#module-form div.width-60 {width: 56%;}
+
+/* ----- RESET Styles ----- */
+#module-sliders ul,
+#module-sliders li,
+#module-sliders fieldset,
+#module-sliders label {
+	margin: 0; padding: 0;
+}
+
+#module-sliders div.panel {
+	margin-bottom: 4px;
+}
+#module-sliders h3.title {
+	margin: -1px -3px 0 -5px; padding: 10px 0 5px 19px;
+	height: 23px;
+	border: 1px solid #a5b6c7;
+	border-radius: 4px;
+	background: url(bkg_header.png) no-repeat 100% 0;
+}
+#module-sliders h3.pane-toggler-down {
+	background-position: 100% -38px;
+}
+#module-sliders h3.title span {
+	display: inline-block;
+	padding: 1px 17px 0;
+	min-width: 160px;
+	font-size: 12px; line-height: 20px; text-transform: uppercase;
+	color: #e9eef3;
+	border-top: 1px solid #0c3c74; border-bottom: 1px solid #d7e0e9;
+	border-radius: 3px;
+	background: none; background-color: #0f4b91;
+}
+
+#module-sliders .adminformlist {
+	padding-top: 6px; padding-bottom: 12px;
+}
+#module-sliders li {
+	margin: 0 3px 0 6px;
+	overflow: hidden;
+	border-bottom: 1px solid #f5f5f5;
+}
+#module-sliders label.hasTip {		/* Line Label */
+	min-width: 156px; max-width: 256px;
+	font: bold 12px/20px Verdana, sans-serif;
+	text-align: right;
+}
+#module-sliders label {		/* Field Label */
+	margin: 5px 14px 4px 0; padding: 4px 0 2px;
+	min-width: 72px;
+	line-height: 20px;
+	text-align: left;
+	color: #3b434d;
+}
+
+#module-sliders fieldset input {
+	margin: 9px 6px 6px 0;
+}
+#module-sliders fieldset.radio input,
+#module-sliders fieldset.checkboxes input {
+	clear: none;
+	margin-top: 13px;
+}
+
+
+#module-sliders input[type="text"] {
+	margin: 7px 6px 4px 0; padding: 1px 3px;
+	height: 20px;
+	font-size: 11px;
+	background: url(bkg_input.png) repeat-x scroll 0 0 #ffffff;
+	border: 1px solid #7594bb;
+	border-radius: 3px 3px 3px 3px;
+}
+
+
+/* ----- Captions ----- */
+#module-sliders h3.caption {
+	margin: 10px 0 8px; padding: 0;
+	font-size: 12px;
+	border-bottom: 4px solid #becae4; border-radius: 3px 3px 0 0;
+	background-color: #f6f6f6;
+}
+#module-sliders .caption span {
+	position: relative;
+	left: 64px; bottom: -7px;
+	padding: 0 8px;
+	color: #7594bb; background-color: #ffffff;
+	border-radius: 2px 2px 0 0;
+}
+
+/* ----- Selects ----- */
+#module-sliders select {
+	margin: 7px 0 4px; padding: 4px 3px 3px;
+	min-width: 220px; max-width: 480px;
+	font-size: 11px; line-height: 24px;
+	background: url(bkg_input.png) repeat-x scroll 0 -25px #ffffff;
+	border: 1px solid #7594bb;
+	border-radius: 3px 3px 3px 3px;
+}
+
+#module-sliders input[type="text"]:focus,
+#module-sliders select:focus {
+	border: 1px solid #3366cc;
+	background-color: #fefce8; background-position: 480px 0;
+}
+
+
+/* ----- Radio ----- */
+#module-sliders .radio label {
+	min-width: 32px;
+}
+
+/* ----- CheckBoxes ----- */
+#module-sliders .checkboxes li,
+#module-sliders .inputboxes li {
+	float: left;
+	margin: 0;
+	min-width: 105px;
+	border: none;
+}
+
+/* ----- InputBoxes ----- */
+fieldset.inputboxes label {
+	display: none;
+}
+fieldset.inputboxes input {
+	width: 48px;
+}
+fieldset.inputmedium input {
+	width: 88px;
+}
+fieldset.inputboxes span {
+	font-size: 12px; line-height: 35px;
+	color: #7d8c9c;
+}
+
+/* ----- Inputs ----- */
+.inputshort {width: 48px;}
+.inputlong {width: 212px; margin-right: 0 !important;}
+
+/* ----- Dynamic Fields ----- */
+.hide-field {display: none;}

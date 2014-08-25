@@ -1,0 +1,25 @@
+/**
+* GK Image Show - CSS style
+* @package Joomla!
+* @Copyright (C) 2009-2011 Gavick.com
+* @ All rights reserved
+* @ Joomla! is Free Software
+* @ Released under GNU/GPL License : http://www.gnu.org/copyleft/gpl.html
+* @ version $Revision: GK4 1.0 $
+**/
+ 
+.gkIsWrapper-gk_gamebox { position:relative; width:auto; float:left; overflow:hidden; }
+.gkIsWrapper-gk_gamebox .gkIsSlides { position:relative; overflow:hidden; }
+.gkIsWrapper-gk_gamebox .gkIsSlide { position:absolute; left:0; top:0; visibility: hidden; }
+.gkIsWrapper-gk_gamebox .gkIsSlide:first-child { visibility: visible; }
+.gkIsWrapper-gk_gamebox .gkIsTextData { /*unvisible*/ display:none; }
+.gkIsWrapper-gk_gamebox .gkIsPreloader { position:absolute; z-index:128; top:0; left:0; background:#000 url('images/loader.gif') no-repeat center center;  width:100%; height:100%; text-indent:-999em; }
+.gkIsWrapper-gk_gamebox .gkIsText { position:absolute; z-index:997; padding:10px 0 20px 0; width:100%; font-size:12px; font-weight:normal; font-family:Arial, sans-serif; margin-right:10px; }
+.gkIsWrapper-gk_gamebox .gkIsText h4 { font-size:34px!important; font-weight:normal; margin:-10px 100px 0 0; padding:0 20px; }
+.gkIsWrapper-gk_gamebox .gkIsText a.readon { position:absolute; z-index:127; right:20px; }
+.gkIsWrapper-gk_gamebox .gkIsText .gkIsInfo { padding:0 20px; color:#555555; font-size:90%; display:block; }
+.gkIsWrapper-gk_gamebox .gkIsTextBg { position:absolute; z-index:120; width:100%; opacity:0.9; filter:alpha(opacity=90); background:#000; }
+.gkIsWrapper-gk_gamebox .gkIsPrev,
+.gkIsWrapper-gk_gamebox .gkIsNext { text-indent:-999em; width:41px; height:39px; position:absolute; z-index:121; cursor:pointer; }
+.gkIsWrapper-gk_gamebox .gkIsPrev { top:40%; left:20px; background:transparent url('images/is_arrows.png') no-repeat left 0; }
+.gkIsWrapper-gk_gamebox .gkIsNext { top:40%; right:20px; background:transparent url('images/is_arrows.png') no-repeat right 0; }

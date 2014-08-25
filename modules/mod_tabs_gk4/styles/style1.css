@@ -1,0 +1,31 @@
+/**
+* GK Tab - style 1
+* @package Joomla!
+* @Copyright (C) 2009-2011 Gavick.com
+* @ All rights reserved
+* @ Joomla! is Free Software
+* @ Released under GNU/GPL License : http://www.gnu.org/copyleft/gpl.html
+* @version $Revision: GK4 1.0 $
+**/
+
+.gkTab { position: relative; }
+.gkTabWrap { margin: 0 auto; }
+ul.gkTabs { margin:0!important; padding: 0!important; background: url('../images/style1/bg.png') repeat-x 0 0 !important; height:42px; border: 1px solid #e8e8e8!important; border-bottom-color: #e1e1e1 !important; -moz-border-radius-topleft: 4px; -moz-border-radius-topright: 4px; -webkit-border-radius-topleft: 4px; -webkit-border-radius-topright: 4px; border-radius-topright: 4px; }
+ul.gkTabs li { list-style-type: none; position: relative; line-height: 42px !important; margin: 0 !important; padding: 0 20px!important; border: none !important; border-right: 1px solid #e3e3e3!important; background: none!important; float: left; cursor: pointer; font-weight: bold; color: #666 }
+ul.gkTabs li:hover,
+ul.gkTabs li.active { background: #fff !important; color: #5581b2 !important; border-bottom: 1px solid #fff !important }
+ul.gkTabs li:hover:first-child,
+ul.gkTabs li.active:first-child { -moz-border-radius-topleft: 4px; -webkit-border-radius-topleft: 4px; border-radius-topright: 4px; }
+.gkTabContainer0 { clear: both; }
+.gkTabContainer1 { overflow: hidden; }
+.gkTabItem { float: left; overflow: hidden; padding: 26px 0; }
+.gkTabButtonNext,
+.gkTabButtonPrev { width: 18px; height: 18px; background: url('../images/style1/b_next.png') no-repeat 0 0; cursor: pointer; position: absolute; top: 43%; right: 0; text-indent:-999em; }
+.gkTabButtonPrev { background: url('../images/style1/b_prev.png') no-repeat 0 0; left: 0; right:inherit; }
+.gkTabButtonNext:hover,
+.gkTabButtonPrev:hover { background-position: 100% 0; }
+.gkTabContainer0,
+.gkTabContainer1,
+.gkTabContainer2 { position:relative; }
+.gkTabItem { position: absolute; left: -999em; top: 0; width: 100%; }
+.gkTabItem.active { position: static; left: 0; }

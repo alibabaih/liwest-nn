@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.6" type="plugin" group="authentication">
+	<name>Authentication - Facebook</name>
+	<creationDate>31 December 2011</creationDate>
+	<author>GavickPro</author>
+	<authorEmail>support@gavick.com</authorEmail>
+	<authorUrl>http://gavick.com</authorUrl>
+	<copyright>Copyright (C) 2010 - 2011 GavickPro. All rights reserved.</copyright>
+	<license></license>
+	<version>GK4 1.2</version>
+	<description>GavickPro Facebook authentication plugin</description>
+	<files>
+		<filename plugin="facebook">facebook.php</filename>
+		<filename plugin="facebook">index.html</filename>
+		<folder>sdk</folder>
+	</files>
+	
+	<languages folder="language">
+		<language tag="en-GB">en-GB.plg_authentication_facebook.ini</language>
+	</languages>
+
+	<config>
+		<fields name="params">
+
+			<fieldset name="basic">
+				<field name="facebook_api_id" type="text" description="PLG_GK_FACEBOOK_API_ID_DESC" label="PLG_GK_FACEBOOK_API_ID" size="40" />
+				<field name="facebook_api_secret" type="text" description="PLG_GK_FACEBOOK_API_SECRET_DESC" label="PLG_GK_FACEBOOK_API_SECRET" size="50" />
+				<field name="auto_register" type="list" default="0" description="PLG_GK_FACEBOOK_AUTO_REGISTER_DESC" label="PLG_GK_FACEBOOK_AUTO_REGISTER">
+					<option value="1">PLG_GK_FACEBOOK_ENABLED</option>
+					<option value="0">PLG_GK_FACEBOOK_DISABLED</option>
+				</field>
+			</fieldset>
+
+		</fields>
+	</config>
+</extension>

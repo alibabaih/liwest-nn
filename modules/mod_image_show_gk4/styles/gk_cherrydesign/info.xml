@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<style>
+	<info>
+		<name>gk_cherrydesign</name>
+		<author>GavickPro</author>
+		<desc>Image Show GK4 style for Cherrydesign template.</desc>
+		<version>1.0</version>
+	</info>
+	<config>
+		<field type="text" name="image_width" label="Image width" desc="Slide image width in pixels" default="480" unit="px" />
+		<field type="text" name="image_height" label="Image height" desc="Slide image height in pixels" default="320" unit="px" />
+		<field type="text" name="image_bg" label="Image background color" desc="Slide image background as hexdecimal value" default="#000000" unit="" />	
+		<field type="text" name="quality" label="Image quality" desc="Quality of images (used in the JPG images) - percentage value between 0 and 100." default="95" unit="%" />
+		<field type="switch" name="show_text_block" label="Show text block" default="1" desc="You can enable showing block with slide titles and texts." class="gk_switch" />
+		<field type="switch" name="slide_links" label="Slide links" desc="You can enable links in the slides." default="1" class="gk_switch" />
+		<field type="switch" name="pagination" label="Pagination" desc="You can enable showing interface (pagination buttons)." default="1" class="gk_switch" />	
+		<field type="select" name="pagination_position" label="Pagination position" desc="Position of the pagination" default="right" class="">
+			<option value="left">Left</option>
+			<option value="right">Right</option>
+		</field>
+		<field type="text" name="readmore_text" label="Readmore text" desc="Text used in the readmore button" default="Read more..." />
+		<field type="switch" name="clean_xhtml" label="Clean (X)HTML" desc="Enable/disable cleaning of XHTML tags in article content." default="1" class="gk_switch" />
+		<field type="text" name="wordcount" label="Wordcount" desc="Amount of words in the article text" default="30" />
+		<field type="text" name="animation_speed" label="Animation speed" desc="Animation speed in miliseconds" default="500" unit="ms" />
+		<field type="text" name="animation_interval" label="Animation interval" desc="Animation interval in miliseconds" default="5000" unit="ms" />
+		<field type="switch" name="autoanimation" label="Autoanimation" desc="Autoanimation of the slides" default="1" class="gk_switch" />
+		<field type="select" name="animation_type" label="Animation type" desc="Animation type used in the slideshow" default="opacity" class="">
+			<option value="opacity">Opacity</option>
+			<option value="top">Top</option>
+			<option value="bottom">Bottom</option>
+			<option value="left">Left</option>
+			<option value="right">Right</option>
+		</field>
+	</config>
+</style>

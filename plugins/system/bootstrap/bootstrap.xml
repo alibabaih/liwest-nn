@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" version="2.5" method="upgrade" group="system">
+    <name>System - bootstrap</name>
+    <creationDate>08-Feb-2012</creationDate>
+    <author>OSTree Team</author>
+    <authorEmail>ostree.org@gmail.com</authorEmail>
+    <authorUrl>http://www.ostree.org</authorUrl>
+    <copyright>http://www.ostree.org</copyright>
+    <license></license>
+    <version>1.0.2</version>
+    <description>Using Twitter Bootstrap as a library in Joomla site easily. Twitter Bootstrap is a powerful CSS framework, more details, please refer http://twitter.github.com/bootstrap/ </description>   
+    <files>
+        <filename plugin="bootstrap">bootstrap.php</filename>
+        <filename>index.html</filename>
+    </files>
+    <media>
+        <folder>bootstrap</folder>
+    </media>
+
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="loadCSS" type="radio"
+                       default="1"
+                       description="Load Bootstrap CSS files for all pages"
+                       label="Load CSS"
+                        >
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </field>
+                <field name="loadJS" type="radio"
+                       default="1"
+                       description="Load Bootstrap JavaScript files for all pages"
+                       label="Load JavaScript"
+                        >
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </field>
+
+                <field name="loadJQuery" type="radio"
+                       default="1"
+                       description="Bootstrap JavaScript depends on jQuery"
+                       label="Load jQuery"
+                        >
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </field>
+                <field name="jQueryFromLocal" type="radio"
+                       default="1"
+                       description="Load jQuery from your own site, otherwise load jQuery from Google AJAX Libraries CDN."
+                       label="Load jQuery from Local"
+                        >
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </field>
+
+            </fieldset>
+            <fieldset  name="advanced">
+                <field name="onlyFrontside" type="radio"
+                       default="1"
+                       description="The Scope to enable bootstrap"
+                       label="Scope"
+                        >
+                    <option value="1">Site</option>
+                    <option value="0">Both Admin and Site</option>
+                </field>
+                <field name="onlyHTML" type="radio"
+                       default="1"
+                       description="Which file type to enalbe bootstrap"
+                       label="File Types"
+                        >
+                    <option value="1">HTML</option>
+                    <option value="0">All Types</option>
+                </field>
+                <field name="notModal" type="radio"
+                       default="1"
+                       description="Enable Bootstrap for Modal Dialog"
+                       label="Modal Dialog"
+                        >
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>

@@ -1,0 +1,219 @@
+/*------------------------------------------------------------------------
+# mod_jo_k2_slideshow - JO k2 slide show item for Joomla 1.6, 1.7, 2.5 Module
+# -----------------------------------------------------------------------
+# author: http://www.joomcore.com
+# copyright Copyright (C) 2011 Joomcore.com. All Rights Reserved.
+# @license - http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+# Websites: http://www.joomcore.com
+# Technical Support:  Forum - http://www.joomcore.com/Support
+-------------------------------------------------------------------------*/
+@charset "utf-8";
+/* CSS Document */
+.jo-k2-slidecontent{
+	position:relative;
+	overflow:hidden;
+	border:#CCCCCC solid 1px;
+	padding: 1px;
+}
+.jo-k2-slidecontent .preload{
+	height:100%;
+	width:100%;
+	background:#FFF;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:100000;
+	color:#FFF;
+	text-align:center
+}
+.jo-k2-slidecontent .preload div{
+	height:100%;
+	width:100%;
+	background:transparent url(../images/load-indicator.gif) no-repeat scroll 50% 50%;
+}
+.jo-k2-main-outer{
+	position:relative;
+	z-index:3px;
+	overflow:hidden;
+}
+
+
+/*******************************************************/
+.jo-k2-main-item-desc{
+	z-index:100px;
+	position:absolute;
+	bottom:0px;
+	width:402px;
+	background-color: #191919;
+	opacity: 0.7;
+
+	/* filter:0.7(opacity:60) */
+}
+.jo-k2-main-item-desc p{
+	color:#FFF;
+	margin:0 8px;
+	padding:8px 0
+}
+.jo-k2-main-item-desc h3 a{
+	color:#FFF;	
+	margin:0;
+	font-size:140%;
+	padding:20px 8px 2px;
+	font-family:"Trebuchet MS",Trebuchet,Arial,Verdana,sans-serif;
+}
+.jo-k2-main-item-desc h3 a:hover{
+	color:#FF6;
+	text-decoration:underline;
+}
+
+
+/* main flash */
+ul.jo-k2-main-wapper{
+	/* margin-right:auto; */
+	overflow:hidden;
+	background:transparent url(../images/load-indicator.gif) no-repeat scroll 50% 50%;
+	padding:0px;
+	margin:0;
+	height:300px;
+	width:auto;
+	position:absolute;
+	overflow:hidden;
+}
+
+ul.jo-k2-main-wapper li{
+	overflow:hidden;
+	padding:0px;
+	margin:0px;
+	height:100%;
+	width:auto;
+	float:left;
+}
+.jo-k2-opacity  li{
+	position:absolute;
+	top:0;
+	left:0;
+	float:inherit;
+}
+ul.jo-k2-main-wapper li img{
+	padding:0px;	
+	width:auto;
+	
+}
+
+li-desc{
+	z-index:100px;
+	position:absolute;
+	top:150px;
+	left:50px;
+	width:400px;
+	background:url(../images/transparent_bg.png);
+
+	/* filter:0.7(opacity:60) */
+}
+li-desc p{
+	color:#FFF;
+	margin:0 8px;
+	padding:8px 0
+}
+li-desc h3 a{
+	color:#FFF;	
+	margin:0;
+	font-size:140%;
+	padding:20px 8px 2px;
+	font-family:"Trebuchet MS",Trebuchet,Arial,Verdana,sans-serif;
+}
+li-desc h3 a:hover{
+	color:#FF6;
+	text-decoration:underline;
+}
+
+/* item navigator */
+ul.jo-k2-navigator{
+	top:0;
+	padding:0;
+	margin:0;
+	position:absolute;
+	width:100%;
+}
+ul.jo-k2-navigator li{
+	cursor:hand; 
+	cursor:pointer;
+	list-style:none;
+	width:100%;
+	padding:0;
+	margin:0;
+	overflow:hidden;
+	float: left;
+}
+.jo-k2-navigator-outer{
+	position:absolute;
+	right:0;
+	top:00px;
+	z-index:100;
+	height:300px;
+	width:310px;
+	overflow:hidden;
+	color:#FFF
+}
+.jo-k2-navigator li.active{
+	background:url(../images/arrow-bg.png) no-repeat scroll left center; 
+	color:#FFF
+}
+.jo-k2-navigator li:hover{
+	
+}
+
+
+.jo-k2-navigator li h3{
+	color:#FFF;
+	font-size:100%;
+	padding:0 !important;
+	margin:0 !important;
+
+}
+.jo-k2-navigator li div{
+	
+    background-color: #000;
+    border-top: 1px solid #555;
+    color: #FFFFFF;
+    height: 100%;
+    margin-left: 15px;
+    padding-left: 15px;
+    position: relative;
+    opacity:0.85;
+}
+
+.jo-k2-navigator li.active div{
+	background:url(../images/grad-bg.png);
+	color:#FFF;
+}
+.jo-k2-navigator li img{
+	margin:0px 15px 0px 0px;
+	float:left;
+	padding:3px;
+	border:#C5C5C5 solid 1px;
+}
+.jo-k2-navigator li.active img{
+	border:#6C8E5C  solid 1px;
+}
+.jo-k2-navigator li.active h3{
+	color:#FFF;
+}
+.jo-k2-navigator li table tr,
+.jo-k2-navigator li table td{
+	border: none;
+}
+
+div.jo-k2-navigator-outer  ul.jo-k2-navigator,
+div.jo-k2-main-outer .jo-k2-main-wapper
+{
+	margin: 0px !important;
+	padding: 0px !important;
+}
+
+.jo-k2-navigator li td p{
+	opacity: 0.5;
+}
+.jo-k2-navigator li.active td p{
+	opacity: 1;
+}

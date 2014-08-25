@@ -1,0 +1,140 @@
+# If the Joomla site is installed within a folder such as at
+
+# e.g. www.example.com/joomla/ the robots.txt file MUST be
+
+# moved to the site root at e.g. www.example.com/robots.txt
+
+# AND the joomla folder name MUST be prefixed to the disallowed
+
+# path, e.g. the Disallow rule for the /administrator/ folder
+
+# MUST be changed to read Disallow: /joomla/administrator/
+
+#
+
+# For more information about the robots.txt standard, see:
+
+# http://www.robotstxt.org/orig.html
+
+#
+
+# For syntax checking, see:
+
+# http://www.sxw.org.uk/computing/robots/check.html
+
+
+
+User-agent: Yandex
+
+Disallow: /administrator/
+
+Disallow: /cache/
+
+Disallow: /cli/
+
+Disallow: /components/
+
+Disallow: /component/
+
+Disallow: /includes/
+
+Disallow: /installation/
+
+Disallow: /language/
+
+Disallow: /libraries/
+
+Disallow: /logs/
+
+Disallow: /media/
+
+Disallow: /modules/
+
+Disallow: /plugins/
+
+Disallow: /templates/
+
+Disallow: /template/
+
+Disallow: /tmp/
+
+Disallow: /index.php?/
+
+Disallow: /liwest-nn/
+
+Disallow: /cart/
+
+Disallow: /orders/
+
+Disallow: /?page=shop.cart
+
+Disallow: /results,11-10
+
+Disallow: /results,21-20
+
+Disallow: /results,31-30
+
+Disallow: /results,41-40
+
+Disallow: /results,51-50
+
+Disallow: /results,61-60
+
+Disallow: /results,71-70
+
+Disallow: /results,81-80
+
+Disallow: /results,91-90
+
+Disallow: /results,101-100
+
+
+
+User-agent: *
+
+Disallow: /administrator/
+
+Disallow: /cache/
+
+Disallow: /cli/
+
+Disallow: /components/
+
+Disallow: /component/
+
+Disallow: /includes/
+
+Disallow: /installation/
+
+Disallow: /language/
+
+Disallow: /libraries/
+
+Disallow: /logs/
+
+Disallow: /media/
+
+Disallow: /modules/
+
+Disallow: /plugins/
+
+Disallow: /templates/
+
+Disallow: /template/
+
+Disallow: /tmp/
+
+Disallow: /index.php?/
+
+Disallow: /index.php/
+
+Disallow: /liwest-nn/
+
+Disallow: /cart/
+
+Disallow: /orders/
+
+Host: liwest-nn.ru
+
+Crawl-delay: 15
+

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<style>
+	<info>
+		<name>gk_musicity</name>
+		<author>GavickPro</author>
+		<desc>Image Show GK4 style for Musicity template.</desc>
+		<version>1.0</version>
+	</info>
+	<config>
+		<field type="text" name="image_width" label="Image width" desc="Slide image width in pixels" default="627" unit="px" />
+		<field type="text" name="image_height" label="Image height" desc="Slide image height in pixels" default="345" unit="px" />
+		<field type="text" name="image_bg" label="Image background color" desc="Slide image background as hexdecimal value" default="#000000" unit="" />	
+		<field type="text" name="quality" label="Image quality" desc="Quality of images (used in the JPG images) - percentage value between 0 and 100." default="95" unit="%" />		
+		
+		<field type="switch" name="show_title_block" label="Show title block" default="1" desc="You can enable showing block with slide titles." class="gk_switch" />
+		<field type="switch" name="show_date_block" label="Show date block" default="1" desc="You can enable showing block with slide date." class="gk_switch" />
+		<field type="text" name="date_format" label="Date format" desc="Date format used in the block with date" default="F d, Y" unit="" />
+		<field type="switch" name="interface" label="Interface" desc="You can enable showing interface (prev/next buttons)." default="1" class="gk_switch" />	
+		
+		<field type="text" name="title_block_y" label="Title block Y" default="23" desc="Bottom margin for title block" unit="" />
+		<field type="text" name="date_block_y" label="Date block Y" default="14" desc="Top margin for date block" unit="" />
+		
+		<field type="switch" name="slide_links" label="Slide links" desc="You can enable links in the slides." default="1" class="gk_switch" />
+		<field type="text" name="animation_speed" label="Animation speed" desc="Animation speed in miliseconds" default="500" unit="ms" />
+		<field type="text" name="animation_interval" label="Animation interval" desc="Animation interval in miliseconds" default="5000" unit="ms" />
+		<field type="switch" name="autoanimation" label="Autoanimation" desc="Autoanimation of the slides" default="1" class="gk_switch" />
+		<field type="select" name="animation_type" label="Animation type" desc="Animation type used in the slideshow" default="opacity" class="">
+			<option value="opacity">Opacity</option>
+			<option value="top">Top</option>
+			<option value="bottom">Bottom</option>
+			<option value="left">Left</option>
+			<option value="right">Right</option>
+		</field>
+	</config>
+</style>

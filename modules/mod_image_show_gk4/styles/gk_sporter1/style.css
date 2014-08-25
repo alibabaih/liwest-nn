@@ -1,0 +1,46 @@
+/**
+* GK Image Show - CSS style
+* @package Joomla!
+* @Copyright (C) 2009-2011 Gavick.com
+* @ All rights reserved
+* @ Joomla! is Free Software
+* @ Released under GNU/GPL License : http://www.gnu.org/copyleft/gpl.html
+* @ version $Revision: GK4 1.0 $
+**/
+ 
+.gkIsWrapper-gk_sporter1 { position:relative; }
+.gkIsWrapper-gk_sporter1 .gkIsPreloader,
+.gkIsWrapper-gk_sporter1 .gkIsPreloader div { position:absolute; z-index:999; width:100%; height:100%; }
+.gkIsWrapper-gk_sporter1 .gkIsPreloader div { position:relative; }
+.gkIsWrapper-gk_sporter1 .gkIsPreloader p { font-size:32px; font-family:Georgia, serif; position:absolute; right:50px; bottom:20px; }
+.gkIsWrapper-gk_sporter1 .gkIsPreloader { background:#000000 url('images/loader.gif') no-repeat center center; }
+.gkIsWrapper-gk_sporter1 .gkIsSlide { position:absolute; visibility: hidden; }
+.gkIsWrapper-gk_sporter1 .gkIsSlide:first-child { visibility:visible; }
+.gkIsWrapper-gk_sporter1 .gkIsImage { overflow: hidden; position: relative; }
+.gkIsWrapper-gk_sporter1 .gkIsText h4 { font-size:26px; line-height: 31px; font-weight:bold; text-transform:uppercase; color: #fff; margin:-10px 100px 0 0; padding:0 20px; }
+.gkIsWrapper-gk_sporter1 .gkIsText h4 a { color: #fff; }
+.gkIsWrapper-gk_sporter1 .gkIsText p { color:#fff; padding:0 150px 0 20px; line-height: 130% }
+.gkIsWrapper-gk_sporter1 .gkIsText a.readon { background: transparent url('images/gk_is_button.png') no-repeat 50% 0; border: none; position:absolute; z-index:998; right:20px; text-indent: -99999px; height:40px !important; width: 40px !important; }
+.gkIsWrapper-gk_sporter1 .gkIsText a:hover.readon { background-position: 50% 100%; }
+.gkIsWrapper-gk_sporter1 .gkIsText .gkIsInfo { padding:0 20px 9px; color:#ccc; font-size:80%; display:block; }
+.gkIsWrapper-gk_sporter1 .gkIsText { position:absolute; z-index:997; padding:10px 0 0 0; width:100%; font-size:12px; font-weight:normal; font-family:Arial, sans-serif; margin-right:10px; }
+.gkIsWrapper-gk_sporter1 .gkIsTextBg { position:absolute; z-index:996; width:100%; opacity:0.6; filter:alpha(opacity=60); background:#000000; padding: 10px 0 0 0; }
+.gkIsWrapper-gk_sporter1 .gkIsTextData { display:none; }
+.gkIsWrapper-gk_sporter1 .gkIsPagination { padding: 10px 0; background:#000; overflow:hidden; }
+.gkIsWrapper-gk_sporter1 .gkIsTab { cursor: pointer; float:left; }
+.gkIsWrapper-gk_sporter1 .gkIsTab>div { padding:0 10px; }
+.gkIsWrapper-gk_sporter1 .gkIsTab.active span,
+.gkIsWrapper-gk_sporter1 .gkIsTab:hover span { color: #fff; }
+.gkIsWrapper-gk_sporter1 .gkIsTab.active h3,
+.gkIsWrapper-gk_sporter1 .gkIsTab:hover h3 { color: #fff !important; }
+.gkIsWrapper-gk_sporter1 .gkIsTab { background: transparent url('images/gk_is_tab_separator.png') no-repeat 0 50%; }
+.gkIsWrapper-gk_sporter1 .gkIsTab h3 { font-size: 12px !important; line-height: 145%; color: #999 !important; text-transform: none !important }
+.gkIsWrapper-gk_sporter1 .gkIsTab span { font-size: 10px; color: #999 }
+.gkIsWrapper-gk_sporter1 .gkIsCols1 .gkIsTab { width:100%; }
+.gkIsWrapper-gk_sporter1 .gkIsCols2 .gkIsTab { width:49.9%; }
+.gkIsWrapper-gk_sporter1 .gkIsCols3 .gkIsTab { width:33.2%; }
+.gkIsWrapper-gk_sporter1 .gkIsCols4 .gkIsTab { width:24.9%; }
+.gkIsWrapper-gk_sporter1 .gkIsCols5 .gkIsTab { width:19.8%; }
+.gkIsWrapper-gk_sporter1 .gkIsCols6 .gkIsTab { width:16.4%; }
+.gkIsWrapper-gk_sporter1 .gkIsCols7 .gkIsTab { width:14.1%; }
+.gkIsWrapper-gk_sporter1 .gkIsCols8 .gkIsTab { width:12.4%; }

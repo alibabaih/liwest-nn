@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<install version="1.5" type="plugin" group="vmpayment" >
+    <name>Yandex Payment Bank</name>
+    <creationDate>June 2012</creationDate>
+    <author>VampiRUS</author>
+    <authorUrl>http://vampirus.ru</authorUrl>
+    <copyright>vampirus.ru</copyright>
+    <license></license>
+    <version>2.0.1</version>
+    <description>Yandex.Money на счет юрлица или ИП</description>
+    <languages>
+	<language tag="en-GB">en-GB.plg_vmpayment_yandex_bank.ini</language>
+	<language tag="ru-RU">ru-RU.plg_vmpayment_yandex_bank.ini</language>
+    </languages>
+    <files>
+	<filename plugin="yandex_bank">yandex_bank.php</filename>
+	<filename>index.html</filename>
+	<filename>yandex_bank.gif</filename>
+    </files>
+    <params addpath="/administrator/components/com_virtuemart/elements">
+	<param type="vmjpluginwarning" />
+	<param	name="payment_logos" type="vmfiles" label="VMPAYMENT_STANDARD_LOGOS"
+		description="VMPAYMENT_STANDARD_LOGOS_DESC"
+		directory="/plugins/vmpayment/yandex_bank"
+		default="yandex_bank.gif" hide_default="1" hide_none="1"
+		stripext="0"   exclude=".*\.(php|html|xml|wsdl)" />
+	<param type="text" name="yandex_bank_name"  size="50" label="VMPAYMENT_YANDEX_BANK_NAME"
+             default="" description="VMPAYMENT_YANDEX_BANK_NAME_DESC" />
+    <param type="text" name="yandex_bank_inn"  size="50" label="VMPAYMENT_YANDEX_BANK_INN"
+             default="" description="VMPAYMENT_YANDEX_BANK_INN_DESC" />        
+    <param type="text" name="yandex_bank_bik"  size="50" label="VMPAYMENT_YANDEX_BANK_BIK"
+             default="" description="VMPAYMENT_YANDEX_BANK_BIK_DESC" />        
+    <param type="text" name="yandex_bank_rs"  size="50" label="VMPAYMENT_YANDEX_BANK_RS"
+             default="" description="VMPAYMENT_YANDEX_BANK_RS_DESC" />        
+    <param type="text" name="yandex_bank_kpp"  size="50" label="VMPAYMENT_YANDEX_BANK_KPP"
+             default="" description="VMPAYMENT_YANDEX_BANK_KPP_DESC" />        
+    <param type="text" name="yandex_bank_kbk"  size="50" label="VMPAYMENT_YANDEX_BANK_KBK"
+             default="" description="VMPAYMENT_YANDEX_BANK_KBK_DESC" />        
+    <param type="text" name="yandex_bank_okato"  size="50" label="VMPAYMENT_YANDEX_BANK_OKATO"
+             default="" description="VMPAYMENT_YANDEX_BANK_OKATO_DESC" />        
+    <param type="text" name="yandex_bank_text"  size="50" label="VMPAYMENT_YANDEX_BANK_TEXT"
+             default="Оплата заказа %id% от %date%" description="VMPAYMENT_YANDEX_BANK_TEXT_DESC" />        
+	<param name="yandex_bank_label" type="radio" default="01" label="VMPAYMENT_YANDEX_BANK_LABEL" description="VMPAYMENT_YANDEX_BANK_LABEL_DESC" >
+	    <option value="01">VMPAYMENT_YANDEX_BANK_BUY</option>
+	    <option value="02">VMPAYMENT_YANDEX_BANK_PAY</option>
+	</param>
+	<param name="yandex_bank_nds" type="radio" default="0" label="VMPAYMENT_YANDEX_BANK_NDS" description="VMPAYMENT_YANDEX_BANK_NDS_DESC" >
+	    <option value="1">COM_VIRTUEMART_YES</option>
+	    <option value="0">COM_VIRTUEMART_NO</option>
+	</param>
+    <param type="text" name="yandex_bank_nds_sum"  size="50" label="VMPAYMENT_YANDEX_BANK_NDS_SUM"
+             default="" description="VMPAYMENT_YANDEX_BANK_NDS_SUM_DESC" />        
+	<param name="countries" type="vmcountries"  scope="com_virtuemart" default="[176]" label="VMPAYMENT_STANDARD_COUNTRIES" description="VMPAYMENT_STANDARD_COUNTRIES_DESC"/>
+    <param name="payment_currency" type="vmacceptedcurrency" default="" label="VMPAYMENT_STANDARD_CURRENCY" description="VMPAYMENT_STANDARD_CURRENCY_DESC" />
+
+	<param name="min_amount" type="text"  label="VMPAYMENT_STANDARD_MIN_AMOUNT" description="VMPAYMENT_STANDARD_MIN_AMOUNT_EXPLAIN" />
+	<param name="max_amount" type="text"  label="VMPAYMENT_STANDARD_MAX_AMOUNT" description="VMPAYMENT_STANDARD_MAX_AMOUNT_EXPLAIN" />
+	<param name="cost_per_transaction" type="text"  label="VMPAYMENT_STANDARD_COST_PER_TRANSACTION" description="VMPAYMENT_STANDARD_COST_PER_TRANSACTION_EXPLAIN" />
+	<param name="cost_percent_total" type="text"  label="VMPAYMENT_STANDARD_COST_PERCENT_TOTAL" description="VMPAYMENT_STANDARD_COST_PERCENT_TOTAL_EXPLAIN" />
+	<param name="tax_id" type="vmtaxes" scope="com_virtuemart"  label="VMPAYMENT_STANDARD_TAX" description="VMPAYMENT_STANDARD_TAX_DESC" />
+    </params>
+
+
+
+</install>

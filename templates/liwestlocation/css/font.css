@@ -1,0 +1,98 @@
+@font-face {
+	font-family: Intro;
+	src: local("Intro"), 
+		 url(../font/Intro.ttf) format('truetype'),
+		 url(../font/Intro.eot) format('eot'),
+		 url(../font/Intro.svg#svgIntro) format('svg');
+}
+@font-face {
+	font-family: Lobster;
+	src: local("Lobster"), 
+		 url(../font/Lobster.ttf) format('truetype'),
+		 url(../font/Lobster.eot) format('eot'),
+		 url(../font/Lobster.svg#svgIntro) format('svg');
+}
+@font-face {
+	font-family: Arctika script;
+	src: local("Arctika script"), 
+		 url(../font/Arctika_script.ttf) format('truetype'),
+		 url(../font/Lobster.eot) format('eot'),
+		 url(../font/Lobster.svg#svgIntro) format('svg');
+}
+@font-face {
+	font-family: JohnSans Text Pro;
+	src: local("JohnSans Text Pro"), 
+		 url(../font/JohnSansText.ttf) format('truetype'),
+		 url(../font/JohnSansText.eot) format('eot'),
+		 url(../font/JohnSansText.svg#svgIntro) format('svg');
+}
+@font-face {
+	font-family: John Sans White Pro;
+	src: local("John Sans White Pro"), 
+		 url(../font/JohnSansWhite.ttf) format('truetype'),
+		 url(../font/JohnSansWhite.eot) format('eot'),
+		 url(../font/JohnSansWhite.svg#svgIntro) format('svg');
+}
+
+/*hyphenator*/
+.text{text-align:justify;}
+
+
+/*Темная полоска у магазина*/
+.help-shop {
+	padding-top: 10px;
+	background-color: #4C9214;
+	border-bottom: 1px solid #3F7A0F;
+	border-top: 1px solid #3F7A0F;
+	text-shadow: 1px 1px 0px black;
+}
+a.a-help-shop {
+	font-family: John Sans White Pro;
+	color: #fff;
+}
+
+.search {
+	padding-top: 4px;
+}
+
+
+
+/* help-user-shop-articles*/
+.help-user-shop-articles {
+float: center;
+margin: 0px 10px 0px 10px;
+position: relative;
+box-shadow: 0px 1px 15px rgba(0,0,0, 0.4);
+background-image: url(/images/white-bg.png);
+padding: 20px 20px 0px 20px;
+}
+.modified {
+	font-style: italic;
+	float: right;
+	color: #333;
+}
+
+
+
+/*Выравнивание текста по ширине с переносом слов*/
+
+span.blog-article-title {font-size: 110%;line-height: 2;}
+.blog-article-title a {color: #000;}
+
+
+
+
+/*Список статей в категории к2*/
+.item-prview {
+	margin: 10px 10px 0px 10px;
+position: relative;
+box-shadow: 0px 1px 15px rgba(0,0,0, 0.4);
+background-image: url(../images/white-bg.png);
+padding: 20px 0px 0px 0px;
+}
+.item-preview-bottom {
+	background-image: url(../images/bottom-white-bg.png);
+height: 35px;
+margin: 0px 10px 0px 10px;
+position: relative;
+}

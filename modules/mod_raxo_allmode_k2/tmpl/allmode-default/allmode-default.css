@@ -1,0 +1,201 @@
+/*
+ * =============================================================
+ * RAXO All-mode K2 J2.5 - Template CSS
+ * -------------------------------------------------------------
+ * @package		RAXO All-mode K2
+ * @subpackage	All-mode Default Template
+ * @copyright	Copyright (C) 2009-2012 RAXO Group
+ * @license		RAXO Commercial Licence
+ * 				This file is forbidden for redistribution
+ * @link		http://raxo.org
+ * =============================================================
+ */
+
+
+/* ----- RESET Styles ----- */
+.allmode-default .allmode-name, .allmode-default .allmode-showall,
+.allmode-default .allmode-topitem, .allmode-default .allmode-item,
+.allmode-default .allmode-title, .allmode-default img {
+	margin: 0; padding: 0;
+	background: none; border: 0 none;
+}
+.allmode-default a {															/* LINKS */
+	color: #b00000 !important;
+	text-decoration: none;
+}
+.allmode-default a:hover {														/* LINKS Hover */
+	color: #960000 !important;
+	text-decoration: underline;
+}
+
+
+/* ----- MODULE BOX Styles ----- */
+.allmode-default .allmode-name {												/* Module Block NAME */
+	margin: 5px 8px 10px;
+	font-size: 14px; font-weight: bold;
+	color: #373737;
+	border-bottom: 1px dashed #dddddd;
+}
+.allmode-default .allmode-name a {
+	font-weight: bold;
+	text-decoration: none;
+}
+.allmode-default .allmode-showall {												/* "Show All" TEXT */
+	margin: -4px 12px 0 0;
+	text-align: right !important;
+}
+
+
+/* ----- TOP ITEMS Styles ----- */
+.allmode-default .allmode-topbox {												/* TOP Items DIV */
+	margin: 0 8px 16px;
+/*	width: 400px;*/
+}
+.allmode-default .allmode-topitem {												/* TOP Item DIV */
+	margin: 8px 0 0; padding-bottom: 6px;
+	overflow: hidden; clear: left;
+	border-bottom: 1px dashed #dddddd;
+}
+.allmode-default .allmode-topitem .allmode-img {								/* TOP Item IMAGE */
+	float: left;
+	margin: 2px 16px 8px 0; padding: 3px;
+	border: 1px solid #8e8c8c;
+	background-color: #f6f5f5;
+}
+.allmode-default .allmode-topitem .allmode-title {								/* TOP Item TITLE */
+	margin: 0 0 3px 0 !important;
+	font: bold 15px/21px Tahoma,Verdana,Arial,Helvetica,sans-serif;
+}
+.allmode-default .allmode-topitem .allmode-title a {
+	font-weight: bold;
+}
+.allmode-default .allmode-topitem .allmode-text {								/* TOP Item TEXT */
+	font: normal 13px/20px "Trebuchet MS",Arial,sans-serif;
+	color: #373737;
+}
+.allmode-default .allmode-topitem .allmode-readmore {							/* TOP Item READ MORE */
+	float: right;
+	margin-right: 4px;
+	font: normal 11px/21px Helvetica,Arial,sans-serif;
+	text-align: right;
+}
+
+
+/* ----- TOP FIELDS Styles ----- */
+.allmode-default .allmode-topitem .allmode-details {							/* TOP Item Details DIV */
+	margin-bottom: 3px;
+	font-size: 12px; line-height: 14px;
+	color: #525252;
+}
+.allmode-default .allmode-topitem .allmode-date {								/* TOP Item DATE */
+	padding: 0 10px 0 15px;
+	background: url(icons.png) no-repeat 0 3px;
+}
+.allmode-default .allmode-topitem .allmode-hits {								/* TOP Item HITS */
+	padding: 0 10px 0 15px;
+	background: url(icons.png) no-repeat 0 -29px;
+}
+.allmode-default .allmode-topitem .allmode-comments {							/* TOP Item COMMENTS */
+	padding: 0 10px 0 15px;
+	background: url(icons.png) no-repeat 0 -60px;
+}
+
+.allmode-default .allmode-topitem .allmode-info {								/* TOP Item Info DIV */
+	margin-top: -4px; padding-bottom: 2px;
+	font-size: 11px; line-height: 17px;
+	font-style: italic;
+	color: #b4b4b4;
+}
+.allmode-default .allmode-topitem .allmode-section,
+.allmode-default .allmode-topitem .allmode-category,
+.allmode-default .allmode-topitem .allmode-author {								/* TOP Item SECTION, CATEGORY, AUTHOR */
+	padding-right: 5px;
+	font-style: normal;
+	color: #808080;
+}
+
+
+/* ----- ITEMS Styles ----- */
+.allmode-default .allmode-itemsbox {											/* Items DIV */
+	margin: 0 8px 8px;
+/*	width: 400px;*/
+}
+.allmode-default .allmode-item {												/* Item DIV */
+	margin: 8px 0 0; padding-bottom: 6px;
+	overflow: hidden; clear: left;
+	border-bottom: 1px dashed #dddddd;
+}
+.allmode-default .allmode-item .allmode-img {									/* Item IMAGE */
+	float: left;
+	margin: 2px 16px 8px 0; padding: 2px;
+	border: 1px solid #8e8c8c;
+	background-color: #f6f5f5;
+}
+.allmode-default .allmode-item .allmode-title {									/* Item TITLE */
+	margin: 0 0 3px 0 !important;
+	font: bold 13px/17px Tahoma,Verdana,Arial,Helvetica,sans-serif;
+}
+.allmode-default .allmode-item .allmode-title a {
+	font-weight: bold;
+}
+.allmode-default .allmode-item .allmode-text {									/* Item TEXT */
+	font: normal 12px/17px Helvetica,Arial,sans-serif;
+	color: #373737;
+}
+.allmode-default .allmode-item .allmode-readmore {								/* Item READ MORE */
+	float: right;
+	margin-right: 4px;
+	font-size: 11px;
+	text-align: right;
+}
+
+
+/* ----- FIELDS Styles ----- */
+.allmode-default .allmode-item .allmode-details {								/* Item Details DIV */
+	margin-bottom: 2px;
+	font-size: 11px; line-height: 13px;
+	color: #525252;
+}
+.allmode-default .allmode-item .allmode-date {									/* Item DATE */
+	padding: 0 10px 0 15px;
+	background: url(icons.png) no-repeat 0 2px;
+}
+.allmode-default .allmode-item .allmode-hits {									/* Item HITS */
+	padding: 0 10px 0 15px;
+	background: url(icons.png) no-repeat 0 -30px;
+}
+.allmode-default .allmode-item .allmode-comments {								/* Item COMMENTS */
+	padding: 0 10px 0 15px;
+	background: url(icons.png) no-repeat 0 -61px;
+}
+.allmode-default .allmode-item .allmode-info {									/* Item Info DIV */
+	margin-top: -4px; padding-bottom: 2px;
+	font-size: 10px; line-height: 16px;
+	font-style: italic;
+	color: #b4b4b4;
+}
+.allmode-default .allmode-item .allmode-section,
+.allmode-default .allmode-item .allmode-category,
+.allmode-default .allmode-item .allmode-author {								/* Item SECTION, CATEGORY, AUTHOR */
+	padding-right: 5px;
+	font-style: normal;
+	color: #808080;
+}
+
+
+/* ----- RATING Field ----- */
+.allmode-default .allmode-rating {												/* Items RATING */
+	white-space: nowrap;
+}
+	.allmode-default .allmode-star {											/* Inactive STAR */
+		display: inline-block;
+		margin: 0 1px;
+		width: 11px; height: 11px;
+		background: url(rating.png) no-repeat 0 0;
+		zoom: 1; *display: inline; /*IE7 Hack*/
+	}
+	.allmode-default .allmode-star span {										/* Active STAR */
+		display: inline-block;
+		width: 100%; height: 100%;
+		background: url(rating.png) no-repeat 0 -20px;
+	}

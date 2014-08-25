@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	  type="module"
+	  version="2.5"
+	  client="site"
+	  method="upgrade">
+	  
+	<name>Hot Film Tape</name> 
+	<author>HotThemes</author> 
+	<creationDate>2013-04-19</creationDate> 
+	<copyright>Copyright 2013 by HotThemes</copyright>
+	<license>GNU General Public License version 2 or later</license>
+	<authorEmail>info@hotjoomlatemplates.com</authorEmail> 
+	<authorUrl>http://www.hotjoomlatemplates.com</authorUrl> 
+	<version>2.5.9</version> 
+	<description>Hot Film Tape - Commercial module from HotThemes</description>
+	
+	<files>
+		<filename module="mod_hot_film_tape">mod_hot_film_tape.php</filename>
+		<filename>index.html</filename>
+		<folder>elements</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<folder>tmpl</folder>
+	</files>
+
+	<languages>
+		<language tag="en-GB">en-GB.mod_hot_film_tape.ini</language>
+	</languages>
+	
+	<config>
+		<fields name="params" addfieldpath="/modules/mod_hot_film_tape/elements">
+			<fieldset name="system" label="LABEL SYSTEM SETTINGS">
+				<field type="loader" />
+				<field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" />
+				<field name="enablejQuery" type="list" default="1" label="LABEL JQUERY" description="DESC JQUERY">
+					<option value="1">Enable</option>
+					<option value="0">Disable</option>
+				</field>
+				<field name="noConflict" type="list" default="1" label="LABEL NO CONFLICT" description="DESC NO CONFLICT">
+					<option value="1">Enable</option>
+					<option value="0">Disable</option>
+				</field>
+				<field name="elementID" type="text" default="hot_film_tape" label="LABEL ELEMENT ID" description="DESC ELEMENT ID" />
+				<field name="linkNewWindow" type="list" default="0" label="LABEL LINK NEW WINDOW" description="DESC LINK NEW WINDOW">
+					<option value="1">Enable</option>
+					<option value="0">Disable</option>
+				</field>
+				<field name="responsive" type="list" default="0" label="LABEL RESPONSIVE" description="DESC RESPONSIVE">
+					<option value="1">Enable</option>
+					<option value="0">Disable</option>
+				</field>
+				<field name="minVisible" type="text" default="2" label="LABEL MIN VISIBLE" description="DESC MIN VISIBLE" />
+				<field name="maxVisible" type="text" default="7" label="LABEL MAX VISIBLE" description="DESC MAX VISIBLE" />
+				<field name="scrollAmount" type="list" default="1" label="LABEL SCROLL AMOUNT" description="DESC SCROLL AMOUNT">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+				</field>
+				<field name="pagination" type="list" default="0" label="LABEL PAGINATION" description="DESC PAGINATION">
+					<option value="1">Enable</option>
+					<option value="0">Disable</option>
+				</field>
+				<field name="navigation" type="list" default="1" label="LABEL NAVIGATION" description="DESC NAVIGATION">
+					<option value="1">Enable</option>
+					<option value="0">Disable</option>
+				</field>
+				<field name="timer" type="list" default="0" label="LABEL TIMER" description="DESC TIMER">
+					<option value="1">Enable</option>
+					<option value="0">Disable</option>
+				</field>
+				<field name="autoSlideShow" type="list" default="true" label="LABEL AUTO SLIDE SHOW" description="DESC AUTO SLIDE SHOW">
+					<option value="true">Enabled</option>
+					<option value="false">Disabled</option>
+				</field>
+			</fieldset>
+			<fieldset name="styling" label="LABEL MODULE STYLE">
+				<field name="elementWidth" type="text" default="240" label="LABEL ELEMENT WIDTH" description="DESC ELEMENT WIDTH" />
+				<field name="elementHeight" type="text" default="320" label="LABEL ELEMENT HEIGHT" description="DESC ELEMENT HEIGHT" />
+				<field name="elementMargin" type="text" default="10" label="LABEL ELEMENT MARGIN" description="DESC ELEMENT MARGIN" />
+				<field name="elementPadding" type="text" default="0" label="LABEL ELEMENT PADDING" description="DESC ELEMENT PADDING" />
+				<field name="textColor" type="hotcolor" default="#333333" label="LABEL TEXT COLOR" description="DESC COLOR" />
+				<field name="borderSize" type="text" default="1" label="LABEL BORDER SIZE" description="DESC BORDER SIZE" />
+				<field name="borderColor" type="hotcolor" default="#999999" label="LABEL BORDER COLOR" description="DESC COLOR" />
+				<field name="buttonTextColor" type="hotcolor" default="#FFFFFF" label="LABEL BUTTON TEXT COLOR" description="DESC COLOR" />
+				<field name="buttonColor" type="hotcolor" default="#333333" label="LABEL BUTTON COLOR" description="DESC COLOR" />
+				<field name="buttonHoverColor" type="hotcolor" default="#89051c" label="LABEL BUTTON HOVER COLOR" description="DESC COLOR" />
+			</fieldset>
+			<fieldset name="image1" label="LABEL IMAGE1">
+				<field name="enableSlide1" type="list" default="false" label="LABEL ENABLE SLIDE" description="DESC ENABLE SLIDE">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="image1content" type="editor" filter="raw" default="" label="LABEL IMAGE CONTENT" description="DESC IMAGE CONTENT" />
+				<field name="image1link" type="text" default="" label="LABEL IMAGE LINK" description="DESC IMAGE LINK" />
+				<field name="image1title" type="text" default="" label="LABEL IMAGE TITLE" description="DESC IMAGE TITLE" />
+			</fieldset>
+			<fieldset name="image2" label="LABEL IMAGE2">
+				<field name="enableSlide2" type="list" default="false" label="LABEL ENABLE SLIDE" description="DESC ENABLE SLIDE">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="image2content" type="editor" filter="raw" default="" label="LABEL IMAGE CONTENT" description="DESC IMAGE CONTENT" />
+				<field name="image2link" type="text" default="" label="LABEL IMAGE LINK" description="DESC IMAGE LINK" />
+				<field name="image2title" type="text" default="" label="LABEL IMAGE TITLE" description="DESC IMAGE TITLE" />
+			</fieldset>
+			<fieldset name="image3" label="LABEL IMAGE3">
+				<field name="enableSlide3" type="list" default="false" label="LABEL ENABLE SLIDE" description="DESC ENABLE SLIDE">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="image3content" type="editor" filter="raw" default="" label="LABEL IMAGE CONTENT" description="DESC IMAGE CONTENT" />
+				<field name="image3link" type="text" default="" label="LABEL IMAGE LINK" description="DESC IMAGE LINK" />
+				<field name="image3title" type="text" default="" label="LABEL IMAGE TITLE" description="DESC IMAGE TITLE" />
+			</fieldset>
+			<fieldset name="image4" label="LABEL IMAGE4">
+				<field name="enableSlide4" type="list" default="false" label="LABEL ENABLE SLIDE" description="DESC ENABLE SLIDE">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="image4content" type="editor" filter="raw" default="" label="LABEL IMAGE CONTENT" description="DESC IMAGE CONTENT" />
+				<field name="image4link" type="text" default="" label="LABEL IMAGE LINK" description="DESC IMAGE LINK" />
+				<field name="image4title" type="text" default="" label="LABEL IMAGE TITLE" description="DESC IMAGE TITLE" />
+			</fieldset>
+			<fieldset name="image5" label="LABEL IMAGE5">
+				<field name="enableSlide5" type="list" default="false" label="LABEL ENABLE SLIDE" description="DESC ENABLE SLIDE">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="image5content" type="editor" filter="raw" default="" label="LABEL IMAGE CONTENT" description="DESC IMAGE CONTENT" />
+				<field name="image5link" type="text" default="" label="LABEL IMAGE LINK" description="DESC IMAGE LINK" />
+				<field name="image5title" type="text" default="" label="LABEL IMAGE TITLE" description="DESC IMAGE TITLE" />
+			</fieldset>
+			<fieldset name="image6" label="LABEL IMAGE6">
+				<field name="enableSlide6" type="list" default="false" label="LABEL ENABLE SLIDE" description="DESC ENABLE SLIDE">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="image6content" type="editor" filter="raw" default="" label="LABEL IMAGE CONTENT" description="DESC IMAGE CONTENT" />
+				<field name="image6link" type="text" default="" label="LABEL IMAGE LINK" description="DESC IMAGE LINK" />
+				<field name="image6title" type="text" default="" label="LABEL IMAGE TITLE" description="DESC IMAGE TITLE" />
+			</fieldset>
+			<fieldset name="image7" label="LABEL IMAGE7">
+				<field name="enableSlide7" type="list" default="false" label="LABEL ENABLE SLIDE" description="DESC ENABLE SLIDE">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="image7content" type="editor" filter="raw" default="" label="LABEL IMAGE CONTENT" description="DESC IMAGE CONTENT" />
+				<field name="image7link" type="text" default="" label="LABEL IMAGE LINK" description="DESC IMAGE LINK" />
+				<field name="image7title" type="text" default="" label="LABEL IMAGE TITLE" description="DESC IMAGE TITLE" />
+			</fieldset>
+			<fieldset name="image8" label="LABEL IMAGE8">
+				<field name="enableSlide8" type="list" default="false" label="LABEL ENABLE SLIDE" description="DESC ENABLE SLIDE">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="image8content" type="editor" filter="raw" default="" label="LABEL IMAGE CONTENT" description="DESC IMAGE CONTENT" />
+				<field name="image8link" type="text" default="" label="LABEL IMAGE LINK" description="DESC IMAGE LINK" />
+				<field name="image8title" type="text" default="" label="LABEL IMAGE TITLE" description="DESC IMAGE TITLE" />
+			</fieldset>
+			<fieldset name="image9" label="LABEL IMAGE9">
+				<field name="enableSlide9" type="list" default="false" label="LABEL ENABLE SLIDE" description="DESC ENABLE SLIDE">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="image9content" type="editor" filter="raw" default="" label="LABEL IMAGE CONTENT" description="DESC IMAGE CONTENT" />
+				<field name="image9link" type="text" default="" label="LABEL IMAGE LINK" description="DESC IMAGE LINK" />
+				<field name="image9title" type="text" default="" label="LABEL IMAGE TITLE" description="DESC IMAGE TITLE" />
+			</fieldset>
+			<fieldset name="image10" label="LABEL IMAGE10">
+				<field name="enableSlide10" type="list" default="false" label="LABEL ENABLE SLIDE" description="DESC ENABLE SLIDE">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="image10content" type="editor" filter="raw" default="" label="LABEL IMAGE CONTENT" description="DESC IMAGE CONTENT" />
+				<field name="image10link" type="text" default="" label="LABEL IMAGE LINK" description="DESC IMAGE LINK" />
+				<field name="image10title" type="text" default="" label="LABEL IMAGE TITLE" description="DESC IMAGE TITLE" />
+			</fieldset>
+			<fieldset name="image11" label="LABEL IMAGE11">
+				<field name="enableSlide11" type="list" default="false" label="LABEL ENABLE SLIDE" description="DESC ENABLE SLIDE">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="image11content" type="editor" filter="raw" default="" label="LABEL IMAGE CONTENT" description="DESC IMAGE CONTENT" />
+				<field name="image11link" type="text" default="" label="LABEL IMAGE LINK" description="DESC IMAGE LINK" />
+				<field name="image11title" type="text" default="" label="LABEL IMAGE TITLE" description="DESC IMAGE TITLE" />
+			</fieldset>
+			<fieldset name="image12" label="LABEL IMAGE12">
+				<field name="enableSlide12" type="list" default="false" label="LABEL ENABLE SLIDE" description="DESC ENABLE SLIDE">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="image12content" type="editor" filter="raw" default="" label="LABEL IMAGE CONTENT" description="DESC IMAGE CONTENT" />
+				<field name="image12link" type="text" default="" label="LABEL IMAGE LINK" description="DESC IMAGE LINK" />
+				<field name="image12title" type="text" default="" label="LABEL IMAGE TITLE" description="DESC IMAGE TITLE" />
+			</fieldset>
+			<fieldset name="image13" label="LABEL IMAGE13">
+				<field name="enableSlide13" type="list" default="false" label="LABEL ENABLE SLIDE" description="DESC ENABLE SLIDE">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="image13content" type="editor" filter="raw" default="" label="LABEL IMAGE CONTENT" description="DESC IMAGE CONTENT" />
+				<field name="image13link" type="text" default="" label="LABEL IMAGE LINK" description="DESC IMAGE LINK" />
+				<field name="image13title" type="text" default="" label="LABEL IMAGE TITLE" description="DESC IMAGE TITLE" />
+			</fieldset>
+			<fieldset name="image14" label="LABEL IMAGE14">
+				<field name="enableSlide14" type="list" default="false" label="LABEL ENABLE SLIDE" description="DESC ENABLE SLIDE">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="image14content" type="editor" filter="raw" default="" label="LABEL IMAGE CONTENT" description="DESC IMAGE CONTENT" />
+				<field name="image14link" type="text" default="" label="LABEL IMAGE LINK" description="DESC IMAGE LINK" />
+				<field name="image14title" type="text" default="" label="LABEL IMAGE TITLE" description="DESC IMAGE TITLE" />
+			</fieldset>
+			<fieldset name="image15" label="LABEL IMAGE15">
+				<field name="enableSlide15" type="list" default="false" label="LABEL ENABLE SLIDE" description="DESC ENABLE SLIDE">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="image15content" type="editor" filter="raw" default="" label="LABEL IMAGE CONTENT" description="DESC IMAGE CONTENT" />
+				<field name="image15link" type="text" default="" label="LABEL IMAGE LINK" description="DESC IMAGE LINK" />
+				<field name="image15title" type="text" default="" label="LABEL IMAGE TITLE" description="DESC IMAGE TITLE" />
+			</fieldset>
+			<fieldset name="image16" label="LABEL IMAGE16">
+				<field name="enableSlide16" type="list" default="false" label="LABEL ENABLE SLIDE" description="DESC ENABLE SLIDE">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="image16content" type="editor" filter="raw" default="" label="LABEL IMAGE CONTENT" description="DESC IMAGE CONTENT" />
+				<field name="image16link" type="text" default="" label="LABEL IMAGE LINK" description="DESC IMAGE LINK" />
+				<field name="image16title" type="text" default="" label="LABEL IMAGE TITLE" description="DESC IMAGE TITLE" />
+			</fieldset>
+			<fieldset name="image17" label="LABEL IMAGE17">
+				<field name="enableSlide17" type="list" default="false" label="LABEL ENABLE SLIDE" description="DESC ENABLE SLIDE">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="image17content" type="editor" filter="raw" default="" label="LABEL IMAGE CONTENT" description="DESC IMAGE CONTENT" />
+				<field name="image17link" type="text" default="" label="LABEL IMAGE LINK" description="DESC IMAGE LINK" />
+				<field name="image17title" type="text" default="" label="LABEL IMAGE TITLE" description="DESC IMAGE TITLE" />
+			</fieldset>
+			<fieldset name="image18" label="LABEL IMAGE18">
+				<field name="enableSlide18" type="list" default="false" label="LABEL ENABLE SLIDE" description="DESC ENABLE SLIDE">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="image18content" type="editor" filter="raw" default="" label="LABEL IMAGE CONTENT" description="DESC IMAGE CONTENT" />
+				<field name="image18link" type="text" default="" label="LABEL IMAGE LINK" description="DESC IMAGE LINK" />
+				<field name="image18title" type="text" default="" label="LABEL IMAGE TITLE" description="DESC IMAGE TITLE" />
+			</fieldset>
+			<fieldset name="image19" label="LABEL IMAGE19">
+				<field name="enableSlide19" type="list" default="false" label="LABEL ENABLE SLIDE" description="DESC ENABLE SLIDE">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="image19content" type="editor" filter="raw" default="" label="LABEL IMAGE CONTENT" description="DESC IMAGE CONTENT" />
+				<field name="image19link" type="text" default="" label="LABEL IMAGE LINK" description="DESC IMAGE LINK" />
+				<field name="image19title" type="text" default="" label="LABEL IMAGE TITLE" description="DESC IMAGE TITLE" />
+			</fieldset>
+			<fieldset name="image20" label="LABEL IMAGE20">
+				<field name="enableSlide20" type="list" default="false" label="LABEL ENABLE SLIDE" description="DESC ENABLE SLIDE">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="image20content" type="editor" filter="raw" default="" label="LABEL IMAGE CONTENT" description="DESC IMAGE CONTENT" />
+				<field name="image20link" type="text" default="" label="LABEL IMAGE LINK" description="DESC IMAGE LINK" />
+				<field name="image20title" type="text" default="" label="LABEL IMAGE TITLE" description="DESC IMAGE TITLE" />
+			</fieldset>
+		</fields>
+	</config>
+
+</extension>

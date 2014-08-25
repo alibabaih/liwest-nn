@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+	<name>MOD_JO_K2_SLIDESHOW</name>
+	<author>http://www.joomcore.com/</author>
+	<creationDate>4th April, 2012</creationDate>
+	<copyright>http://www.joomcore.com. All rights reserved.</copyright>
+	<authorEmail>contact@joomcore.com</authorEmail>
+	<authorUrl>http://www.joomcore.com/</authorUrl>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<version>2.5</version>
+	<description>MOD_JO_K2_SLIDESHOW_XML_DESCRIPTION</description>
+	<files>
+		<filename module="mod_jo_k2_slideshow">mod_jo_k2_slideshow.php</filename>
+		<folder>css</folder>
+		<folder>elements</folder>
+		<folder>lib</folder>
+		<folder>thumb_article</folder>
+		<folder>js</folder>
+		<folder>images</folder>
+		<folder>language</folder>
+		<folder>tmpl</folder>
+		
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.mod_jo_k2_slideshow.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.mod_jo_k2_slideshow.sys.ini</language>
+	</languages>
+	<help key="JHELP_EXTENSIONS_MODULE_MANAGER_JOOMCORE" />
+	<config>
+		
+		<fields name="params">
+			<fieldset name="basic" addfieldpath="/modules/mod_jo_k2_slideshow/elements">
+				<field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+				
+				<field name="getTemplate" type="moduletemplate" modulename="mod_jo_k2_slideshow" default="Default" label="Select sub-template "	description=""/>
+				
+				<field name="source" type="list" default="filter" label="Source" description="">
+					<option value="filter">Retrieve items from categories</option>
+					<option value="specific">Select specific items</option>
+				</field>
+				
+				<field name="" type="header" default="Retrieve items from categories" label="" description=""/>
+				<field name="catfilter" type="radio" default="0" label="Category filter" description="">
+					<option value="0">All</option>
+					<option value="1">Select</option>
+				</field>
+			
+				<field name="category_id" type="categoriesmultiple" default="" label="Select one or more categories" description="Select one or more categories"/>
+				
+				<field name="getChildren" type="radio" default="0" label="Fetch items from children categories" description="">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				
+				<field name="itemCount" type="text" size="4" default="5" label="Item count" description="Number of item to show"/>
+	
+				<field name="itemsOrdering" type="list" default="" label="Item ordering" description="">
+					<option value="">Default</option>
+					<option value="date">Oldest first</option>
+					<option value="rdate">Most recent first</option>
+					<option value="alpha">Title Alphabetical</option>
+					<option value="ralpha">Title Reverse-Alphabetical</option>
+					<option value="order">Ordering</option>
+					<option value="rorder">Ordering Reverse</option>
+					<option value="hits">Most popular</option>
+					<option value="best">Highest rated</option>
+					<option value="comments">Most commented</option>
+					<option value="modified">Latest modified</option>
+					<option value="rand">Random ordering</option>
+				</field>
+				
+				<field name="FeaturedItems" type="list" default="1" label="Featured items" description="">
+					<option value="0">Hide</option>
+					<option value="1">Show</option>
+					<option value="2">Show only featured items</option>
+				</field>
+				
+				<field name="popularityRange" type="list" 
+					default="" 
+					label="Time range (if ordering is set to 'most popular' or 'most commented')" 
+					description="">
+						<option value="">All time</option>
+						<option value="1">1 Day</option>
+						<option value="3">3 Days</option>
+						<option value="7">1 Week</option>
+						<option value="15">2 Weeks</option>
+						<option value="30">1 Month</option>
+						<option value="180">6 Months</option>
+				</field>
+				<field name="" type="header" default="Select specific items" label="" description=""/>
+				
+				<field name="item" type="item" default="" label="Add items" description="Add items"/>				
+				<field name="items" type="items" default="" label="Drag and drop to re-order items" 	description="Drag and drop to re-order item"/>
+				
+				<field name="" type="header" default="Slide show custom" label="" description=""/>
+				
+				<field name="spacer1" type="spacer" class="text" label="1._________MODULE SETTING___________________"/>
+				<field name="left_right" type="list" default="right" label="MOD_JO_K2_SLIDESHOW_NAVIGATION_SLIDER_ON_SIDE" description="MOD_JO_K2_SLIDESHOW_NAVIGATION_SLIDER_ON_SIDE_DESC">
+					<option value="left">MOD_JO_K2_SLIDESHOW_LEFT</option>
+					<option value="right">MOD_JO_K2_SLIDESHOW_RIGHT</option>
+				</field>
+					
+				<field name="modwidth" type="text" default="665" label="MOD_JO_K2_SLIDESHOW_MODULE_WIDTH" description="MOD_JO_K2_SLIDESHOW_MODULE_WIDTH_DESC"/>
+				<field name="modheight" type="text" default="300" label="MOD_JO_K2_SLIDESHOW_MODULE_HEIGHT" description="MOD_JO_K2_SLIDESHOW_MODULE_HEIGHT_DESC" />
+				
+				<field name="spacer2" type="spacer" class="text" label="2._________SLIDER  NAVIGATOR OUTER___________" />
+				<field name="maxitem" type="text" default="4" label="MOD_JO_K2_SLIDESHOW_MAX_ITEM_SLIDER" description="MOD_JO_K2_SLIDESHOW_MAX_ITEM_SLIDER_DESC" />
+				<field name="itemwidth" type="text" default="280" label="MOD_JO_K2_SLIDESHOW_WIDTH_ITEM" description="MOD_JO_K2_SLIDESHOW_WIDTH_ITEM_DESC" />
+				
+				<field name="overlay_link_color" type ="color" label="MOD_JO_K2_SLIDESHOW_TITLE_COLOR" description="MOD_JO_K2_SLIDESHOW_TITLE_COLOR_DESC" />						
+				<field name="overlay_introtext_color" type ="color" label="MOD_JO_K2_SLIDESHOW_LIMIT_INTROTEXT_COLOR" description="MOD_JO_K2_SLIDESHOW_LIMIT_INTROTEXT_COLOR_DESC" />	
+				
+				<field name="spacer3" type="spacer" class="text" label="3._________CONTENT SOURCE SETTING___________" />
+				
+				<field name="numberdisplay" type="text" default="30" label="MOD_JO_K2_SLIDESHOW_LIMIT_INTRO_TEXT" description="MOD_JO_K2_SLIDESHOW_LIMIT_INTRO_TEXT_DESC" />
+				<field name="limitintrotext" type="text" default="100" label="MOD_JO_K2_SLIDESHOW_LIMIT_DETAIL_DESCRIPTION" description="MOD_JO_K2_SLIDESHOW_LIMIT_DETAIL_DESCRIPTION_DESC" />
+				
+				<field name="showlink" type="radio" default="1" label="MOD_JO_K2_SLIDESHOW_SHOW_LINK" description="MOD_JO_K2_SLIDESHOW_SHOW_LINK_DESC">	
+					<option value="0">MOD_JO_K2_SLIDESHOW_NO</option>
+					<option value="1">MOD_JO_K2_SLIDESHOW_YES</option>
+				</field>
+				<field name="showreadmore" type="radio" default="0" label="MOD_JO_K2_SLIDESHOW_SHOW_READMORE" description="MOD_JO_K2_SLIDESHOW_SHOW_READMORE_DESC">	
+					<option value="0">MOD_JO_K2_SLIDESHOW_NO</option>
+					<option value="1">MOD_JO_K2_SLIDESHOW_YES</option>
+				</field>
+				<field name="showthumbnails" type="radio" default="1" label="MOD_JO_K2_SLIDESHOW_NO_SHOW_THUMBNAILS" description="MOD_JO_K2_SLIDESHOW_NO_SHOW_THUMBNAILS_DESC">	
+					<option value="0">MOD_JO_K2_SLIDESHOW_NO</option>
+					<option value="1">MOD_JO_K2_SLIDESHOW_YES</option>	
+				</field>
+				<field name="showthumbnailsdefault" type="radio" default="1" label="MOD_JO_K2_SLIDESHOW_SHOW_DEFAULT_THUMBNAILS" description="MOD_JO_K2_SLIDESHOW_SHOW_DEFAULT_THUMBNAILS_DESC">	
+					<option value="0">MOD_JO_K2_SLIDESHOW_NO</option>
+					<option value="1">MOD_JO_K2_SLIDESHOW_YES</option>	
+				</field>
+				
+				<field name="imagedefault" type="text" size="50" default="modules/mod_jo_k2_slideshow/images/default.jpg" label="MOD_JO_K2_SLIDESHOW_IMAGE_DIRECTORY_DEFAULT" description="MOD_JO_K2_SLIDESHOW_IMAGE_DIRECTORY_DEFAULT_DESC" />
+				
+				<field name="imagewidth" type="text" default="70" label="MOD_JO_K2_SLIDESHOW_THUMBNAIL_IMAGES_WIDTH" description="MOD_JO_K2_SLIDESHOW_THUMBNAIL_IMAGES_WIDTH_DESC" />
+				<field name="imageheight" type ="text" default="45" label="MOD_JO_K2_SLIDESHOW_THUMBNAIL_IMAGES_HEIGHT" description="MOD_JO_K2_SLIDESHOW_THUMBNAIL_IMAGES_HEIGHT_DESC" />
+				
+				<field name="spacer5" type="spacer" class="text" label="4._________OVERLAY SETTING____________________" />
+				
+				<field name="overlay_position" type="list" default="bottom" label="MOD_JO_K2_SLIDESHOW_OVERLAY_POSITION" description="MOD_JO_K2_SLIDESHOW_OVERLAY_POSITION_DESC">	
+					<option value="top">MOD_JO_K2_SLIDESHOW_TOP</option>
+					<option value="bottom">MOD_JO_K2_SLIDESHOW_BOTTOM</option>
+				</field>
+				
+				<field name="overlay_height" type="text" default="120" 	label="MOD_JO_K2_SLIDESHOW_OVERLAY_HEIGHT" description="MOD_JO_K2_SLIDESHOW_OVERLAY_HEIGHT_DESC" />
+				
+				<field name="overlay_width" type="text" default="403" label="MOD_JO_K2_SLIDESHOW_OVERLAY_WIDTH" description="MOD_JO_K2_SLIDESHOW_OVERLAY_WIDTH_DESC" />
+					
+				<field name="overlay_color" type ="color" label="MOD_JO_K2_SLIDESHOW_OVERLAY_COLOR" description="MOD_JO_K2_SLIDESHOW_OVERLAY_COLOR_DESC" />
+				
+				<field name="overlay_opacity" type ="text" default="0.6" label="MOD_JO_K2_SLIDESHOW_OVERLAY_OPACITY" description="MOD_JO_K2_SLIDESHOW_OVERLAY_OPACITY_DESC" />
+					
+				<field name="overlay_text_color" type ="color" label="MOD_JO_K2_SLIDESHOW_OVERLAY_TEXT_COLOR" description="MOD_JO_K2_SLIDESHOW_OVERLAY_TEXT_COLOR_DESC" />
+					
+				<field name="overlay_font_size" type ="text" default="12px" label="MOD_JO_K2_SLIDESHOW_OVERLAY_FONT_SIZE" description="MOD_JO_K2_SLIDESHOW_OVERLAY_FONT_SIZE_DESC" />
+					
+				<field name="overlay_heading_color" type ="color" label="MOD_JO_K2_SLIDESHOW_OVERLAY_HEADDING_COLOR" description="MOD_JO_K2_SLIDESHOW_OVERLAY_HEADDING_COLOR_DESC" />
+				
+			
+				
+				<field name="spacer6" type="spacer" class="text" label="5._________OTHER SETTING____________________" />
+				
+				<field name="easing_type" type="list" default="easeInQuad" label="MOD_JO_K2_SLIDESHOW_EASING_TYPE" description="MOD_JO_K2_SLIDESHOW_EASING_TYPE_DESC">
+					<option value="easeInQuad">easeInQuad</option>
+					<option value="easeOutQuad">easeOutQuad</option>
+					<option value="easeInOutQuad">easeInOutQuad</option>
+					<option value="easeInBounce">easeInBounce</option>
+					<option value="easeOutBounce">easeOutBounce</option>
+					<option value="easeInOutBounce">easeInOutBounce</option>
+				</field>
+				<field name="interval" type="text" default="4000" label="MOD_JO_K2_SLIDESHOW_INTERVAL" description="MOD_JO_K2_SLIDESHOW_INTERVAL_DESC" />
+				<field name="auto_start" type="radio" default="1" label="MOD_JO_K2_SLIDESHOW_INTERVAL_AUTO_START" description="MOD_JO_K2_SLIDESHOW_INTERVAL_AUTO_START_DESC">
+					<option value="0">MOD_JO_K2_SLIDESHOW_NO</option>
+					<option value="1">MOD_JO_K2_SLIDESHOW_YES</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>	
+	

@@ -1,0 +1,406 @@
+
+.zhym-wrap-markerList-simple,
+.zhym-wrap-markerList-advanced
+{
+}
+
+.zhym-list-markerList-simple
+{
+	overflow: auto;
+}
+
+.zhym-list-markerList-advanced
+{
+	overflow: auto;
+	border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 4px #666666;
+}
+
+.zhym-table-markerList-simple,
+.zhym-table-markerList-advanced
+{
+}
+
+
+.zhym-ul-markerList-simple,
+.zhym-ul-markerList-advanced
+{
+	list-style-type: none;
+}
+
+.zhym-li-markerList-simple,
+.zhym-li-markerList-advanced
+{
+}
+
+a.zhym-a-markerList-simple:visited, 
+a.zhym-a-markerList-simple:link,
+a.zhym-a-markerList-advanced:visited, 
+a.zhym-a-markerList-advanced:link
+{
+	text-decoration: none;
+}
+
+a.zhym-a-markerList-simple:hover,
+a.zhym-a-markerList-advanced:hover
+{
+	color: #181118;
+}
+
+.zhym-0-li-markerList-simple,
+.zhym-0-li-markerList-advanced
+{
+	font-size:1em;
+}
+
+/* Placemark with title and description */
+.zhym-1-liw-markerList-simple,
+.zhym-1-liw-markerList-advanced
+{
+	display: inline;
+}
+
+.zhym-1-lit-markerList-simple,
+.zhym-1-lit-markerList-advanced
+{
+	font-size:1em;
+}
+
+.zhym-1-lid-markerList-simple,
+.zhym-1-lid-markerList-advanced
+{
+	font-size:0.8em;
+}
+
+/* Placemark with icon and title */
+
+.zhym-2-liw-icon-markerList-simple,
+.zhym-2-liw-icon-markerList-advanced
+{
+}
+
+.zhym-2-lit-icon-markerList-simple,
+.zhym-2-lit-icon-markerList-advanced
+{
+	display: inline;
+	font-size:1em;
+	vertical-align: top;
+}
+
+.zhym-2-lid-icon-markerList-simple,
+.zhym-2-lid-icon-markerList-advanced
+{
+	display: inline;
+	font-size:0.8em;
+}
+
+.zhym-2-lii-icon-markerList-simple,
+.zhym-2-lii-icon-markerList-advanced
+{
+	display: inline;
+}
+
+
+/* Placemark with icon, title and description */
+.zhym-3-liw-icon-markerList-simple,
+.zhym-3-liw-icon-markerList-advanced
+{
+}
+
+.zhym-3-lit-icon-markerList-simple,
+.zhym-3-lit-icon-markerList-advanced
+{
+	display: inline;
+	font-size:1em;
+	vertical-align: top;
+}
+
+.zhym-3-lii-icon-markerList-simple,
+.zhym-3-lii-icon-markerList-advanced
+{
+	display: inline;
+}
+
+.zhym-3-liwd-icon-markerList-simple,
+.zhym-3-liwd-icon-markerList-advanced
+{
+	display: inline;
+}
+.zhym-3-lid-icon-markerList-simple,
+.zhym-3-lid-icon-markerList-advanced
+{
+	display: inline;
+	font-size:0.8em;
+	color: #000000;
+}
+
+/* Placemark with icon, title and description (table) */
+.zhym-4-table-icon-markerList-simple,
+.zhym-4-table-icon-markerList-advanced
+{
+	border: 0;
+}
+
+.zhym-4-row-icon-markerList-simple,
+.zhym-4-row-icon-markerList-advanced
+{
+	text-align:left;
+	vertical-align:top;
+}
+
+.zhym-4-tdicon-icon-markerList-simple,
+.zhym-4-tdicon-icon-markerList-advanced
+{
+	border: 0;
+	padding: 0;
+}
+
+.zhym-4-tdtitle-icon-markerList-simple,
+.zhym-4-tdtitle-icon-markerList-advanced
+{
+	border: 0;
+	padding: 0;
+}
+
+.zhym-4-tddesc-icon-markerList-simple,
+.zhym-4-tddesc-icon-markerList-advanced
+{
+	border: 0;
+	padding: 0;
+	font-size:0.8em;
+	color: #000000;
+}
+
+/* Placemark with image and title */
+.zhym-11-liw-image-markerList-simple,
+.zhym-11-liw-image-markerList-advanced
+{
+	text-align: center; 
+}
+.zhym-11-lit-image-markerList-simple,
+.zhym-11-lit-image-markerList-advanced
+{
+	font-size:1em;
+	vertical-align: top;
+	text-align: center; 
+}
+
+.zhym-11-lii-image-markerList-simple,
+.zhym-11-lii-image-markerList-advanced
+{
+}
+
+/* Placemark with image, title and description */
+.zhym-12-liw-image-markerList-simple,
+.zhym-12-liw-image-markerList-advanced
+{
+	text-align: center; 
+}
+.zhym-12-lit-image-markerList-simple,
+.zhym-12-lit-image-markerList-advanced
+{
+	font-size:1em;
+	vertical-align: top;
+	text-align: center; 
+}
+
+.zhym-12-lii-image-markerList-simple,
+.zhym-12-lii-image-markerList-advanced
+{
+}
+
+.zhym-12-liwd-image-markerList-simple,
+.zhym-12-liwd-image-markerList-advanced
+{
+	text-align: center; 
+}
+.zhym-12-lid-image-markerList-simple,
+.zhym-12-lid-image-markerList-advanced
+{
+	font-size:0.8em;
+	color: #000000;
+}
+
+/* Placemark with image and title */
+.zhym-13-liw-image-markerList-simple,
+.zhym-13-liw-image-markerList-advanced
+{
+}
+.zhym-13-lit-image-markerList-simple,
+.zhym-13-lit-image-markerList-advanced
+{
+	display: inline;
+	font-size:1em;
+	vertical-align: top;
+}
+
+.zhym-13-lii-image-markerList-simple,
+.zhym-13-lii-image-markerList-advanced
+{
+	display: inline;
+	padding: 0 5px 0 0;
+}
+
+
+/* Placemark with image, title and description */
+.zhym-14-liw-image-markerList-simple,
+.zhym-14-liw-image-markerList-advanced
+{
+}
+.zhym-14-lit-image-markerList-simple,
+.zhym-14-lit-image-markerList-advanced
+{
+	display: inline;
+	font-size:1em;
+	vertical-align: top;
+}
+
+.zhym-14-lii-image-markerList-simple,
+.zhym-14-lii-image-markerList-advanced
+{
+	display: inline;
+	padding: 0 5px 0 0;
+}
+
+.zhym-14-liwd-image-markerList-simple,
+.zhym-14-liwd-image-markerList-advanced
+{
+	display: inline;
+}
+.zhym-14-lid-image-markerList-simple,
+.zhym-14-lid-image-markerList-advanced
+{
+	display: inline;
+	font-size:0.8em;
+	color: #000000;
+}
+
+
+/* Placemark with image, title and description (table) */
+.zhym-15-table-image-markerList-simple,
+.zhym-15-table-image-markerList-advanced
+{
+	border: 0;
+}
+
+.zhym-15-row-image-markerList-simple,
+.zhym-15-row-image-markerList-advanced
+{
+	text-align:left;
+	vertical-align:top;
+}
+
+.zhym-15-tdimage-image-markerList-simple,
+.zhym-15-tdimage-image-markerList-advanced
+{
+	border: 0;
+	padding: 0;
+}
+
+.zhym-15-tdtitle-image-markerList-simple,
+.zhym-15-tdtitle-image-markerList-advanced
+{
+	border: 0;
+	padding: 0;
+}
+
+.zhym-15-tddesc-image-markerList-simple,
+.zhym-15-tddesc-image-markerList-advanced
+{
+	border: 0;
+	padding: 0;
+	font-size:0.8em;
+	color: #000000;
+}
+
+/*- Placemark with image, title and description (table) -*/
+
+
+/*- Placemark List Table Type -*/
+.zhym-ul-table-markerList-simple,
+.zhym-ul-table-markerList-advanced
+{
+	border: 0;
+	border-collapse: collapse;
+}
+
+.zhym-ul-tablebody-markerList-simple,
+.zhym-ul-tablebody-markerList-advanced
+{
+	border: 0;
+}
+
+
+.zhym-li-table-tr-markerList-simple,
+.zhym-li-table-tr-markerList-advanced
+{
+	text-align:left;
+	vertical-align:top;
+}
+
+.zhym-li-table-c1-markerList-simple,
+.zhym-li-table-c2-markerList-simple,
+.zhym-li-table-c1-markerList-advanced,
+.zhym-li-table-c2-markerList-advanced
+{
+	padding: 0;
+}
+
+.zhym-li-table-tr-markerList-advanced:nth-child(odd) 
+{
+	color: #000; 
+	background: #FFF
+}
+
+.zhym-li-table-tr-markerList-advanced:nth-child(even) 
+{
+	color: #000;
+	background: #eaeaea
+}
+
+.zhym-li-table-tr-markerList-advanced:hover
+{
+	background: #ccc
+}
+
+/*- Placemark List Table Type - End -*/
+
+
+.zhym-placemarklist-button-text-star
+{
+	font-family: Arial,sans-serif;   
+	padding: 3px 3px 3px 3px;
+}
+
+/* ---- Button ---- */
+.zhym-placemarklist-button-ui
+{
+	text-align: center; 
+	font-size: 13px; 
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(113, 123, 135);
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); 
+	background: #FFFFFF;
+	cursor: pointer;
+}
+
+.zhym-placemarklist-button-text
+{
+	font-family: Arial,sans-serif;   
+	padding: 1px 6px 1px 6px;
+}
+
+.zhym-placemarklist-button-ui-star
+{
+	text-align: center; 
+	font-size: 13px; 
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(113, 123, 135);
+	border-radius: 5px 5px 5px 5px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); 
+	background: #FFFFFF;
+	cursor: pointer;
+}
+

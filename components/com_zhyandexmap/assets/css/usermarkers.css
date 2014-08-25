@@ -1,0 +1,54 @@
+ .bodyInsertProperties
+{
+	padding: 2px;
+	background : #F4F4F4;
+	border-collapse: collapse; 
+	border-width: 1px; 
+	border-style: solid; 
+	border-color: #DEDEDE;
+}
+
+ .bodyInsertPlacemarkProperties
+{
+	display : block;
+	padding: 2px;
+	border-collapse: collapse; 
+	border-width: 1px; 
+	border-style: solid; 
+	border-color: #DEDEDE;
+}
+
+ .bodyInsertPlacemarkGrpProperties
+{
+	display : none;
+	padding: 2px;
+	border-collapse: collapse; 
+	border-width: 1px; 
+	border-style: solid; 
+	border-color: #DEDEDE;
+}
+
+ .bodyInsertContactProperties
+{
+	display : none;
+	padding: 2px;
+	border-collapse: collapse; 
+	border-width: 1px; 
+	border-style: solid; 
+	border-color: #DEDEDE;
+}
+
+ .bodyInsertContactAdrProperties
+{
+	display : none;
+	padding: 2px;
+	border-collapse: collapse; 
+	border-width: 1px; 
+	border-style: solid; 
+	border-color: #DEDEDE;
+}
+
+.YMaps-b-balloon-content
+{
+	height:100%!important;
+}

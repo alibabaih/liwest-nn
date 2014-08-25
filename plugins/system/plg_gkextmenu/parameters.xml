@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+		<fields name="params">
+			<fieldset name="gk-params" label="Menu Params (GavickPro)">
+				<field name="gk_desc" type="textarea" rows="5" cols="40" default="" label="Description" description="Additiona description for menu item" />
+				<field name="gk_cols" type="list" default="1" label="Columns" description="Set menu item columns">
+					<option value="1">1</option>
+					<option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+				</field>
+				<field name="gk_group" type="radio" default="0" label="Group" description="Group menu items">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="gk_class" type="text" size="30" default="" label="Additional class" description="Set additional class for menu item" />	
+				
+				<field name="gk_subcontent" type="radio" default="0" label="Subcontent" description="Set type of subconent in menu position">
+					<option value="0">None</option>
+					<option value="pos">Module Position</option>
+				</field>
+				
+				<field name="gk_subcontent_pos_positions" type="list" default="0" label="Select Positions" description="Select template position for subcontent">
+					<option value="menu1">menu1</option>
+					<option value="menu2">menu2</option>
+					<option value="menu3">menu3</option>
+					<option value="menu4">menu4</option>
+					<option value="menu5">menu5</option>
+					<option value="menu6">menu6</option>
+					<option value="menu7">menu7</option>
+					<option value="menu8">menu8</option>
+					<option value="menu9">menu9</option>
+					<option value="menu10">menu10</option>
+				</field>
+			</fieldset>
+		</fields>
+</form>

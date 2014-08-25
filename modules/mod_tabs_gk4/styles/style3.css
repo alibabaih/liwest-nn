@@ -1,0 +1,30 @@
+/**
+* GK Tab - style 1
+* @package Joomla!
+* @Copyright (C) 2009-2011 Gavick.com
+* @ All rights reserved
+* @ Joomla! is Free Software
+* @ Released under GNU/GPL License : http://www.gnu.org/copyleft/gpl.html
+* @version $Revision: GK4 1.0 $
+**/
+
+.gkTabItemSpace{ padding: 10px; }
+.gkTab { position: relative; }
+.gkTabWrap { margin: 0 auto; }
+ul.gkTabs { margin: 0!important; padding: 0!important; overflow:hidden; background: none!important; border: none!important; }
+ul.gkTabs li { list-style-type: none; position: relative; float: left; cursor: pointer; margin: 0 3px -1px 0!important; border: 1px solid #ebebeb!important; border-bottom: none!important; padding: 1px!important; padding-bottom: 0px!important; background:none!important; }
+ul.gkTabs li span { background: url('../images/style3/bg_tab.png') repeat-x 0 bottom; display: block; height: 27px; line-height: 27px; padding: 0 10px; font-size: 10px; color: #666; text-transform:uppercase; }
+ul.gkTabs li.active span { background: url('../images/style3/bg_tab-active.png') repeat-x 0 0;color: #aa2207; }
+.gkTabContainer0 { clear: both; background: url('../images/style3/bg_content.png') repeat-x 0 0; }
+.gkTabContainer1 { overflow: hidden; background: url('../images/style3/bg_content-bottom.png') repeat-x 0 100%; }
+.gkTabItem { float: left; overflow: hidden; padding: 10px; }
+.gkTabButtonNext,
+.gkTabButtonPrev { width: 24px; height: 24px; background: url('../images/style3/b_next.png') no-repeat 0 0; cursor: pointer; position: absolute; top: 43%; right: 0; text-indent: -999em; }
+.gkTabButtonPrev { background: url('../images/style3/b_prev.png') no-repeat 0 0; left: 0; right:inherit; }
+.gkTabButtonNext:hover { background: url('../images/style3/b_next.png') no-repeat 100% 0; }
+.gkTabButtonPrev:hover { background: url('../images/style3/b_prev.png') no-repeat 100% 0; }
+.gkTabContainer0,
+.gkTabContainer1,
+.gkTabContainer2{ position:relative; }
+.gkTabItem { position: absolute; left: -999em; top: 0; width: 100%; }
+.gkTabItem.active { position: static; left: 0; }

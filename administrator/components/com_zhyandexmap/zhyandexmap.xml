@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  -->
+<extension type="component" version="1.6.0" method="upgrade">
+
+	<name>COM_ZHYANDEXMAP</name>
+	<!-- The following elements are optional and free of formatting conttraints -->
+	<creationDate>April 2011</creationDate>
+	<author>Zhuk Dmitry</author>
+	<authorEmail>ZhukDL@gmail.com</authorEmail>
+	<authorUrl>http://zhuk.cc</authorUrl>
+	<copyright>Copyright</copyright>
+	<license>http://www.gnu.org/licenseses/gpl-2.0.html GNU/GPLv2 or later</license>
+	<!--  The version string is recorded in the components table -->
+	<version>4.1.3.2</version>
+	<!-- The description is optional and defaults to the name -->
+	<description>COM_ZHYANDEXMAP_DESCRIPTION</description>
+
+        <install> <!-- Runs on install -->
+                <sql>
+                        <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+                </sql>
+        </install>
+        <uninstall> <!-- Runs on uninstall -->
+                <sql>
+                        <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+                </sql>
+        </uninstall>
+
+	<update> <!-- Runs on update; New in 1.6 -->
+		<schemas>
+			<schemapath type="mysql">sql/updates/mysql</schemapath>
+		</schemas>
+	</update>
+
+	<!-- Site Main File Copy Section -->
+	<!-- Note the folder attribute: This attribute describes the folder
+		to copy FROM in the package to install therefore files copied
+		in this section are copied from /site/ in the package -->
+	<files folder="site">
+		<filename>index.html</filename>
+		<filename>zhyandexmap.php</filename>
+		<filename>controller.php</filename>
+		<!-- models files section -->
+		<folder>models</folder>
+		<!-- views files section -->
+		<folder>views</folder>
+		<!-- language files section -->
+		<folder>language</folder>
+		<!-- assets files section -->
+		<folder>assets</folder>
+	</files>
+	<media destination="com_zhyandexmap" folder="media">
+		<filename>index.html</filename>
+		<folder>images</folder>
+	</media>
+
+	<administration>
+		<!-- Administration Menu Section -->
+		<menu img="../media/com_zhyandexmap/images/menu-16x16.png">COM_ZHYANDEXMAP_MENU</menu>
+		<submenu>
+			<!--
+				Note that all & must be escaped to &amp; for the file to be valid
+				XML and be parsed by the installer
+			-->
+			<menu link="option=com_zhyandexmap&amp;view=zhyandexmaps" img=""
+				alt="">COM_ZHYANDEXMAP_SUBMENU_MAPS</menu>
+			<menu link="option=com_zhyandexmap&amp;view=mapmarkers" img=""
+				alt="">COM_ZHYANDEXMAP_SUBMENU_MAPMARKERS</menu>
+			<menu link="option=com_zhyandexmap&amp;view=mapmarkergroups" img=""
+				alt="">COM_ZHYANDEXMAP_SUBMENU_MAPMARKERGROUPS</menu>
+			<menu link="option=com_zhyandexmap&amp;view=maprouters" img=""
+				alt="">COM_ZHYANDEXMAP_SUBMENU_MAPROUTERS</menu>
+			<menu link="option=com_zhyandexmap&amp;view=mappaths" img=""
+				alt="">COM_ZHYANDEXMAP_SUBMENU_MAPPATHS</menu>
+			<menu link="option=com_zhyandexmap&amp;view=maptypes" img=""
+				alt="">COM_ZHYANDEXMAP_SUBMENU_MAPTYPES</menu>
+			<menu link="option=com_categories&amp;extension=com_zhyandexmap&amp;view=categories" img="" 
+				alt="">COM_ZHYANDEXMAP_SUBMENU_CATEGORIES</menu>
+			<menu link="option=com_zhyandexmap&amp;view=abouts" img=""
+				alt="">COM_ZHYANDEXMAP_SUBMENU_ABOUT</menu>
+		</submenu>
+		<!-- Administration Main File Copy Section -->
+		<!-- Note the folder attribute: This attribute describes the folder
+			to copy FROM in the package to install therefore files copied
+			in this section are copied from /admin/ in the package -->
+		<files folder="admin">
+			<!-- Admin Main File Copy Section -->
+			<filename>index.html</filename>
+			<filename>config.xml</filename>
+			<filename>access.xml</filename>
+			<filename>zhyandexmap.php</filename>
+			<filename>controller.php</filename>
+			<!-- SQL files section -->
+			<folder>sql</folder>
+			<!-- models files section -->
+			<folder>models</folder>
+			<!-- views files section -->
+			<folder>views</folder>
+                        <!-- controllers files section -->
+                        <folder>controllers</folder>
+			<!-- tables files section -->
+                        <folder>tables</folder>
+			<!-- helpers files section -->
+			<folder>helpers</folder>
+			<!-- assets files section -->
+			<folder>assets</folder>
+		</files>
+		<languages folder="admin">
+                        <language tag="en-GB">language/en-GB/en-GB.com_zhyandexmap.ini</language>
+                        <language tag="en-GB">language/en-GB/en-GB.com_zhyandexmap.sys.ini</language>
+                        <language tag="ru-RU">language/ru-RU/ru-RU.com_zhyandexmap.ini</language>
+                        <language tag="ru-RU">language/ru-RU/ru-RU.com_zhyandexmap.sys.ini</language>
+                </languages>
+	</administration>
+
+        <!-- UPDATESERVER DEFINITION -->
+        <updateservers>
+                <!-- Note: No spaces or linebreaks allowed between the server tags -->
+                <server type="extension" priority="1" name="Zh YandexMap Update Site">http://zhuk.cc/update/zhyandexmap-update.xml</server>
+        </updateservers>
+
+</extension>

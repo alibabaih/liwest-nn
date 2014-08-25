@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<extension type="plugin" group="system" version="1.7.0" method="install">
+	<name>System - jSecure Authentication</name>
+	<creationDate>2008-08-28</creationDate>
+	<author>Ajay Lulia</author>
+	<authorEmail>ajay.lulia@joomlaserviceprovider.com</authorEmail>
+	<copyright>This module is released under the GNU/GPL License</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorUrl>www.joomlaserviceprovider.com</authorUrl>
+	<version>2.1.10</version>
+	<description>jSecure Authentication secures the admin login page. Set the parameters for this plugin in the jSecure Authentication component admin screen. Click on: Components -> jSecure Authentication</description>
+	<files>
+		<filename plugin="jsecure">jsecure.php</filename>
+		<filename>404.html</filename>
+	</files>
+</extension>

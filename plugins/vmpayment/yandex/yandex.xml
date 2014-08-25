@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<install version="1.5" type="plugin" group="vmpayment" >
+    <name>Yandex Payment</name>
+    <creationDate>January 2012</creationDate>
+    <author>VampiRUS</author>
+    <authorUrl>http://vampirus.ru</authorUrl>
+    <copyright>vampirus.ru</copyright>
+    <license></license>
+    <version>2.0.1</version>
+    <description>Yandex.Money Payment plugin</description>
+    <languages>
+	<language tag="en-GB">en-GB.plg_vmpayment_yandex.ini</language>
+	<language tag="ru-RU">ru-RU.plg_vmpayment_yandex.ini</language>
+    </languages>
+    <files>
+	<filename plugin="yandex">yandex.php</filename>
+	<filename>index.html</filename>
+	<filename>yandex.gif</filename>
+    </files>
+    <params addpath="/administrator/components/com_virtuemart/elements">
+	<param type="vmjpluginwarning" />
+	<param	name="payment_logos" type="vmfiles" label="VMPAYMENT_STANDARD_LOGOS"
+		description="VMPAYMENT_STANDARD_LOGOS_DESC"
+		directory="/plugins/vmpayment/yandex"
+		default="yandex.gif" hide_default="1" hide_none="1"
+		stripext="0"   exclude=".*\.(php|html|xml|wsdl)" />
+	<param type="text" name="yandex_wallet"  size="50" label="VMPAYMENT_YANDEX_WALLET"
+             default="" description="VMPAYMENT_YANDEX_WALLET_DESC" />
+    <param type="text" name="yandex_license"  size="50" label="VMPAYMENT_YANDEX_LICENSE"
+             default="" description="VMPAYMENT_YANDEX_LICENSE_DESC" />        
+	<param name="yandex_size" type="radio" default="l" label="VMPAYMENT_YANDEX_COLOR" description="VMPAYMENT_YANDEX_COLOR_DESC" >
+	    <option value="l">VMPAYMENT_YANDEX_LARGE</option>
+	    <option value="m">VMPAYMENT_YANDEX_MIDDLE</option>
+	    <option value="s">VMPAYMENT_YANDEX_SMALL</option>
+	</param>
+	<param name="yandex_color" type="radio" default="orange" label="VMPAYMENT_YANDEX_COLOR" description="VMPAYMENT_YANDEX_COLOR_DESC" >
+	    <option value="orange">VMPAYMENT_YANDEX_ORANGE</option>
+	    <option value="white">VMPAYMENT_YANDEX_WHITE</option>
+	    <option value="black">VMPAYMENT_YANDEX_BLACK</option>
+	</param>
+	<param name="yandex_fio" type="radio" default="0" label="VMPAYMENT_YANDEX_FIO" description="VMPAYMENT_YANDEX_FIO" >
+	    <option value="1">COM_VIRTUEMART_YES</option>
+	    <option value="0">COM_VIRTUEMART_NO</option>
+	</param>
+	<param name="yandex_address" type="radio" default="0" label="VMPAYMENT_YANDEX_ADDRESS" description="VMPAYMENT_YANDEX_ADDRESS" >
+	    <option value="1">COM_VIRTUEMART_YES</option>
+	    <option value="0">COM_VIRTUEMART_NO</option>
+	</param>
+	<param name="yandex_email" type="radio" default="0" label="VMPAYMENT_YANDEX_EMAIL" description="VMPAYMENT_YANDEX_EMAIL" >
+	    <option value="1">COM_VIRTUEMART_YES</option>
+	    <option value="0">COM_VIRTUEMART_NO</option>
+	</param>
+	<param name="yandex_phone" type="radio" default="0" label="VMPAYMENT_YANDEX_PHONE" description="VMPAYMENT_YANDEX_PHONE" >
+	    <option value="1">COM_VIRTUEMART_YES</option>
+	    <option value="0">COM_VIRTUEMART_NO</option>
+	</param>
+	<param name="countries" type="vmcountries"  scope="com_virtuemart" default="[176]" label="VMPAYMENT_STANDARD_COUNTRIES" description="VMPAYMENT_STANDARD_COUNTRIES_DESC"/>
+    <param name="payment_currency" type="vmacceptedcurrency" default="" label="VMPAYMENT_STANDARD_CURRENCY" description="VMPAYMENT_STANDARD_CURRENCY_DESC" />
+
+	<param name="min_amount" type="text"  label="VMPAYMENT_STANDARD_MIN_AMOUNT" description="VMPAYMENT_STANDARD_MIN_AMOUNT_EXPLAIN" />
+	<param name="max_amount" type="text"  label="VMPAYMENT_STANDARD_MAX_AMOUNT" description="VMPAYMENT_STANDARD_MAX_AMOUNT_EXPLAIN" />
+	<param name="cost_per_transaction" type="text"  label="VMPAYMENT_STANDARD_COST_PER_TRANSACTION" description="VMPAYMENT_STANDARD_COST_PER_TRANSACTION_EXPLAIN" />
+	<param name="cost_percent_total" type="text"  label="VMPAYMENT_STANDARD_COST_PERCENT_TOTAL" description="VMPAYMENT_STANDARD_COST_PERCENT_TOTAL_EXPLAIN" />
+	<param name="tax_id" type="vmtaxes" scope="com_virtuemart"  label="VMPAYMENT_STANDARD_TAX" description="VMPAYMENT_STANDARD_TAX_DESC" />
+    </params>
+
+
+
+</install>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<install version="1.5" type="plugin" group="vmpayment" >
+    <name>Qiwi Light Payment</name>
+    <creationDate>April 2012</creationDate>
+    <author>VampiRUS</author>
+    <authorUrl>http://vampirus.ru</authorUrl>
+    <copyright>vampirus.ru</copyright>
+    <license></license>
+    <version>2.0.0</version>
+    <description><![CDATA[<a href="http://qiwi.ru" target="_blank">QIWI (КИВИ)</a> -- удобный сервис для оплаты повседневных услуг ]]></description>
+    <languages>
+	<language tag="en-GB">en-GB.plg_vmpayment_qiwi.ini</language>
+	<language tag="ru-RU">ru-RU.plg_vmpayment_qiwi.ini</language>
+    </languages>
+    <files>
+	<filename plugin="qiwi">qiwi.php</filename>
+	<filename>qiwi.jpg</filename>
+    </files>
+    <params addpath="/administrator/components/com_virtuemart/elements">
+	<param type="vmjpluginwarning" />
+	<param	name="payment_logos" type="vmfiles" label="VMPAYMENT_STANDARD_LOGOS"
+		description="VMPAYMENT_STANDARD_LOGOS_DESC"
+		directory="/plugins/vmpayment/qiwi"
+		default="qiwi.jpg" hide_default="1" hide_none="1"
+		stripext="0"   exclude=".*\.(php|html|xml|wsdl)" />
+		<param type="text" name="qiwi_login"  size="50" label="VMPAYMENT_QIWI_LOGIN"
+             default="" description="VMPAYMENT_QIWI_LOGIN_DESC" />
+             
+	<param type="text" name="qiwi_lifetime"  size="50" label="VMPAYMENT_QIWI_LIFETIME"
+             default="168" description="VMPAYMENT_QIWI_LIFETIME_DESC" />
+
+	<param name="qiwi_agent" type="radio" default="0" label="VMPAYMENT_QIWI_AGENT" description="VMPAYMENT_QIWI_AGENT_DESC" >
+	    <option value="1">COM_VIRTUEMART_NO</option>
+	    <option value="0">COM_VIRTUEMART_YES</option>
+	</param>
+	<param name="countries" type="vmcountries"  scope="com_virtuemart" default="" label="VMPAYMENT_STANDARD_COUNTRIES" description="VMPAYMENT_STANDARD_COUNTRIES_DESC"/>
+        <param name="payment_currency" type="vmacceptedcurrency" default="" label="VMPAYMENT_STANDARD_CURRENCY" description="VMPAYMENT_STANDARD_CURRENCY_DESC" />
+
+	<param name="min_amount" type="text"  label="VMPAYMENT_STANDARD_MIN_AMOUNT" description="VMPAYMENT_STANDARD_MIN_AMOUNT_EXPLAIN" />
+	<param name="max_amount" type="text"  label="VMPAYMENT_STANDARD_MAX_AMOUNT" description="VMPAYMENT_STANDARD_MAX_AMOUNT_EXPLAIN" />
+	<param name="cost_per_transaction" type="text"  label="VMPAYMENT_STANDARD_COST_PER_TRANSACTION" description="VMPAYMENT_STANDARD_COST_PER_TRANSACTION_EXPLAIN" />
+	<param name="cost_percent_total" type="text"  label="VMPAYMENT_STANDARD_COST_PERCENT_TOTAL" description="VMPAYMENT_STANDARD_COST_PERCENT_TOTAL_EXPLAIN" />
+	<param name="tax_id" type="vmtaxes" scope="com_virtuemart"  label="VMPAYMENT_STANDARD_TAX" description="VMPAYMENT_STANDARD_TAX_DESC" />
+    </params>
+
+
+
+</install>

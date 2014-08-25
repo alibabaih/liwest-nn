@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<style>
+	<info>
+		<name>gk_game_magazine</name>
+		<author>GavickPro</author>
+		<desc>Image Show GK4 style for Game Magazine template.</desc>
+		<version>1.0</version>
+	</info>
+	<config>
+		<field type="text" name="image_width" label="Image width" desc="Full size image width in pixels" default="600" unit="px" />
+		<field type="text" name="image_height" label="Image height" desc="Full size image height in pixels" default="600" unit="px" />
+		<field type="text" name="image_bg" label="Image background color" desc="Image background as hexdecimal value" default="#ffffff" unit="" />	
+		<field type="text" name="quality" label="Image quality" desc="Quality of images (used in the JPG images) - percentage value between 0 and 100." default="95" unit="%" />	
+		
+		<field type="select" name="text_block_position" label="Text block position" desc="Position of the text block" default="right">
+			<option value="right">Right</option>
+			<option value="left">Left</option>
+		</field>
+		
+		<field type="text" name="total_width" label="Total width" default="946" desc="Total width of the module" unit="px" />
+
+		<field type="switch" name="show_text_block" label="Show text block" default="1" desc="Enable/disable showing text block" class="gk_switch" />
+		<field type="text" name="text_block_x" label="Text block X coordinate" default="32" desc="Horizontal position of the text block (left margin)" unit="px" />	
+		<field type="text" name="text_block_y" label="Text block Y coordinate" default="32" desc="Vertical position of the text block (bottom margin)" unit="px" />	
+		
+		<field type="text" name="title_chars_amount" label="Title chars amount" default="20" desc="Amount of chars in the slide title" unit="" />
+		<field type="text" name="text_chars_amount" label="Text chars amount" default="40" desc="Amount of chars in the slide text" unit="" />
+		
+		<field type="switch" name="slide_links" label="Slide links" desc="You can enable links in the slides." default="1" class="gk_switch" />
+		
+		<field type="text" name="animation_speed" label="Animation speed" desc="Animation speed in miliseconds" default="500" unit="ms" />
+		<field type="text" name="animation_interval" label="Animation interval" desc="Animation interval in miliseconds" default="5000" unit="ms" />
+		<field type="switch" name="autoanimation" label="Autoanimation" desc="Autoanimation of the slides" default="1" class="gk_switch" />
+		<field type="select" name="animation_type" label="Animation type" desc="Animation type used in the slideshow" default="opacity" class="">
+			<option value="opacity">Opacity</option>
+			<option value="top">Top</option>
+			<option value="bottom">Bottom</option>
+			<option value="left">Left</option>
+			<option value="right">Right</option>
+		</field>
+		
+		<field type="select" name="animation_text_type" label="Text animation type" desc="Animation type used in the text block" default="opacity" class="">
+			<option value="opacity">Opacity</option>
+			<option value="bottom">Bottom</option>
+			<option value="left">Left</option>
+		</field>
+	</config>
+</style>

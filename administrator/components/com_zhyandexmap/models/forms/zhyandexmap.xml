@@ -1,0 +1,1446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form
+	addrulepath="/administrator/components/com_zhyandexmap/models/rules"
+>
+        <fieldset name="details">
+                <field
+                        name="id"
+                        type="hidden"
+                />
+                <field
+                        name="title"
+                        type="text"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_TITLE_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_TITLE_DESC"
+                        size="50"
+                        class="inputbox"
+						required="true"
+                        default=""
+                />
+                <field
+                        name="description"
+                        type="text"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_DESCRIPTION_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_DESCRIPTION_DESC"
+                        size="90"
+                        class="inputbox"
+						required="false"
+                        default=""
+                />
+                <field
+                        name="balloon"
+						type="list"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_BALLOON_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_BALLOON_DESC"
+                        size="1"
+						required="true"
+                        default="1"
+		>
+			<option	value="0">COM_ZHYANDEXMAP_MAP_DETAIL_BALLOON_NONE</option>
+			<option	value="1">COM_ZHYANDEXMAP_MAP_DETAIL_BALLOON_BALLOON</option>
+			<option	value="2">COM_ZHYANDEXMAP_MAP_DETAIL_BALLOON_PLACEMARK</option>
+			<option	value="3">COM_ZHYANDEXMAP_MAP_DETAIL_BALLOON_ICONCONTENT</option>
+                </field>
+                <field
+                        name="preseticontype"
+                        type="text"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_PRESETICONTYPE_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_PRESETICONTYPE_DESC"
+                        size="90"
+                        class="inputbox"
+						required="false"
+                        default=""
+                />
+                <field
+                        name="width"
+                        type="text"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_WIDTH_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_WIDTH_DESC"
+                        size="10"
+                        class="inputbox"
+						required="true"
+                        default=""
+                />
+                <field
+                        name="height"
+                        type="text"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_HEIGHT_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_HEIGHT_DESC"
+                        size="10"
+                        class="inputbox"
+						required="true"
+                        default=""
+                />
+                <field
+                        name="latitude"
+                        type="text"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_LATITUDE_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_LATITUDE_DESC"
+                        size="30"
+                        class="inputbox"
+						required="true"
+                        default=""
+                />
+                <field
+                        name="longitude"
+                        type="text"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_LONGITUDE_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_LONGITUDE_DESC"
+                        size="30"
+                        class="inputbox"
+						required="true"
+                        default=""
+                />
+                <field
+                        name="mapbounds"
+                        type="text"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_MAPBOUNDS_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_MAPBOUNDS_DESC"
+                        size="90"
+                        class="inputbox"
+						required="false"
+                        default=""
+                />
+                <field
+                        name="zoom"
+                        type="list"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_ZOOM_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_ZOOM_DESC"
+                        size="1"
+                        class="inputbox"
+						required="true"
+                        default="14"
+				>
+					<option	value="1">1</option>
+					<option	value="2">2</option>
+					<option	value="3">3</option>
+					<option	value="4">4</option>
+					<option	value="5">5</option>
+					<option	value="6">6</option>
+					<option	value="7">7</option>
+					<option	value="8">8</option>
+					<option	value="9">9</option>
+					<option	value="10">10</option>
+					<option	value="11">11</option>
+					<option	value="12">12</option>
+					<option	value="13">13</option>
+					<option	value="14">14</option>
+					<option	value="15">15</option>
+					<option	value="16">16</option>
+					<option	value="17">17</option>
+					<option	value="200">COM_ZHYANDEXMAP_MAP_DETAIL_ZOOM_MAX_AVAILABLE</option>
+                </field>
+                <field
+                        name="minzoom"
+                        type="list"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_MINZOOM_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_MINZOOM_DESC"
+                        size="1"
+                        class="inputbox"
+						required="true"
+                        default="1"
+				>
+					<option	value="1">1</option>
+					<option	value="2">2</option>
+					<option	value="3">3</option>
+					<option	value="4">4</option>
+					<option	value="5">5</option>
+					<option	value="6">6</option>
+					<option	value="7">7</option>
+					<option	value="8">8</option>
+					<option	value="9">9</option>
+					<option	value="10">10</option>
+					<option	value="11">11</option>
+					<option	value="12">12</option>
+					<option	value="13">13</option>
+					<option	value="14">14</option>
+					<option	value="15">15</option>
+					<option	value="16">16</option>
+					<option	value="17">17</option>
+                </field>
+                <field
+                        name="maxzoom"
+                        type="list"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_MAXZOOM_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_MAXZOOM_DESC"
+                        size="1"
+                        class="inputbox"
+						required="true"
+                        default="200"
+				>
+					<option	value="1">1</option>
+					<option	value="2">2</option>
+					<option	value="3">3</option>
+					<option	value="4">4</option>
+					<option	value="5">5</option>
+					<option	value="6">6</option>
+					<option	value="7">7</option>
+					<option	value="8">8</option>
+					<option	value="9">9</option>
+					<option	value="10">10</option>
+					<option	value="11">11</option>
+					<option	value="12">12</option>
+					<option	value="13">13</option>
+					<option	value="14">14</option>
+					<option	value="15">15</option>
+					<option	value="16">16</option>
+					<option	value="17">17</option>
+					<option	value="200">COM_ZHYANDEXMAP_MAP_DETAIL_ZOOM_UNLIMIT_MAX</option>
+                </field>
+                <field
+                        name="maptype"
+                        type="list"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_MAPTYPE_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_MAPTYPE_DESC"
+                        size="1"
+                        class="inputbox"
+						required="true"
+                        default="1"
+				>
+					<option	value="1">COM_ZHYANDEXMAP_MAP_DETAIL_MAPTYPE_MAP</option>
+					<option	value="2">COM_ZHYANDEXMAP_MAP_DETAIL_MAPTYPE_SATELLITE</option>
+					<option	value="3">COM_ZHYANDEXMAP_MAP_DETAIL_MAPTYPE_HYBRID</option>
+					<option	value="4">COM_ZHYANDEXMAP_MAP_DETAIL_MAPTYPE_PMAP</option>
+					<option	value="5">COM_ZHYANDEXMAP_MAP_DETAIL_MAPTYPE_PHYBRID</option>
+					<option	value="6">COM_ZHYANDEXMAP_MAP_DETAIL_MAPTYPE_OSM</option>
+					<option	value="7">COM_ZHYANDEXMAP_MAP_DETAIL_MAPTYPE_CUSTOM1</option>
+                </field>
+                <field
+                        name="openstreet"
+                        type="radio"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_OPENSTREET_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_OPENSTREET_DESC"
+                        size="1"
+						required="true"
+                        default="0"
+				>
+					<option	value="0">JNO</option>
+					<option	value="1">JYES</option>
+                </field>
+                <field
+                        name="custommaptype"
+                        type="list"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_CUSTMAPTYPE_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_CUSTMAPTYPE_DESC"
+                        size="1"
+						required="true"
+                        default="0"
+				>
+					<option	value="0">COM_ZHYANDEXMAP_MAP_DETAIL_CUSTMAPTYPE_NO</option>
+					<option	value="1">COM_ZHYANDEXMAP_MAP_DETAIL_CUSTMAPTYPE_YES</option>
+					<option	value="2">COM_ZHYANDEXMAP_MAP_DETAIL_CUSTMAPTYPE_MAPTYPE</option>
+                </field>
+                <field
+                        name="custommaptypelist"
+                        type="text"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_CUSTMAPTYPELIST_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_CUSTMAPTYPELIST_DESC"
+                        size="90"
+                        class="inputbox"
+						required="false"
+                        default=""
+                />
+                <field
+                        name="gridcoordinates"
+						type="radio"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_GRIDCOORDINATES_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_GRIDCOORDINATES_DESC"
+                        size="40"
+						required="true"
+                        default="0"
+				>
+					<option	value="0">JNO</option>
+					<option	value="1">JYES</option>
+                </field>
+                <field
+                        name="kmllayer"
+                        type="text"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_KMLLAYER_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_KMLLAYER_DESC"
+                        size="90"
+                        class="inputbox"
+						required="false"
+                        default=""
+                />
+                <field
+                        name="kmllayerkml"
+                        type="text"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_KMLLAYERKML_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_KMLLAYERKML_DESC"
+                        size="90"
+                        class="inputbox"
+						required="false"
+                        default=""
+                />
+                <field
+                        name="kmllayergpx"
+                        type="text"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_KMLLAYERGPX_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_KMLLAYERGPX_DESC"
+                        size="90"
+                        class="inputbox"
+						required="false"
+                        default=""
+                />
+                <field
+                        name="markermanager"
+                        type="radio"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_MARKERMANAGER_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_MARKERMANAGER_DESC"
+                        size="40"
+						required="true"
+                        default="0"
+				>
+					<option	value="0">JNO</option>
+					<option	value="1">JYES</option>
+                </field>
+                <field
+                        name="lang"
+                        type="text"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_LANGUAGE_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_LANGUAGE_DESC"
+                        size="6"
+                        class="inputbox"
+						required="false"
+                        default=""
+                />
+				<field
+					name="catid"
+					type="category"
+					extension="com_zhyandexmap"
+					class="inputbox"
+					default=""
+					label="COM_ZHYANDEXMAP_MAP_DETAIL_CATEGORY_LABEL"
+					description="COM_ZHYANDEXMAP_MAP_DETAIL_CATEGORY_DESC"
+					required="false"
+				>
+					<option value="0">JOPTION_SELECT_CATEGORY</option>
+				</field>
+        </fieldset>
+
+
+        <fieldset name="mapdecor">
+                <field
+                        name="maptypecontrol"
+						type="radio"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_MAPTYPECONTROL_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_MAPTYPECONTROL_DESC"
+                        size="40"
+						required="true"
+                        default="0"
+				>
+					<option	value="0">JNO</option>
+					<option	value="1">JYES</option>
+                </field>
+                <field
+                        name="pmaptypecontrol"
+						type="radio"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_PMAPTYPECONTROL_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_PMAPTYPECONTROL_DESC"
+                        size="40"
+						required="true"
+                        default="0"
+				>
+					<option	value="0">JNO</option>
+					<option	value="1">JYES</option>
+                </field>
+                <field
+                        name="toolbar"
+                        type="radio"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_TOOLBAL_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_TOOLBAR_DESC"
+                        size="40"
+						required="true"
+                        default="1"
+				>
+					<option	value="0">JNO</option>
+					<option	value="1">JYES</option>
+                </field>
+                <field
+                        name="magnifier"
+                        type="list"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_TB_ACTION_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_TB_ACTION_DESC"
+                        size="1"
+						required="true"
+                        default="0"
+				>
+					<option	value="0">COM_ZHYANDEXMAP_MAP_DETAIL_TB_ACTION_DEFAULT</option>
+					<option	value="1">COM_ZHYANDEXMAP_MAP_DETAIL_TB_ACTION_MAGNIFIER</option>
+					<option	value="2">COM_ZHYANDEXMAP_MAP_DETAIL_TB_ACTION_RULER</option>
+                </field>
+                <field
+                        name="search"
+                        type="radio"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_SEARCH_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_SEARCH_DESC"
+                        size="40"
+						required="true"
+                        default="0"
+				>
+					<option	value="0">JNO</option>
+					<option	value="1">JYES</option>
+                </field>
+                <field
+                        name="doubleclickzoom"
+						type="radio"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_DOUBLECLICKZOOM_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_DOUBLECLICKZOOM_DESC"
+                        size="40"
+						required="true"
+                        default="0"
+				>
+					<option	value="0">JNO</option>
+					<option	value="1">JYES</option>
+                </field>
+                <field
+                        name="scrollwheelzoom"
+                        type="radio"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_SCROLLWHEELZOOM_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_SCROLLWHEELZOOM_DESC"
+                        size="40"
+						required="true"
+                        default="1"
+				>
+					<option	value="0">JNO</option>
+					<option	value="1">JYES</option>
+                </field>
+                <field
+                        name="zoomcontrol"
+                        type="list"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_ZOOMCONTROL_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_ZOOMCONTROL_DESC"
+                        size="1"
+						required="true"
+                        default="1"
+				>
+					<option	value="1">COM_ZHYANDEXMAP_MAP_DETAIL_ZOOMCONTROL_ZOOM</option>
+					<option	value="2">COM_ZHYANDEXMAP_MAP_DETAIL_ZOOMCONTROL_SMALLZOOM</option>
+                </field>
+                <field
+                        name="scalecontrol"
+                        type="radio"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_SCALECONTROL_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_SCALECONTROL_DESC"
+                        size="40"
+						required="true"
+                        default="0"
+				>
+					<option	value="0">JNO</option>
+					<option	value="1">JYES</option>
+                </field>
+                <field
+                        name="minimap"
+                        type="list"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_MINIMAP_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_MINIMAP_DESC"
+                        size="1"
+						required="true"
+                        default="1"
+				>
+					<option	value="0">COM_ZHYANDEXMAP_MAP_DETAIL_MINIMAP_NO</option>
+					<option	value="1">COM_ZHYANDEXMAP_MAP_DETAIL_MINIMAP_OPEN</option>
+					<option	value="2">COM_ZHYANDEXMAP_MAP_DETAIL_MINIMAP_CLOSE</option>
+                </field>
+                <field
+                        name="minimaptype"
+                        type="list"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_MINIMAPTYPE_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_MINIMAPTYPE_DESC"
+                        size="1"
+                        class="inputbox"
+						required="true"
+                        default="0"
+				>
+					<option	value="0">COM_ZHYANDEXMAP_MAP_DETAIL_MAPTYPE_DEFAULT</option>
+					<option	value="1">COM_ZHYANDEXMAP_MAP_DETAIL_MAPTYPE_MAP</option>
+					<option	value="2">COM_ZHYANDEXMAP_MAP_DETAIL_MAPTYPE_SATELLITE</option>
+					<option	value="3">COM_ZHYANDEXMAP_MAP_DETAIL_MAPTYPE_HYBRID</option>
+					<option	value="4">COM_ZHYANDEXMAP_MAP_DETAIL_MAPTYPE_PMAP</option>
+					<option	value="5">COM_ZHYANDEXMAP_MAP_DETAIL_MAPTYPE_PHYBRID</option>
+                </field>
+                <field
+                        name="traffic"
+                        type="radio"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_TRAFFIC_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_TRAFFIC_DESC"
+                        size="40"
+						required="true"
+                        default="0"
+				>
+					<option	value="0">JNO</option>
+					<option	value="1">JYES</option>
+                </field>
+                <field
+                        name="trafficlayer"
+                        type="radio"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_TRAFFICLAYER_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_TRAFFICLAYER_DESC"
+                        size="40"
+						required="true"
+                        default="0"
+				>
+					<option	value="0">JNO</option>
+					<option	value="1">JYES</option>
+                </field>
+                <field
+                        name="trafficprovider"
+                        type="list"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_TRAFFICPROVIDER_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_TRAFFICPROVIDER_DESC"
+                        size="1"
+						required="true"
+                        default="0"
+				>
+					<option	value="0">COM_ZHYANDEXMAP_MAP_DETAIL_TRAFFICPROVIDER_ACTUAL</option>
+					<option	value="1">COM_ZHYANDEXMAP_MAP_DETAIL_TRAFFICPROVIDER_ARCHIVE</option>
+                </field>
+                <field
+                        name="draggable"
+                        type="radio"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_DRAGGABLE_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_DRAGGABLE_DESC"
+                        size="40"
+						required="true"
+                        default="1"
+				>
+					<option	value="0">JNO</option>
+					<option	value="1">JYES</option>
+                </field>
+                <field
+                        name="rightbuttonmagnifier"
+                        type="radio"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_RBMAGNIFIER_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_RBMAGNIFIER_DESC"
+                        size="40"
+						required="true"
+                        default="0"
+				>
+					<option	value="0">JNO</option>
+					<option	value="1">JYES</option>
+                </field>
+                <field
+                        name="findcontrol"
+                        type="radio"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_FINDCONTROL_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_FINDCONTROL_DESC"
+                        size="40"
+						required="true"
+                        default="0"
+				>
+					<option	value="0">JNO</option>
+					<option	value="1">JYES</option>
+                </field>
+                <field
+                        name="findwidth"
+                        type="text"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_FINDWIDTH_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_FINDWIDTH_DESC"
+                        size="10"
+                        class="inputbox"
+						required="true"
+                        default="70"
+                />
+                <field
+                        name="findroute"
+                        type="radio"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_FINDROUTE_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_FINDROUTE_DESC"
+                        size="40"
+						required="true"
+                        default="0"
+				>
+					<option	value="0">JNO</option>
+					<option	value="1">JYES</option>
+                </field>
+
+        </fieldset>
+
+        <fieldset name="positions">
+                <field
+                        name="zoomcontrolpos"
+                        type="list"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_POS_ZOOMCONTROL_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_POS_ZOOMCONTROL_DESC"
+                        size="1"
+						required="true"
+                        default="0"
+				>
+					<option	value="0">COM_ZHYANDEXMAP_MAP_MAPPOSITION_DEFAULT</option>
+					<option	value="1">COM_ZHYANDEXMAP_MAP_MAPPOSITION_TOP_LEFT</option>
+					<option	value="2">COM_ZHYANDEXMAP_MAP_MAPPOSITION_TOP_RIGHT</option>
+					<option	value="3">COM_ZHYANDEXMAP_MAP_MAPPOSITION_BOTTOM_RIGHT</option>
+					<option	value="4">COM_ZHYANDEXMAP_MAP_MAPPOSITION_BOTTOM_LEFT</option>
+                </field>
+                <field
+                        name="zoomcontrolofsx"
+                        type="text"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_OFSX_ZOOMCONTROL_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_OFSX_ZOOMCONTROL_DESC"
+                        size="10"
+                        class="inputbox"
+						required="true"
+                        default="0"
+                />
+                <field
+                        name="zoomcontrolofsy"
+                        type="text"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_OFSY_ZOOMCONTROL_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_OFSY_ZOOMCONTROL_DESC"
+                        size="10"
+                        class="inputbox"
+						required="true"
+                        default="0"
+                />
+                <field
+                        name="scalecontrolpos"
+                        type="list"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_POS_SCALECONTROL_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_POS_SCALECONTROL_DESC"
+                        size="1"
+						required="true"
+                        default="0"
+				>
+					<option	value="0">COM_ZHYANDEXMAP_MAP_MAPPOSITION_DEFAULT</option>
+					<option	value="1">COM_ZHYANDEXMAP_MAP_MAPPOSITION_TOP_LEFT</option>
+					<option	value="2">COM_ZHYANDEXMAP_MAP_MAPPOSITION_TOP_RIGHT</option>
+					<option	value="3">COM_ZHYANDEXMAP_MAP_MAPPOSITION_BOTTOM_RIGHT</option>
+					<option	value="4">COM_ZHYANDEXMAP_MAP_MAPPOSITION_BOTTOM_LEFT</option>
+                </field>
+                <field
+                        name="scalecontrolofsx"
+                        type="text"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_OFSX_SCALECONTROL_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_OFSX_SCALECONTROL_DESC"
+                        size="10"
+                        class="inputbox"
+						required="true"
+                        default="0"
+                />
+                <field
+                        name="scalecontrolofsy"
+                        type="text"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_OFSY_SCALECONTROL_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_OFSY_SCALECONTROL_DESC"
+                        size="10"
+                        class="inputbox"
+						required="true"
+                        default="0"
+                />
+                <field
+                        name="maptypecontrolpos"
+                        type="list"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_POS_MAPTYPECONTROL_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_POS_MAPTYPECONTROL_DESC"
+                        size="1"
+						required="true"
+                        default="0"
+				>
+					<option	value="0">COM_ZHYANDEXMAP_MAP_MAPPOSITION_DEFAULT</option>
+					<option	value="1">COM_ZHYANDEXMAP_MAP_MAPPOSITION_TOP_LEFT</option>
+					<option	value="2">COM_ZHYANDEXMAP_MAP_MAPPOSITION_TOP_RIGHT</option>
+					<option	value="3">COM_ZHYANDEXMAP_MAP_MAPPOSITION_BOTTOM_RIGHT</option>
+					<option	value="4">COM_ZHYANDEXMAP_MAP_MAPPOSITION_BOTTOM_LEFT</option>
+                </field>
+                <field
+                        name="maptypecontrolofsx"
+                        type="text"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_OFSX_MAPTYPECONTROL_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_OFSX_MAPTYPECONTROL_DESC"
+                        size="10"
+                        class="inputbox"
+						required="true"
+                        default="0"
+                />
+                <field
+                        name="maptypecontrolofsy"
+                        type="text"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_OFSY_MAPTYPECONTROL_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_OFSY_MAPTYPECONTROL_DESC"
+                        size="10"
+                        class="inputbox"
+						required="true"
+                        default="0"
+                />
+                <field
+                        name="pmaptypecontrolpos"
+                        type="list"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_POS_PMAPTYPECONTROL_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_POS_PMAPTYPECONTROL_DESC"
+                        size="1"
+						required="true"
+                        default="0"
+				>
+					<option	value="0">COM_ZHYANDEXMAP_MAP_MAPPOSITION_DEFAULT</option>
+					<option	value="1">COM_ZHYANDEXMAP_MAP_MAPPOSITION_TOP_LEFT</option>
+					<option	value="2">COM_ZHYANDEXMAP_MAP_MAPPOSITION_TOP_RIGHT</option>
+					<option	value="3">COM_ZHYANDEXMAP_MAP_MAPPOSITION_BOTTOM_RIGHT</option>
+					<option	value="4">COM_ZHYANDEXMAP_MAP_MAPPOSITION_BOTTOM_LEFT</option>
+                </field>
+                <field
+                        name="pmaptypecontrolofsx"
+                        type="text"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_OFSX_PMAPTYPECONTROL_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_OFSX_PMAPTYPECONTROL_DESC"
+                        size="10"
+                        class="inputbox"
+						required="true"
+                        default="0"
+                />
+                <field
+                        name="pmaptypecontrolofsy"
+                        type="text"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_OFSY_PMAPTYPECONTROL_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_OFSY_PMAPTYPECONTROL_DESC"
+                        size="10"
+                        class="inputbox"
+						required="true"
+                        default="0"
+                />
+                <field
+                        name="minimappos"
+                        type="list"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_POS_MINIMAP_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_POS_MINIMAP_DESC"
+                        size="1"
+						required="true"
+                        default="0"
+				>
+					<option	value="0">COM_ZHYANDEXMAP_MAP_MAPPOSITION_DEFAULT</option>
+					<option	value="1">COM_ZHYANDEXMAP_MAP_MAPPOSITION_TOP_LEFT</option>
+					<option	value="2">COM_ZHYANDEXMAP_MAP_MAPPOSITION_TOP_RIGHT</option>
+					<option	value="3">COM_ZHYANDEXMAP_MAP_MAPPOSITION_BOTTOM_RIGHT</option>
+					<option	value="4">COM_ZHYANDEXMAP_MAP_MAPPOSITION_BOTTOM_LEFT</option>
+                </field>
+                <field
+                        name="minimapofsx"
+                        type="text"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_OFSX_MINIMAP_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_OFSX_MINIMAP_DESC"
+                        size="10"
+                        class="inputbox"
+						required="true"
+                        default="0"
+                />
+                <field
+                        name="minimapofsy"
+                        type="text"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_OFSY_MINIMAP_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_OFSY_MINIMAP_DESC"
+                        size="10"
+                        class="inputbox"
+						required="true"
+                        default="0"
+                />
+                <field
+                        name="toolbarpos"
+                        type="list"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_POS_TOOLBAR_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_POS_TOOLBAR_DESC"
+                        size="1"
+						required="true"
+                        default="0"
+				>
+					<option	value="0">COM_ZHYANDEXMAP_MAP_MAPPOSITION_DEFAULT</option>
+					<option	value="1">COM_ZHYANDEXMAP_MAP_MAPPOSITION_TOP_LEFT</option>
+					<option	value="2">COM_ZHYANDEXMAP_MAP_MAPPOSITION_TOP_RIGHT</option>
+					<option	value="3">COM_ZHYANDEXMAP_MAP_MAPPOSITION_BOTTOM_RIGHT</option>
+					<option	value="4">COM_ZHYANDEXMAP_MAP_MAPPOSITION_BOTTOM_LEFT</option>
+                </field>
+                <field
+                        name="toolbarofsx"
+                        type="text"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_OFSX_TOOLBAR_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_OFSX_TOOLBAR_DESC"
+                        size="10"
+                        class="inputbox"
+						required="true"
+                        default="0"
+                />
+                <field
+                        name="toolbarofsy"
+                        type="text"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_OFSY_TOOLBAR_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_OFSY_TOOLBAR_DESC"
+                        size="10"
+                        class="inputbox"
+						required="true"
+                        default="0"
+                />
+                <field
+                        name="searchpos"
+                        type="list"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_POS_SEARCH_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_POS_SEARCH_DESC"
+                        size="1"
+						required="true"
+                        default="0"
+				>
+					<option	value="0">COM_ZHYANDEXMAP_MAP_MAPPOSITION_DEFAULT</option>
+					<option	value="1">COM_ZHYANDEXMAP_MAP_MAPPOSITION_TOP_LEFT</option>
+					<option	value="2">COM_ZHYANDEXMAP_MAP_MAPPOSITION_TOP_RIGHT</option>
+					<option	value="3">COM_ZHYANDEXMAP_MAP_MAPPOSITION_BOTTOM_RIGHT</option>
+					<option	value="4">COM_ZHYANDEXMAP_MAP_MAPPOSITION_BOTTOM_LEFT</option>
+                </field>
+                <field
+                        name="searchofsx"
+                        type="text"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_OFSX_SEARCH_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_OFSX_SEARCH_DESC"
+                        size="10"
+                        class="inputbox"
+						required="true"
+                        default="0"
+                />
+                <field
+                        name="searchofsy"
+                        type="text"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_OFSY_SEARCH_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_OFSY_SEARCH_DESC"
+                        size="10"
+                        class="inputbox"
+						required="true"
+                        default="0"
+                />
+                <field
+                        name="trafficpos"
+                        type="list"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_POS_TRAFFIC_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_POS_TRAFFIC_DESC"
+                        size="1"
+						required="true"
+                        default="0"
+				>
+					<option	value="0">COM_ZHYANDEXMAP_MAP_MAPPOSITION_DEFAULT</option>
+					<option	value="1">COM_ZHYANDEXMAP_MAP_MAPPOSITION_TOP_LEFT</option>
+					<option	value="2">COM_ZHYANDEXMAP_MAP_MAPPOSITION_TOP_RIGHT</option>
+					<option	value="3">COM_ZHYANDEXMAP_MAP_MAPPOSITION_BOTTOM_RIGHT</option>
+					<option	value="4">COM_ZHYANDEXMAP_MAP_MAPPOSITION_BOTTOM_LEFT</option>
+                </field>
+                <field
+                        name="trafficofsx"
+                        type="text"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_OFSX_TRAFFIC_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_OFSX_TRAFFIC_DESC"
+                        size="10"
+                        class="inputbox"
+						required="true"
+                        default="0"
+                />
+                <field
+                        name="trafficofsy"
+                        type="text"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_OFSY_TRAFFIC_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_OFSY_TRAFFIC_DESC"
+                        size="10"
+                        class="inputbox"
+						required="true"
+                        default="0"
+                />
+                <field
+                        name="findpos"
+                        type="list"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_POS_FINDPOS_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_POS_FINDPOS_DESC"
+                        size="1"
+						required="true"
+                        default="0"
+				>
+					<option	value="0">COM_ZHYANDEXMAP_MAP_MAPPOSITION_DEFAULT</option>
+					<option	value="101">COM_ZHYANDEXMAP_MAP_MAPPOSITION_MAPTOP</option>
+					<option	value="102">COM_ZHYANDEXMAP_MAP_MAPPOSITION_MAPBOTTOM</option>
+                </field>
+                <field
+                        name="autopositionpos"
+                        type="list"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_AUTOPOSITION_POS_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_AUTOPOSITION_POS_DESC"
+                        size="1"
+						required="true"
+                        default="0"
+				>
+					<option	value="0">COM_ZHYANDEXMAP_MAP_MAPPOSITION_DEFAULT</option>
+					<option	value="101">COM_ZHYANDEXMAP_MAP_MAPPOSITION_MAPTOP</option>
+					<option	value="102">COM_ZHYANDEXMAP_MAP_MAPPOSITION_MAPBOTTOM</option>
+                </field>
+		</fieldset>
+				
+        <fieldset name="mapmarkerlist">
+                <field
+                        name="markerlistwidth"
+                        type="text"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_PLACEMARKLIST_WIDTH_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_PLACEMARKLIST_WIDTH_DESC"
+                        size="10"
+                        class="inputbox"
+						required="true"
+                        default="0"
+                />
+                <field
+                        name="markerlistheight"
+                        type="text"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_PLACEMARKLIST_HEIGHT_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_PLACEMARKLIST_HEIGHT_DESC"
+                        size="10"
+                        class="inputbox"
+						required="true"
+                        default="0"
+                />
+                <field
+                        name="markerlistpos"
+						type="list"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_PLACEMARKLISTPOS_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_PLACEMARKLISTPOS_DESC"
+                        size="1"
+						required="true"
+                        default="0"
+				>
+					<option	value="0">COM_ZHYANDEXMAP_MAP_DETAIL_PLACEMARKLISTPOS_NONE</option>					
+					<option	value="111">COM_ZHYANDEXMAP_MAP_DETAIL_PLACEMARKLISTPOS_LEFT</option>
+					<option	value="112">COM_ZHYANDEXMAP_MAP_DETAIL_PLACEMARKLISTPOS_RIGHT</option>
+					<option	value="113">COM_ZHYANDEXMAP_MAP_DETAIL_PLACEMARKLISTPOS_LIST_MAP</option>
+					<option	value="114">COM_ZHYANDEXMAP_MAP_DETAIL_PLACEMARKLISTPOS_MAP_LIST</option>
+					<option	value="121">COM_ZHYANDEXMAP_MAP_DETAIL_PLACEMARKLISTPOS_EXTERNAL</option>
+                </field>
+                <field
+                        name="markerlist"
+						type="list"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_PLACEMARKLIST_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_PLACEMARKLIST_DESC"
+                        size="1"
+						required="true"
+                        default="0"
+				>
+					<option	value="0">COM_ZHYANDEXMAP_MAP_DETAIL_PLACEMARKLISTSTYLE_SIMPLE</option>
+					<option	value="1">COM_ZHYANDEXMAP_MAP_DETAIL_PLACEMARKLISTSTYLE_ADVANCED</option>
+					<option	value="2">COM_ZHYANDEXMAP_MAP_DETAIL_PLACEMARKLISTSTYLE_EXTERNAL</option>
+                </field>
+                <field
+                        name="markerlistbgcolor"
+                        type="text"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_PLACEMARKLIST_BACKGROUND_COLOR_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_PLACEMARKLIST_BACKGROUND_COLOR_DESC"
+                        size="90"
+                        class="inputbox"
+						required="false"
+                        default=""
+                />
+                <field
+                        name="markerlistaction"
+						type="list"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_PLACEMARKLIST_ACTIONBYCLICK_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_PLACEMARKLIST_ACTIONBYCLICK_DESC"
+                        size="1"
+						required="true"
+                        default="0"
+					>
+					<option	value="0">COM_ZHYANDEXMAP_MAP_DETAIL_PLACEMARKLIST_ACTIONBYCLICK_CENTER</option>
+					<option	value="1">COM_ZHYANDEXMAP_MAP_DETAIL_PLACEMARKLIST_ACTIONBYCLICK_CLICK</option>
+                </field>
+                <field
+                        name="markerlistcontent"
+						type="list"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_PLACEMARKLIST_CONTENT_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_PLACEMARKLIST_CONTENT_DESC"
+                        size="1"
+						required="true"
+                        default="0"
+					>
+					<option	value="0">COM_ZHYANDEXMAP_MAP_DETAIL_PLACEMARKLIST_CONTENT_TITLE</option>
+					<option	value="1">COM_ZHYANDEXMAP_MAP_DETAIL_PLACEMARKLIST_CONTENT_TITLEDESC</option>
+					<option	value="2">COM_ZHYANDEXMAP_MAP_DETAIL_PLACEMARKLIST_CONTENT_ICONTITLE</option>
+					<option	value="3">COM_ZHYANDEXMAP_MAP_DETAIL_PLACEMARKLIST_CONTENT_ICONTITLEDESC</option>
+					<option	value="4">COM_ZHYANDEXMAP_MAP_DETAIL_PLACEMARKLIST_CONTENT_ICONTITLEDESCTABLE</option>
+					<option	value="11">COM_ZHYANDEXMAP_MAP_DETAIL_PLACEMARKLIST_CONTENT_TITLEIMAGE</option>
+					<option	value="12">COM_ZHYANDEXMAP_MAP_DETAIL_PLACEMARKLIST_CONTENT_TITLEIMAGEDESC</option>
+					<option	value="13">COM_ZHYANDEXMAP_MAP_DETAIL_PLACEMARKLIST_CONTENT_IMAGETITLE</option>
+					<option	value="14">COM_ZHYANDEXMAP_MAP_DETAIL_PLACEMARKLIST_CONTENT_IMAGETITLEDESC</option>
+					<option	value="15">COM_ZHYANDEXMAP_MAP_DETAIL_PLACEMARKLIST_CONTENT_IMAGETITLEDESCTABLE</option>
+					<option	value="101">COM_ZHYANDEXMAP_MAP_DETAIL_PLACEMARKLIST_CONTENT_TABLETITLE</option>
+					<option	value="102">COM_ZHYANDEXMAP_MAP_DETAIL_PLACEMARKLIST_CONTENT_TABLETITLEDESC</option>
+                </field>
+                <field
+                        name="markerlistbuttontype"
+                        type="list"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_PLACEMARKLIST_BUTTON_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_PLACEMARKLIST_BUTTON_DESC"
+                        size="1"
+						required="true"
+                        default="0"
+				>
+					<option	value="0">COM_ZHYANDEXMAP_MAP_DETAIL_PLACEMARKLIST_BUTTON_OPEN</option>
+					<option	value="1">COM_ZHYANDEXMAP_MAP_DETAIL_PLACEMARKLIST_BUTTON_ICON</option>
+					<option	value="2">COM_ZHYANDEXMAP_MAP_DETAIL_PLACEMARKLIST_BUTTON_TEXT</option>
+					<option	value="11">COM_ZHYANDEXMAP_MAP_DETAIL_PLACEMARKLIST_BUTTON_ICONOPEN</option>
+					<option	value="12">COM_ZHYANDEXMAP_MAP_DETAIL_PLACEMARKLIST_BUTTON_TEXTOPEN</option>
+                </field>
+        </fieldset>
+
+        <fieldset name="mapmarkergroup">
+                <field
+                        name="markergroupcontrol"
+						type="list"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_MARKERGROUPCONTROL_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_MARKERGROUPCONTROL_DESC"
+                        size="1"
+						required="true"
+                        default="0"
+				>
+					<option	value="0">COM_ZHYANDEXMAP_MAP_DETAIL_MARKERGROUPCONTROL_NONE</option>
+					<option	value="1">COM_ZHYANDEXMAP_MAP_DETAIL_MARKERGROUPCONTROL_LEFT</option>
+					<option	value="2">COM_ZHYANDEXMAP_MAP_DETAIL_MARKERGROUPCONTROL_TOP</option>
+					<option	value="3">COM_ZHYANDEXMAP_MAP_DETAIL_MARKERGROUPCONTROL_RIGHT</option>
+					<option	value="4">COM_ZHYANDEXMAP_MAP_DETAIL_MARKERGROUPCONTROL_BOTTOM</option>
+					<option	value="5">COM_ZHYANDEXMAP_MAP_DETAIL_MARKERGROUPCONTROL_GROUP_MAP</option>
+					<option	value="6">COM_ZHYANDEXMAP_MAP_DETAIL_MARKERGROUPCONTROL_MAP_GROUP</option>
+                </field>
+                <field
+                        name="markergroupwidth"
+						type="list"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_MARKERGROUPWIDTH_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_MARKERGROUPWIDTH_DESC"
+                        size="1"
+						required="true"
+                        default="20"
+				>
+					<option	value="0">0</option>
+					<option	value="5">5</option>
+					<option	value="10">10</option>
+					<option	value="15">15</option>
+					<option	value="20">20</option>
+					<option	value="25">25</option>
+					<option	value="30">30</option>
+					<option	value="35">35</option>
+					<option	value="40">40</option>
+					<option	value="45">45</option>
+					<option	value="50">50</option>
+                </field>
+                <field
+                        name="markergroupshowicon"
+                        type="list"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_MARKERGROUPSHOWICON_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_MARKERGROUPSHOWICON_DESC"
+                        size="1"
+						required="true"
+                        default="1"
+				>
+					<option	value="0">COM_ZHYANDEXMAP_MAP_DETAIL_MARKERGROUPSHOWICON_TEXT</option>
+					<option	value="1">COM_ZHYANDEXMAP_MAP_DETAIL_MARKERGROUPSHOWICON_TEXTICON</option>
+					<option	value="2">COM_ZHYANDEXMAP_MAP_DETAIL_MARKERGROUPSHOWICON_ICON</option>
+                </field>
+                <field
+                        name="markergroupcss"
+                        type="list"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_MARKERGROUPCSS_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_MARKERGROUPCSS_DESC"
+                        size="1"
+						required="true"
+                        default="0"
+				>
+					<option	value="0">COM_ZHYANDEXMAP_MAP_DETAIL_MARKERGROUPCSS_SIMPLE</option>
+					<option	value="1">COM_ZHYANDEXMAP_MAP_DETAIL_MARKERGROUPCSS_ADVANCED</option>
+					<option	value="2">COM_ZHYANDEXMAP_MAP_DETAIL_MARKERGROUPCSS_EXTERNAL</option>
+                </field>
+                <field
+                        name="markergrouptitle"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_MARKERGROUPTITLE_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_MARKERGROUPTITLE_DESC"
+                        type="text"
+                        size="80"
+                        class="inputbox"
+						required="false"
+                        default=""
+                />
+                <field
+                        name="markergroupdesc1"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_MARKERGROUPDESC1_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_MARKERGROUPDESC1_DESC"
+                        type="text"
+                        size="80"
+                        class="inputbox"
+						required="false"
+                        default=""
+                />
+                <field
+                        name="markergroupsep1"
+                        type="radio"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_MARKERGROUPSEP1_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_MARKERGROUPSEP1_DESC"
+                        size="80"
+						required="true"
+                        default="0"
+				>
+					<option	value="0">JNO</option>
+					<option	value="1">JYES</option>
+                </field>
+                <field
+                        name="markergroupsep2"
+                        type="radio"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_MARKERGROUPSEP2_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_MARKERGROUPSEP2_DESC"
+                        size="40"
+						required="true"
+                        default="0"
+				>
+					<option	value="0">JNO</option>
+					<option	value="1">JYES</option>
+                </field>
+                <field
+                        name="markergroupdesc2"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_MARKERGROUPDESC2_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_MARKERGROUPDESC2_DESC"
+                        type="text"
+                        size="40"
+                        class="inputbox"
+						required="false"
+                        default=""
+                />
+
+        </fieldset>
+
+
+        <fieldset name="mapdecorheader">
+                <field
+                        name="headersep"
+                        type="radio"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_HEADERSEP_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_HEADERSEP_DESC"
+                        size="40"
+						required="true"
+                        default="0"
+				>
+					<option	value="0">JNO</option>
+					<option	value="1">JYES</option>
+                </field>
+                <field
+                        name="headerhtml"
+                        type="editor"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_HEADERHTML_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_HEADERHTML_DESC"
+                        size="40"
+                        class="inputbox"
+						required="false"
+                        default=""
+						filter="raw"
+                />
+        </fieldset>
+		
+        <fieldset name="mapdecorfooter">
+                <field
+                        name="footersep"
+                        type="radio"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_FOOTERSEP_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_FOOTERSEP_DESC"
+                        size="40"
+						required="true"
+                        default="0"
+				>
+					<option	value="0">JNO</option>
+					<option	value="1">JYES</option>
+                </field>
+                <field
+                        name="footerhtml"
+                        type="editor"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_FOOTERHTML_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_FOOTERHTML_DESC"
+                        size="40"
+                        class="inputbox"
+						required="false"
+                        default=""
+						filter="raw"
+                />
+        </fieldset>
+
+        <fieldset name="mapadvanced">
+                <field
+                        name="usermarkersfilter"
+                        type="list"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_USERMARKERFILTER_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_USERMARKERFILTER_DESC"
+                        size="1"
+						required="true"
+                        default="0"
+				>
+					<option	value="0">COM_ZHYANDEXMAP_MAP_DETAIL_USERMARKERFILTER_ALL</option>
+					<option	value="1">COM_ZHYANDEXMAP_MAP_DETAIL_USERMARKERFILTER_YES</option>
+                </field>
+                <field
+                        name="usermarkers"
+                        type="list"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_USERMARKER_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_USERMARKER_DESC"
+                        size="1"
+						required="true"
+                        default="0"
+				>
+					<option	value="0">COM_ZHYANDEXMAP_MAP_DETAIL_USERMARKER_NO</option>
+					<option	value="1">COM_ZHYANDEXMAP_MAP_DETAIL_USERMARKER_ALL</option>
+                </field>
+                <field
+                        name="usermarkerspublished"
+                        type="list"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_USERMARKERPUBLISHED_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_USERMARKERPUBLISHED_DESC"
+                        size="1"
+						required="true"
+                        default="0"
+				>
+					<option	value="0">COM_ZHYANDEXMAP_MAP_DETAIL_USERMARKERPUBLISHED_NO</option>
+					<option	value="1">COM_ZHYANDEXMAP_MAP_DETAIL_USERMARKERPUBLISHED_YES</option>
+                </field>
+                <field
+                        name="usercontactpublished"
+                        type="list"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_USERCONTACTPUBLISHED_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_USERCONTACTPUBLISHED_DESC"
+                        size="1"
+						required="true"
+                        default="0"
+				>
+					<option	value="0">COM_ZHYANDEXMAP_MAP_DETAIL_USERCONTACTPUBLISHED_NO</option>
+					<option	value="1">COM_ZHYANDEXMAP_MAP_DETAIL_USERCONTACTPUBLISHED_YES</option>
+                </field>
+                <field
+                        name="usermarkersicon"
+                        type="radio"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_USERMARKERICON_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_USERMARKERICON_DESC"
+                        size="40"
+						required="true"
+                        default="1"
+				>
+					<option	value="0">JNO</option>
+					<option	value="1">JYES</option>
+                </field>
+			
+                <field
+                        name="cssclassname"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_CSSCLASSNAME_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_CSSCLASSNAME_DESC"
+                        type="text"
+                        size="40"
+                        class="inputbox"
+						required="false"
+                        default=""
+                />
+				<field 
+					name="css2load" 
+					label="COM_ZHYANDEXMAP_MAP_DETAIL_ADD_CSS_LABEL" 
+					description="COM_ZHYANDEXMAP_MAP_DETAIL_ADD_CSS_DESC" 
+					type="textarea" 
+					rows="4"
+					cols="50"
+					size="200"
+					required="false"
+					default=""
+				/>
+			
+        </fieldset>
+
+        <fieldset name="mapgeolocation">
+                <field
+                        name="autoposition"
+						type="radio"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_AUTOPOSITION_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_AUTOPOSITION_DESC"
+                        size="30"
+						required="true"
+                        default="0"
+				>
+					<option	value="0">JNO</option>
+					<option	value="1">JYES</option>
+                </field>
+                <field
+                        name="autopositioncontrol"
+						type="list"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_AUTOPOSITIONCONTROL_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_AUTOPOSITIONCONTROL_DESC"
+                        size="1"
+						required="true"
+                        default="0"
+				>
+					<option	value="0">COM_ZHYANDEXMAP_MAP_DETAIL_AUTOPOSITIONCONTROL_NONE</option>
+					<option	value="1">COM_ZHYANDEXMAP_MAP_DETAIL_AUTOPOSITIONCONTROL_TOOLBAR</option>
+					<option	value="2">COM_ZHYANDEXMAP_MAP_DETAIL_AUTOPOSITIONCONTROL_BUTTON</option>
+                </field>
+                <field
+                        name="autopositionbutton"
+						type="list"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_AUTOPOSITIONBUTTON_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_AUTOPOSITIONBUTTON_DESC"
+                        size="1"
+						required="true"
+                        default="1"
+				>
+					<option	value="1">COM_ZHYANDEXMAP_MAP_DETAIL_AUTOPOSITIONBUTTON_ICON</option>
+					<option	value="2">COM_ZHYANDEXMAP_MAP_DETAIL_AUTOPOSITIONBUTTON_TEXT</option>
+					<option	value="3">COM_ZHYANDEXMAP_MAP_DETAIL_AUTOPOSITIONBUTTON_ICONTEXT</option>
+                </field>
+        </fieldset>
+		
+	    <fieldset name="integration">
+                <field
+                        name="usercontact"
+                        type="radio"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_USERCONTACT_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_USERCONTACT_DESC"
+                        size="40"
+						required="true"
+                        default="0"
+				>
+					<option	value="0">JNO</option>
+					<option	value="1">JYES</option>
+                </field>
+                <field
+                        name="useruser"
+                        type="radio"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_USERUSER_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_USERUSER_DESC"
+                        size="40"
+						required="true"
+                        default="0"
+				>
+					<option	value="0">JNO</option>
+					<option	value="1">JYES</option>
+                </field>
+		</fieldset>
+		
+		
+        <fieldset name="mapmarker">
+                <field
+                        name="markercluster"
+						type="radio"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_MARKERCLUSTER_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_MARKERCLUSTER_DESC"
+                        size="30"
+						required="true"
+                        default="1"
+				>
+					<option	value="0">JNO</option>
+					<option	value="1">JYES</option>
+                </field>
+                <field
+                        name="clusterzoom"
+                        type="list"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_CLUSTERZOOM_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_CLUSTERZOOM_DESC"
+                        size="1"
+                        class="inputbox"
+						required="true"
+                        default="10"
+				>
+					<option	value="1">1</option>
+					<option	value="2">2</option>
+					<option	value="3">3</option>
+					<option	value="4">4</option>
+					<option	value="5">5</option>
+					<option	value="6">6</option>
+					<option	value="7">7</option>
+					<option	value="8">8</option>
+					<option	value="9">9</option>
+					<option	value="10">10</option>
+					<option	value="11">11</option>
+					<option	value="12">12</option>
+					<option	value="13">13</option>
+					<option	value="14">14</option>
+					<option	value="15">15</option>
+					<option	value="16">16</option>
+					<option	value="17">17</option>
+					<option	value="18">18</option>
+					<option	value="19">19</option>
+					<option	value="20">20</option>
+					<option	value="21">21</option>
+					<option	value="22">22</option>
+					<option	value="23">23</option>
+                </field>
+                <field
+                        name="markerclustergroup"
+						type="radio"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_MARKERCLUSTERGROUP_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_MARKERCLUSTERGROUP_DESC"
+                        size="30"
+						required="true"
+                        default="0"
+				>
+					<option	value="0">JNO</option>
+					<option	value="1">JYES</option>
+                </field>
+                <field
+                        name="clusterdisableclickzoom"
+						type="radio"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_DISABLECLICKZOOM_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_DISABLECLICKZOOM_DESC"
+                        size="30"
+						required="true"
+                        default="0"
+				>
+					<option	value="0">JNO</option>
+					<option	value="1">JYES</option>
+                </field>
+                <field
+                        name="clustersynchadd"
+						type="radio"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_CLUSTERSYNCHADD_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_CLUSTERSYNCHADD_DESC"
+                        size="30"
+						required="true"
+                        default="0"
+				>
+					<option	value="0">JNO</option>
+					<option	value="1">JYES</option>
+                </field>
+                <field
+                        name="clusterorderalphabet"
+						type="radio"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_CLUSTERORDERALPHABET_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_CLUSTERORDERALPHABET_DESC"
+                        size="30"
+						required="true"
+                        default="0"
+				>
+					<option	value="0">JNO</option>
+					<option	value="1">JYES</option>
+                </field>
+                <field
+                        name="clustergridsize"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_CLUSTERGRIDSIZE_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_CLUSTERGRIDSIZE_DESC"
+                        type="text"
+                        size="40"
+                        class="inputbox"
+						required="false"
+                        default="64"
+                />
+                <field
+                        name="clusterminclustersize"
+                        label="COM_ZHYANDEXMAP_MAP_DETAIL_CLUSTERMINCLUSTERSIZE_LABEL"
+                        description="COM_ZHYANDEXMAP_MAP_DETAIL_CLUSTERMINCLUSTERSIZE_DESC"
+                        type="text"
+                        size="40"
+                        class="inputbox"
+						required="false"
+                        default="2"
+                />
+				
+        </fieldset>
+		
+	<fields name="params">
+		<fieldset
+			name="params"
+			label="JGLOBAL_FIELDSET_DISPLAY_OPTIONS"
+		>
+			<field
+				name="show_category"
+				type="list"
+				label="COM_ZHYANDEXMAP_MAP_DETAIL_SHOW_CATEGORY_LABEL"
+				description="COM_ZHYANDEXMAP_MAP_DETAIL_SHOW_CATEGORY_DESC"
+				default=""
+			>
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+		</fieldset>
+	</fields>
+
+</form>

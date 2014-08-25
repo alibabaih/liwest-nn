@@ -1,0 +1,62 @@
+table.user-details {
+    width: auto;
+}
+td.key {
+    padding: 0 6px;
+    width: 120px;
+}
+.virtuemart_country_id, #virtuemart_state_id, #shipto_virtuemart_country_id, #shipto_virtuemart_state_id {
+ margin-bottom: 2px;
+    padding: 5px 5px 4px;
+    width: 212px;
+}
+select#title {
+ margin-bottom: 2px;
+    padding: 5px 5px 4px;
+}
+.output-billto, .output-shipto {
+    margin: 0;
+}
+.billto-shipto {
+    padding: 10px 0 0;
+}
+
+div#div_billto {
+    padding-top: 8px;
+}
+input#register   {
+    float:left;
+}
+
+#coupon_code   {background: -moz-linear-gradient(center top , #F1F1F1, #fff) repeat scroll 0 0 transparent;
+    border: 1px solid #DCDCDC; padding-top:6px;   margin:3px;
+}
+span.cart-images img {
+    padding-right: 5px;
+}
+.cart-view input.details-button {
+margin-top: 3px;
+padding: 2px 8px 1px;
+}
+#remember, #com-form-login-remember label, #com-form-login-remember input {
+    display: inline-block;
+}
+#preloader {
+background: url("/plugins/system/onepage/images/bg_loader_white.png") repeat scroll 0 0 transparent;
+height: 100%;
+margin: 0 auto;
+overflow: hidden;
+padding-top: 150px;
+position: absolute;
+text-align: center;
+top: 0;
+width: 100%;
+z-index: 1000;
+}
+#preloader img {
+z-index: 100000;
+}
+#preloader td {height: 100%; position: fixed; top: 50%; visibility: visible; width: 100%;}
+input#register {
+    float: left;
+}

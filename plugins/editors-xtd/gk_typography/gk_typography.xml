@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.6" type="plugin" group="editors-xtd" method="upgrade">	
+	<name>Button - GK Typography</name>	
+	<creationDate>08/01/2011</creationDate> 	
+	<author>Robert Gavick - GavickPro</author>  	
+	<authorEmail>info@gavick.com</authorEmail>   	
+	<authorUrl>http://www.gavick.com</authorUrl>    
+	<copyright>Copyrighted Commercial Software</copyright>    
+	<license>Proprietary - GavickPro eClub members only</license>    
+	<version>1.0.1</version>	
+	<description>Plugin to easier typography using in Joomla WYSIWYG editors.</description>
+	
+	<files>		
+		<filename plugin="gk_typography">gk_typography.php</filename>		
+		<filename plugin="gk_typography">gk_typography/index.html</filename>		
+		<filename plugin="gk_typography">gk_typography/js/gk_typography.js</filename>		
+		<filename plugin="gk_typography">gk_typography/js/index.html</filename>		
+		<filename plugin="gk_typography">gk_typography/css/gk_typography.css</filename>		
+		<filename plugin="gk_typography">gk_typography/css/index.html</filename>		
+		<filename plugin="gk_typography">gk_typography/images/button.png</filename>		
+		<filename plugin="gk_typography">gk_typography/images/index.html</filename>		
+		<filename plugin="gk_typography">gk_typography/elements/index.html</filename>		
+		<filename plugin="gk_typography">gk_typography/elements/typooverride.php</filename>	
+	</files>		
+	
+	<config>		
+		<fields name="params">			
+			<fieldset name="basic" addfieldpath="plugins/editors-xtd/gk_typography/gk_typography/elements">				
+				<field name="typo_override" type="typooverride" label="Preset for plugin " description="Select XML set for typography" size="40" />				
+			</fieldset>		
+		</fields>	
+	</config>	
+</install>

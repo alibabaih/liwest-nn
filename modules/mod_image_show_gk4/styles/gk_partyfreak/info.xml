@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<style>
+	<info>
+		<name>gk_partyfreak</name>
+		<author>GavickPro</author>
+		<desc>Image Show GK4 style for Party Freak template.</desc>
+		<version>1.0</version>
+	</info>
+	<config>
+		<field type="text" name="image_width" label="Image width" desc="Full size image width in pixels" default="600" unit="px" />
+		<field type="text" name="image_height" label="Image height" desc="Full size image height in pixels" default="600" unit="px" />
+		<field type="text" name="thumb_width" label="Thumbnail width" desc="Thumbnail image width in pixels" default="70" unit="px" />
+		<field type="text" name="thumb_height" label="Thumbnail height" desc="Thumbnail image height in pixels" default="70" unit="px" />
+		<field type="text" name="image_bg" label="Image background color" desc="Image background as hexdecimal value" default="#ffffff" unit="" />	
+		<field type="text" name="quality" label="Image quality" desc="Quality of images (used in the JPG images) - percentage value between 0 and 100." default="95" unit="%" />	
+		<field type="text" name="total_width" label="Total width" default="980" desc="Total width of the module" unit="px" />
+		<field type="text" name="thumbs_margin" label="Thumbs margin" default="0 0 0 0" desc="Values of margin" unit="" />
+		<field type="text" name="thumbs_padding" label="Thumbs padding" default="0 0 0 0" desc="Values of padding" unit="" />
+		<field type="text" name="thumbs_amount" label="Thumbs amount" default="3" desc="Amount of thumbs visible in one page" unit="" />
+		<field type="text" name="thumbs_space" label="Thumbs space" default="8" desc="Space between thumbs" unit="px" />
+		<field type="text" name="thumbs_text_word_amount" label="Thumbs word amount" default="14" desc="Amount of words in the thumbnails" unit="" />
+		<field type="switch" name="show_title" label="Show title" default="1" desc="Enable/disable showing title in text block" class="gk_switch" />
+		<field type="text" name="text_block_height" label="Text block height" default="80" desc="Height of the text block area" unit="px" />	
+		<field type="switch" name="show_text" label="Show text block" default="1" desc="Enable/disable showing text block" class="gk_switch" />
+		<field type="text" name="text_word_amount" label="Text word amount" default="40" desc="Amount of words in the slide text" unit="" />
+		<field type="switch" name="slide_links" label="Slide links" desc="You can enable links in the slides." default="1" class="gk_switch" />
+		<field type="text" name="animation_speed" label="Animation speed" desc="Animation speed in miliseconds" default="500" unit="ms" />
+		<field type="text" name="animation_interval" label="Animation interval" desc="Animation interval in miliseconds" default="5000" unit="ms" />
+		<field type="switch" name="autoanimation" label="Autoanimation" desc="Autoanimation of the slides" default="1" class="gk_switch" />
+		<field type="select" name="animation_type" label="Animation type" desc="Animation type used in the slideshow" default="opacity" class="">
+			<option value="opacity">Opacity</option>
+			<option value="top">Top</option>
+			<option value="bottom">Bottom</option>
+			<option value="left">Left</option>
+			<option value="right">Right</option>
+		</field>
+	</config>
+</style>

@@ -1,0 +1,78 @@
+/**
+* GK Image Show - CSS style
+* @package Joomla!
+* @Copyright (C) 2009-2011 Gavick.com
+* @ All rights reserved
+* @ Joomla! is Free Software
+* @ Released under GNU/GPL License : http://www.gnu.org/copyleft/gpl.html
+* @ version $Revision: GK4 1.0 $
+**/
+
+.gkIsWrapper-gk_eSport::selection { background: transparent; color: inherit; }
+.gkIsWrapper-gk_eSport::-moz-selection { background: transparent; color: inherit; }
+.gkIsWrapper-gk_eSport::-webkit-selection { background: transparent; color: inherit; }
+
+.gkIsWrapper-gk_eSport { position:relative; background: #fff; width:100%; overflow: hidden; }
+.gkIsWrapper-gk_eSport .gkIsSlides { position:relative; overflow:hidden; }
+.gkIsWrapper-gk_eSport .gkIsSlide { position:absolute; right: -9999px; bottom: -9999px; }
+.slide-links .gkIsSlide { cursor:pointer; }
+.gkIsWrapper-gk_eSport .gkIsImage { overflow:hidden; position: relative; width: 100%; }
+
+/* content area */
+.gkIsWrapper-gk_eSport .gkContentArea { position: absolute; z-index: 127; width: 100%; }
+.gkIsWrapper-gk_eSport .gkContentArea > div { position: relative; }
+
+.gkIsWrapper-gk_eSport.gkThumbsTop .gkContentArea { -webkit-transition: top 0.35s ease-out; -moz-transition: top 0.35s ease-out; transition: top 0.35s ease-out; }
+.gkIsWrapper-gk_eSport.gkThumbsBottom .gkContentArea { -webkit-transition: bottom 0.35s ease-out; -moz-transition: bottom 0.35s ease-out; transition: bottom 0.35s ease-out; }
+
+/* thumbnails */
+.gkIsWrapper-gk_eSport .gkIsThumbnails { margin: 0 30px; background: #fff; padding: 14px 0; position: relative; z-index: 101; }
+.gkIsWrapper-gk_eSport .gkIsPrev { width: 50px; height: 100%; float: left; position: relative; }
+.gkIsWrapper-gk_eSport .gkIsNext { width: 50px; height: 100%; float: right; position: relative; }
+.gkIsWrapper-gk_eSport .gkIsThumbnailsWrap { float: left; overflow: hidden; }
+.gkIsWrapper-gk_eSport .gkIsThumbnailsWrap ul { width: 3000px; }
+.gkIsWrapper-gk_eSport .gkIsThumbnailsWrap li { float: left; margin-right: 13px; opacity: 0.45; cursor: pointer; -webkit-transition: opacity 1s ease-out; -moz-transition: opacity 1s ease-out; transition: opacity 1s ease-out; }
+.gkIsWrapper-gk_eSport .gkIsThumbnailsWrap li.active,
+.gkIsWrapper-gk_eSport .gkIsThumbnailsWrap li:hover { opacity: 1; }
+.gkIsWrapper-gk_eSport .gkIsPrev > span,
+.gkIsWrapper-gk_eSport .gkIsNext > span { height: 34px; width: 17px; background: transparent url('images/is_nav.png') no-repeat left -1px; text-indent: -999em; display: block; border-left: 20px solid #fff; position: absolute; top: 50%; margin-top: -17px; }
+.gkIsWrapper-gk_eSport .gkIsNext > span { background-position: right -1px; border-right: 20px solid #fff; border-left: none; right: 0; }
+.gkIsWrapper-gk_eSport .gkIsPrev > span:hover,
+.gkIsWrapper-gk_eSport .gkIsNext > span:hover { cursor: pointer; background-position: left bottom; }
+.gkIsWrapper-gk_eSport .gkIsNext > span:hover { background-position: right bottom; }
+
+/* bubbles */
+.gkIsWrapper-gk_eSport .gkIsImageAnimArea { position: relative; overflow: hidden; }
+.gkIsWrapper-gk_eSport .gkIsImageAnimArea > div { -webkit-border-radius: 1000px; -moz-border-radius: 1000px; border-radius: 1000px; position: absolute; }
+
+/* text blocks */
+.gkIsWrapper-gk_eSport .gkIsTextTitle { position: absolute; z-index: 100; height: 62px;
+ width: auto; background: transparent url('images/is_bg_title.png') repeat 0 0; padding: 0 30px; text-transform: uppercase; visibility: hidden; right: 30px; }
+.gkIsWrapper-gk_eSport .gkIsTextTitle a { font-size: 30px; color: #fff; line-height: 62px; }
+.gkIsWrapper-gk_eSport .gkIsTextTitle a:hover { color: #879d52; }
+.gkIsWrapper-gk_eSport.gkThumbsTop .gkIsTextTitle { left: 30px; right: auto; }
+
+/* preloader */
+.gkIsWrapper-gk_eSport .gkIsPreloader { display: block; background: #f47b20; position:absolute; z-index:128; text-align: center; -webkit-border-radius: 200px; -moz-border-radius: 200px; border-radius: 200px; top:50%; left: 50%; margin: 0; width:0px; height:0px; line-height: 0px; opacity: 0; 
+-webkit-transition: opacity 0.5s ease-out, width 0.5s ease-out, height 0.5s ease-out, line-height 0.5s ease-out, margin 0.5s ease-out; -moz-transition: opacity 0.5s ease-out, width 0.5s ease-out, height 0.5s ease-out, line-height 0.5s ease-out, margin 0.5s ease-out; transition: opacity 0.5s ease-out, width 0.5s ease-out, height 0.5s ease-out, line-height 0.5s ease-out, margin 0.5s ease-out; }
+.gkIsWrapper-gk_eSport .gkIsPreloader.loaded { left: 50%; margin: 0; width:0px; height:0px; line-height: 0px; opacity: 0; }
+.gkIsWrapper-gk_eSport .gkIsPreloader span,
+.gkIsWrapper-gk_eSport .gkIsPreloader.loaded span { opacity: 0; font-size: 0px; -webkit-transition: opacity 0.5s ease-out, font-size 0.5s ease-out; -moz-transition: opacity 0.5s ease-out, font-size 0.5s ease-out; transition: opacity 0.5s ease-out, font-size 0.5s ease-out; }
+.gkIsWrapper-gk_eSport .gkIsPreloader.loading span { color: #fff; font-weight: bold; font-size: 14px; text-transform: uppercase; opacity: 1; }
+.gkIsWrapper-gk_eSport .gkIsPreloader.loading { margin: -40px 0 0 -40px; width:80px; height:80px; line-height: 80px; opacity: 1; -webkit-animation-name: loader; -webkit-animation-duration: 0.75s; -webkit-animation-iteration-count: infinite; -webkit-animation-timing-function: ease-out; -moz-animation-name: loader; -moz-animation-duration: 0.75s; -moz-animation-iteration-count: infinite; -moz-animation-timing-function: ease-out; animation-name: loader; animation-duration: 0.75s; animation-iteration-count: infinite; animation-timing-function: ease-out; }
+
+@-webkit-keyframes loader {
+	from { margin: -40px 0 0 -40px; width:80px; height:80px; line-height: 80px; background: #f47b20; }
+	50% { margin: -50px 0 0 -50px; width:100px; height:100px; line-height: 100px; background: #f58c31; }
+	to { margin: -40px 0 0 -40px; width:80px; height:80px; line-height: 80px; background: #f47b20; }
+}
+@-moz-keyframes loader {
+	from { margin: -60px 0 0 -60px; width:120px; height:120px; line-height: 120px; background: #f47b20; }
+	50% { margin: -70px 0 0 -70px; width:140px; height:140px; line-height: 140px; background: #f58c31; }
+	to { margin: -60px 0 0 -60px; width:120px; height:120px; line-height: 120px; background: #f47b20; }
+}
+@keyframes loader {
+	from { margin: -60px 0 0 -60px; width:120px; height:120px; line-height: 120px; background: #f47b20; }
+	50% { margin: -70px 0 0 -70px; width:140px; height:140px; line-height: 140px; background: #f58c31; }
+	to { margin: -60px 0 0 -60px; width:120px; height:120px; line-height: 120px; background: #f47b20; }
+}

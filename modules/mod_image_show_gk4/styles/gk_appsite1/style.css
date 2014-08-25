@@ -1,0 +1,39 @@
+/**
+* GK Image Show - CSS style
+* @package Joomla!
+* @Copyright (C) 2009-2011 Gavick.com
+* @ All rights reserved
+* @ Joomla! is Free Software
+* @ Released under GNU/GPL License : http://www.gnu.org/copyleft/gpl.html
+* @ version $Revision: GK4 1.0 $
+**/
+
+.gkIsWrapper-gk_appsite1 { position:relative; width:100%; overflow:hidden; }
+.gkIsWrapper-gk_appsite1 .gkIsSlides { position:relative; overflow:hidden; }
+.gkIsWrapper-gk_appsite1 .gkIsSlide { position:absolute; left:50%; }
+
+.gkIsWrapper-gk_appsite1 .gkIsSlide { visibility:hidden;}
+.gkIsWrapper-gk_appsite1 .gkIsSlide:first-child { visibility:visible; }
+
+.slide-links .gk_is_slide { cursor:pointer; }
+.gkIsWrapper-gk_appsite1 .gkIsImage { overflow:hidden; position: relative; background: transparent url('images/header_bg.jpg') no-repeat 50% 50%; width: 100%; }
+.gkIsWrapper-gk_appsite1 .gkIsTextData { display:none; }
+.gkIsWrapper-gk_appsite1 .gkIsPreloader { position:absolute; z-index:128; top:0; left:0; background:#fff url('images/loader.gif') no-repeat center center; width:100%; height:100%; text-indent:-999em; }
+.gkIsWrapper-gk_appsite1 .gkIsText { position: absolute; left: 0; z-index: 127; }
+.gkIsWrapper-gk_appsite1 .gkIsTextItemWrap { padding: 0 20px; text-align:center; }
+.gkIsWrapper-gk_appsite1 .gkIsText p { font-size: 60px; text-transform: uppercase; line-height: 60px; color: #fff; text-align: center; }
+.gkIsWrapper-gk_appsite1 .gkIsText p small { font-size: 32px; line-height: 40px; width:100%; text-align: center; display: block; }
+.gkIsWrapper-gk_appsite1 .gkIsText a { color: #fff; }
+.gkIsWrapper-gk_appsite1 .gkIsPagination { width: 516px; height: 30px; text-align:center; margin: 24px 0 24px -258px; position: absolute; bottom: 0; left: 50%; }
+.gkIsWrapper-gk_appsite1 .gkIsPagination .gkIsPrev,
+.gkIsWrapper-gk_appsite1 .gkIsPagination .gkIsNext { float: left; width: 23px; height: 23px; margin: 7px 16px 0 0; text-indent: -999em; background: transparent url('images/gk_is_buttons.png') no-repeat left top; cursor: pointer; position: relative; }
+.gkIsWrapper-gk_appsite1 .gkIsPagination .gkIsNext { margin: 7px 0 0 16px; background-position: right top; }
+.gkIsWrapper-gk_appsite1 .gkIsPagination .gkIsPrev:hover { background-position: left bottom; }
+.gkIsWrapper-gk_appsite1 .gkIsPagination .gkIsNext:hover { background-position: right bottom; }
+.gkIsWrapper-gk_appsite1 .gkIsPagination .gkIsScale { width: 435px; height: 24px; float: left; background: transparent url('images/gk_is_scale.png') no-repeat 0 0; padding: 0 2px 0 1px; }
+.gkIsWrapper-gk_appsite1 .gkIsPagination .gkIsProgress { width: 100%; background: #fda087; border-bottom: 1px solid #ffdbd1; border-top: 1px solid #397baa; height: 4px; margin-top: 16px; display: block; float:left; }
+
+/* CSS3 */
+.gkIsWrapper-gk_appsite1 .gkIsText p { text-shadow: 1px 1px 0 #498ec9; -webkit-transition:text-shadow 0.3s ease-in; -moz-transition:text-shadow 0.3s ease-in; -o-transition:text-shadow 0.3s ease-in; transition:text-shadow 0.3s ease-in;   }
+.gkIsWrapper-gk_appsite1 .gkIsText p:hover { text-shadow: 2px 2px 0 #498ec9 }
+.gkIsWrapper-gk_appsite1 .gkIsPagination .gkIsProgress { border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; }

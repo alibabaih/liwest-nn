@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<style>
+	<info>
+		<name>gk_black_and_white</name>
+		<author>GavickPro</author>
+		<desc>Image Show GK4 style for Black and White template.</desc>
+		<version>1.0</version>
+	</info>
+	<config>
+		<field type="text" name="image_width" label="Image width" desc="Slide image width in pixels" default="978" unit="px" />
+		<field type="text" name="image_height" label="Image height" desc="Slide image height in pixels" default="362" unit="px" />
+		<field type="text" name="image_bg" label="Image background color" desc="Slide image background as hexdecimal value" default="#000000" unit="" />	
+		<field type="text" name="quality" label="Image quality" desc="Quality of images (used in the JPG images) - percentage value between 0 and 100." default="95" unit="%" />
+		
+
+
+		<field type="text" name="text_block_position_x" label="Text block position X" desc="Right margin for text area" default="20" unit="" />
+		<field type="text" name="text_block_position_y" label="Text block position Y" desc="Bottom margin for text area" default="20" unit="" />
+		<field type="text" name="text_block_width" label="Text block width" desc="Width of the text area" default="300" unit="" />
+		<field type="switch" name="show_text_block" label="Show text block" desc="Enable/disable showing overlay with article description" default="1" class="gk_switch" />
+		<field type="switch" name="clean_xhtml" label="Clean (X)HTML" desc="Enable/disable cleaning of XHTML tags in article content" default="1" class="gk_switch" />
+		<field type="text" name="wordcount" label="Wordcount" desc="Amount of words in the text" default="10" unit="" />
+		<field type="text" name="title_char_amount" label="Title char amount" desc="Amount of chars in the slide title" default="30" unit="" />
+		<field type="switch" name="pagination" label="Show pagination" desc="Enable/disable showing pagination" default="1" class="gk_switch" />
+		<field type="text" name="pagination_position_x" label="Pagination position X" desc="Left margin for pagination" default="20" unit="px" />
+		<field type="text" name="pagination_position_y" label="Pagination position Y" desc="Top margin for pagination" default="320" unit="px" />
+		
+		
+		
+		
+		<field type="switch" name="show_readmore" label="Show readmore" desc="Enable/disable showing readmore button in the text area" default="1" class="gk_switch" />
+		<field type="text" name="stripe_width" label="Stripe width" desc="You can specify amount and width of the stripes in stripe animations" default="60" unit="px" />
+		<field type="switch" name="slide_links" label="Slide links" desc="You can enable links in the slides." default="1" class="gk_switch" />
+		<field type="text" name="animation_speed" label="Animation speed" desc="Animation speed in miliseconds" default="1800" unit="ms" />
+		<field type="text" name="animation_interval" label="Animation interval" desc="Animation interval in miliseconds" default="5000" unit="ms" />
+		<field type="switch" name="autoanimation" label="Autoanimation" desc="Autoanimation of the slides" default="1" class="gk_switch" />
+		<field type="select" name="animation_type" label="Animation type" desc="Animation type used in the slideshow" default="stripes-height" class="">
+			<option value="opacity">Opacity</option>
+			<option value="stripes-top">Stripes top</option>
+			<option value="stripes-height">Stripes height</option>
+			<option value="stripes-opacity-top">Stripes opacity top</option>
+			<option value="stripes-opacity-height">Stripes opacity height</option>
+			<option value="stripes-mixed">Stripes mixed</option>
+		</field>
+		
+		
+		
+		<field type="switch" name="show_title_block" label="Show title block" default="1" desc="You can enable showing block with slide titles." class="gk_switch" />
+		<field type="switch" name="title_link" label="Title link" desc="You can enable links in titles" default="1" class="gk_switch" />
+		<field type="switch" name="interface" label="Interface" desc="You can enable showing interface (prev/next buttons)." default="1" class="gk_switch" />	
+		
+	</config>
+</style>

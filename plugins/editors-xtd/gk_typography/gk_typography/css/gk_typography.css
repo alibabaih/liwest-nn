@@ -1,0 +1,20 @@
+.gk_typography { background: transparent url(../images/button.png) no-repeat 100% 0; }
+.gk_typography .modal-button { padding: 0 0 0 8px!important; padding-right:26px!important; }
+.gkTypoWrap { border: 1px solid #d8d8d8; border-top:none; -moz-border-radius-bottomright: 3px; -webkit-border-radius-bottomright: 3px; border-radius-bottomright: 3px; margin: 0; overflow: hidden; height: auto; width: auto;}
+.gk_typography_content { padding: 23px; }
+h2.gkTypoHeader { height: 43px; line-height: 43px; background: url(../images/interface.png) repeat-x 0 0; color: #333; margin: 0; padding: 0 0 0 16px; border: 1px solid #d8d8d8; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; font: bold 12px/43px Arial, Helvetica, sans-serif; text-transform: uppercase; }
+ul.gkTypoMenu { float: left;  border-right: 1px solid #e6e6e6; width: 21%; margin: 0; padding: 0; display: block; zoom:1;}
+ul.gkTypoMenu li { display: block !important; list-style-type:none; background: #fbfbfb; border-top: 1px solid #eee; height: 32px; line-height: 31px; margin: 0; padding: 0; max-height: 32px; zoom:1; }
+ul.gkTypoMenu li:first-child { border-top: none;  height: 32px; }
+ul.gkTypoMenu li.active { background: #fffef6;  height: 32px; }
+ul.gkTypoMenu li a { display: block; line-height:31px; height:31px; font-size: 11px; padding: 0 0 0 16px; cursor: pointer; text-decoration:none; color: #555; font-weight: bold; zoom:1; margin:0!important; }
+ul.gkTypoMenu li.active a,
+ul.gkTypoMenu li a:hover { color:#333 }
+div.gkTypoContent { position: relative; overflow: auto; float: right; width: 78%; }
+.gkTypoTable { width: 100%; }
+.gkTypoTable td:first-child { font: bold 10px Arial, Helvetica, sans-serif; text-transform: uppercase; vertical-align:middle; width: 130px; }
+.gkTypoTable td:first-child span { cursor: pointer; background: #84ad2d; color:#fff; padding: 1px 9px; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; }
+.gkTypoTable td:first-child img { vertical-align:middle; padding-right: 16px; }
+.gkTypoTable td:first-child span:hover { background: #333; color :#fff }
+.gkTypoTable td { height: 31px; border-bottom: 1px solid #eee; padding: 3px 10px 3px 16px; font-size:12px; color: #777; }
+.gkTypoTable code { font-family: "Courier New", Courier, monospace; }

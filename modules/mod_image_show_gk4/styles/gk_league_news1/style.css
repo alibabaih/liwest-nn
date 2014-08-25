@@ -1,0 +1,139 @@
+/**
+* GK Image Show - CSS style
+* @package Joomla!
+* @Copyright (C) 2009-2011 Gavick.com
+* @ All rights reserved
+* @ Joomla! is Free Software
+* @ Released under GNU/GPL License : http://www.gnu.org/copyleft/gpl.html
+* @ version $Revision: GK4 1.0 $
+**/
+
+.gkIsWrapper-gk_league_news1 { 
+	position:relative; 
+	width:100%; 
+	overflow:hidden; 	
+}
+.gkIsWrapper-gk_league_news1 .gkIsPreloader { 
+	position:absolute; 
+	z-index:128;
+	top:0; 
+	left:0; 
+	background:#fafafa url('images/loader.gif') no-repeat center center; 
+	width:100%; 
+	height:100%; 
+	text-indent:-999em;
+}
+.gkIsWrapper-gk_league_news1 .gkIsImages { 
+	position: relative; 
+	height: 100%!important; 
+}
+.gkIsWrapper-gk_league_news1 .gkIsImage { 
+	float: left; 
+	overflow: hidden; 
+	visibility: hidden;
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+}
+.gkIsWrapper-gk_league_news1 .gkIsImage:first-child { 
+	visibility:visible; 
+}
+.gkIsWrapper-gk_league_news1 .gkIsTitle {
+	padding: 10px 20px;
+	background: rgba(0, 0, 0, 0.75);
+	width: 100%;
+	position: absolute;
+	bottom: -150px;
+	z-index: 120;
+	box-sizing: border-box;
+}
+.gkIsWrapper-gk_league_news1 .gkIsTitle a {
+	color: #fff!important;
+}
+.gkIsWrapper-gk_league_news1 .gkIsTitle a:active,
+.gkIsWrapper-gk_league_news1 .gkIsTitle a:focus,
+.gkIsWrapper-gk_league_news1 .gkIsTitle a:hover {
+	color: #cb4900!important;
+}
+.gkIsWrapper-gk_league_news1 .gkIsLoader {  
+	height: 4px; 
+	background: #fff; 
+	bottom: 0;
+	position: absolute;
+	width: 100%;
+	z-index: 121; 
+}
+.gkIsWrapper-gk_league_news1 .gkIsLoader > div.gkIsProgress { 
+	background: #cb4900;
+	height: 4px; 
+	text-indent: -9999px;  
+	width: 0%; 
+}
+.gkIsWrapper-gk_league_news1 .gkIsMoreNews {
+	background: #cb4900;
+	color: #fff!important;
+	font-size: 18px;
+	line-height: 20px;
+	position: absolute;
+	padding: 23px 25px;
+	top: 0;
+	right: 0;
+	text-transform: uppercase;
+	z-index: 122;
+}
+.gkIsWrapper-gk_league_news1 .gkIsMoreNews:hover {
+	background: #121212 url('images/dark_bg.png') no-repeat center top;
+	background-size: 100% 100%;
+	color: #fff!important;
+}
+.gkIsWrapper-gk_league_news1 .gkMoreNews {
+	background: #121212 url('images/dark_bg.png') no-repeat center top;
+	box-sizing: border-box;
+	min-height: 100%;
+	padding: 30px 40px;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 126;
+	opacity: 0;
+	display: none;
+}
+.gkIsWrapper-gk_league_news1 .gkMoreNews > div {
+	overflow: hidden;
+}
+.gkIsWrapper-gk_league_news1 .gkMoreNewsItem {
+	overflow: hidden;
+	padding: 5px 0;
+}
+.gkIsWrapper-gk_league_news1 .gkMoreNewsItem > a {
+	float: left; margin: 0 10px 0 0; 	
+}
+.gkIsWrapper-gk_league_news1 .gkMoreNewsItem > a img { 
+	display: block; 
+}
+.gkIsWrapper-gk_league_news1 .gkMoreNewsItem > div h3 { 
+	color: #fff; 
+	font-size: 14px; 
+	margin-bottom: 0; 
+	line-height: 1.2; 
+}
+.gkIsWrapper-gk_league_news1 .gkMoreNewsItem > div h3 a { 
+	color: #fff!important; 
+}
+.gkIsWrapper-gk_league_news1 .gkMoreNewsItem:hover > div h3 a,
+.gkIsWrapper-gk_league_news1 .gkMoreNewsItem > div h3 a:hover { 
+	color: #cb4900!important; 
+}
+.gkIsWrapper-gk_league_news1 .gkMoreNewsItem > div p { 
+	color: #fff; 
+	font-size: 11px; 
+	line-height: 1.3; 
+	margin-bottom: 0; 
+}
+.gkIsWrapper-gk_league_news1 .gkMoreNewsItem > div p a { 
+	color: #fff!important; 
+}
+.gkIsWrapper-gk_league_news1 .gkMoreNewsItem:hover > div p a,
+.gkIsWrapper-gk_league_news1 .gkMoreNewsItem > div p a:hover { 
+	color: #cb4900!important; 
+}

@@ -1,0 +1,109 @@
+/*
+ * =============================================================
+ * RAXO All-mode K2 J2.5 - Template CSS
+ * -------------------------------------------------------------
+ * @package		RAXO All-mode K2
+ * @subpackage	All-mode List Template
+ * @copyright	Copyright (C) 2009-2012 RAXO Group
+ * @license		RAXO Commercial Licence
+ * 				This file is forbidden for redistribution
+ * @link		http://raxo.org
+ * =============================================================
+ */
+
+
+/* ----- RESET Styles ----- */
+.allmode-list .allmode-name, .allmode-list .allmode-showall,
+.allmode-list .allmode-itemsbox, .allmode-list .allmode-item,
+.allmode-list .allmode-title, .allmode-list img {
+	margin: 0; padding: 0;
+	background: none; border: 0 none;
+}
+
+
+/* ----- MODULE BOX Styles ----- */
+.allmode-list {
+	position: relative;
+	margin-bottom: 16px; padding: 16px 6px 10px;
+	background-color: #e3e5e7;
+	border-radius: 5px;
+}
+.allmode-list .allmode-name {													/* Module Block NAME */
+	margin: 0 0 14px 0;
+	font: 22px/17px Impact, sans-serif;
+	color: #565656;
+	background-color: #b4b6b7;
+}
+.allmode-list .allmode-name a {
+	text-decoration: none;
+	color: #565656;
+}
+.allmode-list .allmode-name a:hover {
+	text-decoration: none;
+	color: #b83b0a;
+}
+.allmode-list .allmode-name span {
+	padding-right: 8px;
+	background-color: #e3e5e7;
+}
+.allmode-list .allmode-showall {												/* "Show All" TEXT */
+	position: absolute;
+	top: 19px; right: 15px;
+	padding: 0 7px;
+	font: bold 11px/12px Arial, Helvetica, sans-serif;
+	color: #b4b6b7;
+	background-color: #b83b0a;
+}
+.allmode-list .allmode-showall a {
+	font-weight: bold; text-decoration: none;
+	color: #fbfbf9;
+}
+.allmode-list .allmode-showall a:hover {
+	color: #b4b6b7;
+}
+
+
+/* ----- ITEMS Styles ----- */
+.allmode-list .allmode-itemsbox {												/* Item List (UL) */
+	margin: 0; padding: 6px 0;
+	background-color: #fbfbf9;
+}
+.allmode-list .allmode-item {													/* Item (LI) */
+	position: relative;
+	margin: 0 10px 0 12px; padding: 6px 16px 0 2px;
+	overflow: hidden;
+	list-style: none;
+	border-bottom: 1px solid #eee;
+	background: url(arrow.png) no-repeat right center;
+}
+.allmode-list .allmode-item:last-child {
+	border-bottom: none;
+}
+.allmode-list .allmode-date {													/* Item DATE */
+	float: left;
+	display: block;
+	margin-right: 16px;
+	width: 56px;																/* Change the width to suit your date format */
+	font-size: 15px;
+	color: #888888;
+}
+.allmode-list .allmode-title {													/* Item TITLE */
+	margin: 0 0 5px 0;
+	font: 15px/18px Arial, Helvetica, sans-serif;
+}
+.allmode-list .allmode-title a {
+	font-weight: bold;
+	text-decoration: none;
+	color: #b83b0a;
+}
+.allmode-list .allmode-title a:hover {
+	text-decoration: underline;
+	color: #333333;
+}
+
+
+.allmode-list .allmode-name,
+.allmode-list .allmode-showall,
+.allmode-list .allmode-itemsbox {
+	border-radius: 3px;
+}

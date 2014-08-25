@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<style>
+	<info>
+		<name>gk_appsite1</name>
+		<author>GavickPro</author>
+		<desc>First Image Show GK4 style for Appsite template.</desc>
+		<version>1.0</version>
+	</info>
+	<config>	
+		<field type="text" name="image_width" label="Image width" desc="Slide image width in pixels" default="166" unit="px" />
+		<field type="text" name="image_height" label="Image height" desc="Slide image height in pixels" default="166" unit="px" />
+		<field type="text" name="image_bg" label="Image background color" desc="Slide image background as hexdecimal value" default="#000000" unit="" />	
+		<field type="text" name="quality" label="Image quality" desc="Quality of images (used in the JPG images) - percentage value between 0 and 100." default="95" unit="%" />
+		
+		
+		<field type="switch" name="show_text_block" label="Show text block" default="1" desc="You can enable showing block with slide text." class="gk_switch" />
+		<field type="text" name="text_block_x" label="Text block X" desc="Left margin for text block" default="0" unit="px" />
+		<field type="text" name="text_block_y" label="Text block Y" desc="Top margin for text block" default="215" unit="px" />
+		<field type="text" name="text_block_width" label="Text block width" desc="Width of text block" default="1000" unit="px" />
+		<field type="text" name="image_y" label="Image Y" desc="Top margin for the slide images" default="65" unit="px" />
+		<field type="text" name="module_height" label="Module height" desc="Module block height" default="450" unit="px" />
+		
+		<field type="switch" name="pagination" label="Pagination" desc="You can enable showing interface (prev/next buttons)." default="1" class="gk_switch" />	
+		<field type="switch" name="slide_links" label="Slide links" desc="You can enable links in the slides." default="1" class="gk_switch" />
+		<field type="text" name="animation_speed" label="Animation speed" desc="Animation speed in miliseconds" default="500" unit="ms" />
+		<field type="text" name="animation_interval" label="Animation interval" desc="Animation interval in miliseconds" default="5000" unit="ms" />
+		<field type="switch" name="autoanimation" label="Autoanimation" desc="Autoanimation of the slides" default="1" class="gk_switch" />
+	</config>
+</style>

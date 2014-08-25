@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<metadata>
+	<layout title="COM_ZHYANDEXMAP_ZHYANDEXMAP_VIEW_DEFAULT_TITLE">
+		<map>COM_ZHYANDEXMAP_ZHYANDEXMAP_VIEW_DEFAULT_DESC</map>
+	</layout>
+	<fields
+		name="request"
+		addfieldpath="/administrator/components/com_zhyandexmap/models/fields"
+	>
+		<fieldset name="request">
+			<field
+				name="id"
+				type="zhyandexmap"
+				label="COM_ZHYANDEXMAP_MAP_VIEW_FIELD_TITLE_LABEL"
+				description="COM_ZHYANDEXMAP_MAP_VIEW_FIELD_TITLE_DESC"
+			/>
+			<field
+				name="placemarklistid"
+				type="text"
+				default=""
+				label="COM_ZHYANDEXMAP_MAP_VIEW_FIELD_PLACEMARKLIST_LABEL"
+				description="COM_ZHYANDEXMAP_MAP_VIEW_FIELD_PLACEMARKLIST_DESC"
+			/>
+			<field
+				name="externalmarkerlink"
+				type="radio"
+                size="60"
+				default="0"
+				label="COM_ZHYANDEXMAP_MAP_VIEW_FIELD_EXTERNALMARKERLINK_LABEL"
+				description="COM_ZHYANDEXMAP_MAP_VIEW_FIELD_EXTERNALMARKERLINK_DESC"
+				>
+				<option	value="0">JNO</option>
+				<option	value="1">JYES</option>
+			</field>
+		</fieldset>
+	</fields>
+
+</metadata>

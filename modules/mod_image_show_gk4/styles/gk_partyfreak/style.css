@@ -1,0 +1,36 @@
+/**
+* GK Image Show - CSS style
+* @package Joomla!
+* @Copyright (C) 2009-2011 Gavick.com
+* @ All rights reserved
+* @ Joomla! is Free Software
+* @ Released under GNU/GPL License : http://www.gnu.org/copyleft/gpl.html
+* @ version $Revision: GK4 1.0 $
+**/
+ 
+.gkIsWrapper-gk_partyfreak { overflow:hidden; position:relative; }
+.gkIsWrapper-gk_partyfreak .gkIsImage { display:block; position:relative; overflow:hidden; background:#0d0d0d; }
+.gkIsWrapper-gk_partyfreak .gkIsPreloader { width:100%; height:100%; position:absolute; z-index:60; top:0; left:0; background:#0d0d0d url('images/loader.gif') no-repeat center center; }
+.gkIsWrapper-gk_partyfreak .gkIsSlide { position:absolute; left:0; top:0; visibility:hidden; }
+.gkIsWrapper-gk_partyfreak .gkIsSlide:first-child { visibility:visible; }
+.gkIsWrapper-gk_partyfreak .gkIsImageWrap { float:left; }
+.gkIsWrapper-gk_partyfreak .gkIsThumbs { float:right; }
+.gkIsWrapper-gk_partyfreak .gkIsBtnUp { background:#0d0d0d url('images/image_show_interface.png') no-repeat center top; height:20px; }
+.gkIsWrapper-gk_partyfreak .gkIsBtnDown { background:#0d0d0d url('images/image_show_interface.png') no-repeat center -20px; height:20px; }
+.gkIsWrapper-gk_partyfreak .gkIsBtnUp:hover { background-position:center -40px; cursor:pointer; }
+.gkIsWrapper-gk_partyfreak .gkIsBtnDown:hover { background-position:center -60px; cursor:pointer; }
+.gkIsWrapper-gk_partyfreak .gkIsThumbsSlider1 { overflow:hidden; }
+.gkIsWrapper-gk_partyfreak .gkIsThumb { background:#0d0d0d; cursor:pointer; }
+.gkIsWrapper-gk_partyfreak .gkIsThumb img { float:left; display:block; }
+.gkIsWrapper-gk_partyfreak .gkIsThumb h4 { padding: 6px 0 0 12px; font-size:11px; color:#6c6c6c; line-height: 14px; margin-bottom: 4px; }
+.gkIsWrapper-gk_partyfreak .gkIsThumb p { font-size:10px; padding:0 5px 0 0; color:#494949; line-height: 14px; }
+.gkIsWrapper-gk_partyfreak .gkIsTextData { display:none; }
+.gkIsWrapper-gk_partyfreak .gkIsText { position:absolute; width:100%; z-index:50; bottom:0; background:transparent; }
+.gkIsWrapper-gk_partyfreak .gkIsTextBg { position:absolute; width:100%; z-index:49; bottom:0; background:#0d0d0d; opacity:0.85; filter: alpha(opacity = 85); }
+.gkIsWrapper-gk_partyfreak .gkIsText h4 { font-size:24px; color:#fff; padding:0 28px; }
+.gkIsWrapper-gk_partyfreak .gkIsText p { font-size:12px; color:#767676; padding:0 28px; margin-top:-6px; line-height: 16px; }
+.gkIsWrapper-gk_partyfreak .gkClear { clear: both; }
+.gkIsWrapper-gk_partyfreak .gkIsHeaderTop{padding:12px 0 0 0;background:transparent url('images/header_top.png') no-repeat right 0;}
+.gkIsWrapper-gk_partyfreak .gkIsHeaderBottom{padding:0 0 12px 0;background:transparent url('images/header_bottom.png') no-repeat left bottom;}
+.gkIsWrapper-gk_partyfreak .gkIsHeaderLeft{padding:0 0 0 12px;background:transparent url('images/header_left.png') no-repeat left 0;}
+.gkIsWrapper-gk_partyfreak .gkIsHeaderRight{padding:0 12px 0 0;background:transparent url('images/header_right.png') no-repeat right bottom;}

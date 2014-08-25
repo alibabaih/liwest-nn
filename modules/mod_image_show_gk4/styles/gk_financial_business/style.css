@@ -1,0 +1,29 @@
+/**
+* GK Image Show - CSS style
+* @package Joomla!
+* @Copyright (C) 2009-2011 Gavick.com
+* @ All rights reserved
+* @ Joomla! is Free Software
+* @ Released under GNU/GPL License : http://www.gnu.org/copyleft/gpl.html
+* @ version $Revision: GK4 1.0 $
+**/
+
+.gkIsWrapper-gk_financial_business { position:relative; width:100%; overflow:hidden; }
+.gkIsWrapper-gk_financial_business .gkIsSlides { position:relative; overflow:hidden; }
+.gkIsWrapper-gk_financial_business .gkIsSlide { position:absolute; left: 0; visibility:hidden; }
+.gkIsWrapper-gk_financial_business .gkIsSlide:first-child { visibility:visible; }
+.slide-links .gkIsSlide { cursor:pointer; }
+.gkIsWrapper-gk_financial_business .gkIsImage { overflow:hidden; position: relative; width: 100%; }
+.gkIsWrapper-gk_financial_business .gkIsTextData { display:none; }
+.gkIsWrapper-gk_financial_business .gkIsPreloader { position:absolute; z-index:128; top:0; left:0; background:#fff url('images/loader.gif') no-repeat center center; width:100%; height:100%; text-indent:-999em; }
+.gkIsWrapper-gk_financial_business .gkIsText { height: 68px; background: #000; position: relative; }
+.gkIsWrapper-gk_financial_business .gkIsTimeline { background:transparent url('images/is_timeline.png') repeat-x -12px bottom; height:6px; border-radius:12px; -moz-border-radius: 12px; -webkit-border-radius: 12px; margin: 0 18px; clear: both; position: relative; top: 12px; }
+.gkIsWrapper-gk_financial_business .gkIsProgress { float: left; text-indent: -999em; width: 0; height: 6px; background: transparent url('images/is_timeline.png') repeat-x -12px 0; border-radius:12px; -moz-border-radius: 12px; -webkit-border-radius: 12px; }
+.gkIsWrapper-gk_financial_business .gkIsTextTitle { float: left; }
+.gkIsWrapper-gk_financial_business .gkIsTextTitle span:first-child { height: 20px; line-height:20px; font-size: 11px; color: #9f9f9f; float: left; display: block; padding: 0 18px; margin: 17px 18px 0 0; border-right: 1px solid #4c4c4c; }
+.gkIsWrapper-gk_financial_business .gkIsTextTitle a { color: #fff; font-size: 24px; line-height: 24px; height: 24px; float: left; display: block; margin-top: 16px; }
+.gkIsWrapper-gk_financial_business .gkIsTextTitle a:hover { color: #3477bb; text-decoration: none; }
+.gkIsWrapper-gk_financial_business .gkIsTextInterface { float: right; margin: 22px 18px 0 0; }
+.gkIsWrapper-gk_financial_business .gkIsTextInterface span { width: 10px; height: 10px; background: transparent url('images/is_pagination.png') no-repeat 0 0; display: block; margin-left: 4px; float: left; text-indent:-999em; cursor: pointer; }
+.gkIsWrapper-gk_financial_business .gkIsTextInterface span.active,
+.gkIsWrapper-gk_financial_business .gkIsTextInterface span:hover { background-position: -10px 0; }

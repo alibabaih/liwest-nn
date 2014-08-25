@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" version="2.5" method="upgrade" group="system">
+    <name>System - hyphenator</name>
+    <creationDate>08-Feb-2012</creationDate>
+    <author>OSTree Team</author>
+    <authorEmail>ostree.org@gmail.com</authorEmail>
+    <authorUrl>http://www.ostree.org</authorUrl>
+    <copyright>http://www.ostree.org</copyright>
+    <license></license>
+    <version>1.0.0</version>
+    <description>http://code.google.com/p/hyphenator/</description>   
+    <files>
+        <filename plugin="hyphenator">hyphenator.php</filename>
+        <filename>index.html</filename>
+    </files>
+    <media>
+        <folder>hyphenator</folder>
+    </media>
+</extension>

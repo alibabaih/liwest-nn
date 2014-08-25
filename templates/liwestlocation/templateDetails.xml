@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.6//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="1.7" type="template" client="site">
+	<name>liwestLocation</name>
+	<creationDate>26-06-2013</creationDate>
+	<author>Василий Щитов</author>
+	<authorEmail>alibabaih@gmail.com</authorEmail>
+	<authorUrl>http://www.liwest-nn.ru</authorUrl>
+	<copyright>Copyright (C) 2013</copyright>
+	<license>GNU General Public License version 2</license>
+	<version>1.7.3</version>
+	<description>Liwest main template</description>
+
+	<files>
+		<folder>css</folder>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+	</files>
+
+	<positions>
+        <position>background</position>
+		<position>mainbody</position>
+		<position>main_menu</position>
+		<position>help_user_shop</position>
+		<position>search_shop</position>
+		<position>breadcrumbs</position>
+		<position>slider</position>
+		<position>mainbody</position>
+		<position>topName</position>
+		<position>teaser</position>
+        <position>top_wiget</position>
+		<position>customer-support</position>
+		<position>mainbody-right</position>
+		<position>mainbody-left</position>
+		<position>top-menu</position>
+		<position>logo</position>
+		<position>blog</position>
+		<position>articles_preview</position>
+		<position>map</position>
+		<position>location</position>
+		<position>slider-text</position>
+		<position>offering</position>
+		<position>footer_menu</position>
+		<position>compnent-right</position>
+		<position>aside</position>
+		<position>copyright</position>
+		<position>debag</position>
+	</positions>
+</extension>

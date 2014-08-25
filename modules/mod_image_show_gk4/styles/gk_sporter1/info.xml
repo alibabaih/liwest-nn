@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<style>
+	<info>
+		<name>gk_sporter1</name>
+		<author>GavickPro</author>
+		<desc>First Image Show GK4 style for Sporter template.</desc>
+		<version>1.0</version>
+	</info>
+	<config>
+		<field type="text" name="image_width" label="Image width" desc="Slide image width in pixels" default="637" unit="px" />
+		<field type="text" name="image_height" label="Image height" desc="Slide image height in pixels" default="346" unit="px" />
+		<field type="text" name="image_bg" label="Image background color" desc="Slide image background as hexdecimal value" default="#000000" unit="" />	
+		<field type="text" name="quality" label="Image quality" desc="Quality of images (used in the JPG images) - percentage value between 0 and 100." default="95" unit="%" />	
+
+
+		<field type="text" name="text_position" label="Text position" default="246" desc="Top margin for text area" unit="px" />
+		<field type="text" name="text_height" label="Text height" default="90" desc="Height of the text area" unit="px" />	
+		<field type="switch" name="show_text_block" label="Show text block" default="1" desc="Enable/disable showing overlay with article description" class="gk_switch" />
+		<field type="switch" name="pagination" label="Pagination" default="1" desc="Enable/disable showing pagination" class="gk_switch" />
+		<field type="text" name="pagination_cols" label="Pagination columns" default="4" desc="Amount of pagination buttons in one row" unit="" />
+		<field type="switch" name="pagination_date" label="Pagination date" default="1" desc="Enable/disable showing date in the pagination buttons" class="gk_switch" />
+		<field type="text" name="pagination_date_format" label="Pagination date format" default="d m, Y" desc="format of the date visible in the pagination buttons, based on date PHP function" unit="" />
+		<field type="text" name="pagination_limit" label="Pagination limit" default="39" desc="Chars limit for the pagination button title" unit="" />
+		<field type="text" name="readmore_text" label="Readmore text" default="Read more" desc="Text used in readmore button" unit="" />
+		<field type="select" name="pagination_position" label="Pagination position" desc="Position of the pagination" default="right" class="">
+			<option value="left">Left</option>
+			<option value="right">Right</option>
+		</field>
+		<field type="switch" name="clean_xhtml" label="Clean (X)HTML" desc="Enable/disable cleaning of XHTML tags in article content" default="1" class="gk_switch" />	
+		<field type="text" name="wordcount" label="Wordcount" default="24" desc="Amount of words in the slide text" unit="" />
+		<field type="text" name="title_char_amount" label="Title char amount" default="27" desc="Amount of chars in the slide title" unit="" />
+		<field type="switch" name="show_info" label="Show info" desc="Enable/disable showing of article informations" default="1" class="gk_switch" />	
+		<field type="text" name="date_format" label="Date format" default="F d, Y" desc="Format of the date based on date PHP function" unit="" />
+		<field type="select" name="author_name" label="Author name" desc="Decides what type of user name will be used" default="username" class="">
+			<option value="name">Name</option>
+			<option value="username">Username</option>
+		</field>
+		<field type="text" name="info_format" label="Info block format" default="Written: %date by %author" desc="Format of the info section. %date and %author are replaced by date and author name in this string" unit="" />
+		
+		
+		<field type="switch" name="slide_links" label="Slide links" desc="You can enable links in the slides." default="1" class="gk_switch" />
+		<field type="text" name="animation_speed" label="Animation speed" desc="Animation speed in miliseconds" default="500" unit="ms" />
+		<field type="text" name="animation_interval" label="Animation interval" desc="Animation interval in miliseconds" default="5000" unit="ms" />
+		<field type="switch" name="autoanimation" label="Autoanimation" desc="Autoanimation of the slides" default="1" class="gk_switch" />
+		<field type="select" name="animation_type" label="Animation type" desc="Animation type used in the slideshow" default="opacity" class="">
+			<option value="opacity">Opacity</option>
+			<option value="top">Top</option>
+			<option value="bottom">Bottom</option>
+			<option value="left">Left</option>
+			<option value="right">Right</option>
+		</field>
+	</config>
+</style>

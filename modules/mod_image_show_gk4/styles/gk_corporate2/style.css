@@ -1,0 +1,52 @@
+/**
+* GK Image Show - CSS style
+* @package Joomla!
+* @Copyright (C) 2009-2011 Gavick.com
+* @ All rights reserved
+* @ Joomla! is Free Software
+* @ Released under GNU/GPL License : http://www.gnu.org/copyleft/gpl.html
+* @ version $Revision: GK4 1.0 $
+**/
+
+.gkIsWrapper-gk_corporate2 { position:relative; background:transparent url('images/header_bg.jpg') no-repeat 0 0; }
+.gkIsWrapper-gk_corporate2 .gkIsImage { display:block; position:absolute; overflow:hidden; }
+.gkIsWrapper-gk_corporate2 .gkIsPreloader { width:100%; height:100%; position:absolute; z-index:60; top:0; left:0; background:#7f786e url('images/header_bg.jpg') no-repeat 0 0; }
+.gkIsWrapper-gk_corporate2 .gkIsPreloader span { text-indent:-999em; display:block; width:100%; height:100%; background:transparent url('images/loader.gif') no-repeat center center; }
+.gkIsWrapper-gk_corporate2 .gkIsSlide { position:absolute; left:0; top:0; visibility: hidden; }
+.gkIsWrapper-gk_corporate2 .gkIsSlide:first-child { visibility: visible; }
+.gkIsWrapper-gk_corporate2 .gkIsPrev,
+.gkIsWrapper-gk_corporate2 .gkIsNext { width:23px; height:46px; background:transparent url('images/arrows.png') no-repeat 0 0; position:absolute; cursor:pointer; margin:0; right:-35px; }
+.gkIsWrapper-gk_corporate2 .gkIsPrev div,
+.gkIsWrapper-gk_corporate2 .gkIsNext div { text-indent:-999em; width:23px; height:46px; background:transparent url('../images/arrows.png') no-repeat 0 0; display:none; }
+.gkIsWrapper-gk_corporate2 .gkIsPrev div { background-position:0 -46px!important; }
+.gkIsWrapper-gk_corporate2 .gkIsNext div { background-position:-23px -46px!important; }
+.gkIsWrapper-gk_corporate2 .gkIsPrev { right:inherit; left:-35px; }
+.gkIsWrapper-gk_corporate2 .gkIsNext { background-position:-23px 0!important; }
+.gkIsWrapper-gk_corporate2 .gkIsArt { float:left; visibility:hidden;}
+.gkIsWrapper-gk_corporate2 .gkIsArt.gkFirstSlide { visibility:visible; }
+.gkIsWrapper-gk_corporate2 .gkIsArt div { padding:50px 40px 50px 50px; }
+.gkIsWrapper-gk_corporate2 .gkIsList.gkRightFloat div { padding:50px 35px 50px 0; }
+.gkIsWrapper-gk_corporate2 .gkIsList.gkLeftFloat { float:left; }
+.gkIsWrapper-gk_corporate2 .gkIsList.gkLeftFloat div { padding:50px 0 50px 50px; }
+.gkIsWrapper-gk_corporate2 .gkIsList.gkRightFloat { float:right; }
+.gkIsWrapper-gk_corporate2 .gkIsImage.gkRightFloat { top: 0; right: 0; }
+.gkIsWrapper-gk_corporate2 .gkIsImage.gkLeftFloat { top: 0; left: 0; }
+.gkIsWrapper-gk_corporate2 .gkIsTextItem h4,
+.gkIsWrapper-gk_corporate2 .gkIsArt h4 { font-size:25px; line-height:30px; font-weight:bold; text-transform:uppercase; letter-spacing:-1px; color:#fff; }
+.gkIsWrapper-gk_corporate2 .gkIsTextItem h4 a,
+.gkIsWrapper-gk_corporate2 .gkIsArt h4 a { color:#fff; }
+.gkIsWrapper-gk_corporate2 .gkIsTextItem h4 a:hover,
+.gkIsWrapper-gk_corporate2 .gkIsArt h4 a:hover { color:#a7a29c; text-decoration:none; }
+.gkIsWrapper-gk_corporate2 .gkIsArt p { font-family: Arial, Helvetica, sans-serif; font-size:17px; color:#fff; margin:20px 0 }
+.gkIsWrapper-gk_corporate2 .gkIsArt a.readon { height:25px; line-height:25px; padding-left:6px; padding-right:6px; font-weight:normal; background:#fff; color:#a7a29c; display:block; float:left; width:auto; }
+.gkIsWrapper-gk_corporate2 .gkIsArt a.readon:hover { background:#736a61; color:#fff; cursor:pointer; }
+.gkIsWrapper-gk_corporate2 .gkIsList h3 { padding:10px 0 0 0; }
+.gkIsWrapper-gk_corporate2 .gkIsList h3 .gkTitleSmall,
+.gkIsWrapper-gk_corporate2 .gkIsList h3 .gkTitleBig { color:#fff; font-size:11px; text-transform:uppercase; clear:both; display:block; }
+.gkIsWrapper-gk_corporate2 .gkIsList h3 .gkTitleSmall { line-height:11px; }
+.gkIsWrapper-gk_corporate2 .gkIsList h3 .gkTitleBig { font-size:16px; line-height:18px; }
+.gkIsWrapper-gk_corporate2 .gkIsList ul { padding:0!important; }
+.gkIsWrapper-gk_corporate2 .gkIsList li { border-top:1px solid #bbb!important; color:#d6d6d6; background:none; padding-left:0!important; height:auto!important; line-height:24px; background:none!important; cursor:pointer; list-style-type:none;}
+.gkIsWrapper-gk_corporate2 .gkIsList li.active { color:#fff; }
+.gkIsWrapper-gk_corporate2 .gkIsList li:first-child { border-top:none; }
+.gkIsWrapper-gk_corporate2 .gkUnvisible{ height:1px; left:-10000px; overflow:hidden; position:absolute; top:0; width:1px; } 

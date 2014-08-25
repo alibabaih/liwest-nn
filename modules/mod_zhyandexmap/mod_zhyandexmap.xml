@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  -->
+<extension type="module" version="1.6.0" method="upgrade">
+
+	<name>MOD_ZHYANDEXMAP</name>
+	<!-- The following elements are optional and free of formatting conttraints -->
+	<creationDate>March 2012</creationDate>
+	<author>Zhuk Dmitry</author>
+	<authorEmail>ZhukDL@gmail.com</authorEmail>
+	<authorUrl>http://zhuk.cc</authorUrl>
+	<copyright>Copyright</copyright>
+	<license>http://www.gnu.org/licenseses/gpl-2.0.html GNU/GPLv2 or later</license>
+	<!--  The version string is recorded in the components table -->
+	<version>2.0.3.0</version>
+	<!-- The description is optional and defaults to the name -->
+	<description>MOD_ZHYANDEXMAP_DESCRIPTION</description>
+
+
+	<!-- Note the folder attribute: This attribute describes what to copy
+		into the module folder -->
+	<files>
+		<filename module="mod_zhyandexmap">mod_zhyandexmap.php</filename>
+		<filename>mod_zhyandexmap.xml</filename>
+		<filename>index.html</filename>
+		<folder>helpers</folder>
+		<folder>tmpl</folder>
+		<folder>language</folder>
+	</files>
+	<languages>
+                <language tag="en-GB">language/en-GB/en-GB.mod_zhyandexmap.ini</language>
+                <language tag="ru-RU">language/ru-RU/ru-RU.mod_zhyandexmap.ini</language>
+    </languages>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="mapid"
+					type="text"
+					default=""
+					label="MOD_ZHYANDEXMAP_MAP_ID_LABEL"
+					description="MOD_ZHYANDEXMAP_MAP_ID_DESC"
+				/>
+				<field
+					name="placemarklistid"
+					type="text"
+					default=""
+					label="MOD_ZHYANDEXMAP_MAP_PLACEMARKLIST_LABEL"
+					description="MOD_ZHYANDEXMAP_MAP_PLACEMARKLIST_DESC"
+				/>
+			</fieldset>
+			<fieldset name="advanced">
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					default=""
+					label="MOD_ZHYANDEXMAP_MAP_CSSCLASSSUFFIX_LABEL"
+					description="MOD_ZHYANDEXMAP_MAP_CSSCLASSSUFFIX_DESC"
+				/>
+			</fieldset>
+		</fields>
+	</config>	
+        <!-- UPDATESERVER DEFINITION -->
+        <updateservers>
+                <!-- Note: No spaces or linebreaks allowed between the server tags -->
+                <server type="extension" priority="1" name="Zh YandexMap Module Update Site">http://zhuk.cc/update/mod_zhyandexmap/extension.xml</server>
+        </updateservers>
+
+</extension>

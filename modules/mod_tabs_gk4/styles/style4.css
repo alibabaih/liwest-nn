@@ -1,0 +1,31 @@
+/**
+* GK Tab - style 2
+* @package Joomla!
+* @Copyright (C) 2009-2011 Gavick.com
+* @ All rights reserved
+* @ Joomla! is Free Software
+* @ Released under GNU/GPL License : http://www.gnu.org/copyleft/gpl.html
+* @version $Revision: GK4 1.0 $
+**/
+
+.gkTabItemSpace{ padding: 10px; }
+.gkTab { position: relative; }
+.gkTabWrap { margin: 0 auto; }
+.gkTabs { list-style: none; margin: 0 0 0 18px!important; padding: 0!important; background:none!important; border: none!important; }
+ul.gkTabs li { list-style-type: none; background: none!important; float: left; cursor: pointer; margin: 0 0 -1px 0!important; position: relative; padding: 0 9px!important; border:none!important; }
+.gkTabs li span { display: block; height: 25px; line-height: 25px; padding: 0 18px 0 9px; font-size: 10px; color: #666; text-transform:uppercase; }
+ul.gkTabs li.active { background: url('../images/style4/bg_tab-l.png') no-repeat 0 0!important; }
+ul.gkTabs li.active span { background: url('../images/style4/bg_tab-r.png') no-repeat 100% 0!important; color: #aa2207; }
+.gkTabContainer0 { clear: both; border-top: 1px solid #d5d5d5; }
+.gkTabContainer1 { overflow: hidden; }
+.gkTabItem { float: left; overflow: hidden; padding: 10px; }
+.gkTabButtonNext,
+.gkTabButtonPrev { width: 24px; height: 24px; background: url('../images/style4/b_next.png') no-repeat 0 0; cursor: pointer; position: absolute; top: 43%; right: 0; text-indent:-999em; }
+.gkTabButtonPrev { background: url('../images/style4/b_prev.png') no-repeat 0 0; left: 0; right:inherit; }
+.gkTabButtonNext:hover { background: url('../images/style4/b_next.png') no-repeat 100% 0; }
+.gkTabButtonPrev:hover { background: url('../images/style4/b_prev.png') no-repeat 100% 0; }
+.gkTabContainer0,
+.gkTabContainer1,
+.gkTabContainer2 { position:relative; }
+.gkTabItem { position: absolute; left: -999em; top: 0; width: 100%; }
+.gkTabItem.active { position: static; left: 0; }

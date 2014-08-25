@@ -1,0 +1,79 @@
+/* balloon toolbar */
+
+.zhym-placemark-action-div
+{
+	width:100%;
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+
+.zhym-placemark-action-toolbar
+{
+	margin: 0;
+	padding: 2px 2px 2px 2px;
+	border-top: 1px dotted black;
+	border-bottom: 1px dotted black;
+	height: 25px;
+}
+
+
+.zhym-placemark-action-toolbaritem
+{
+	margin: 0;
+	padding: 0 5px;
+	display: inline;
+	text-align:left;
+	vertical-align:top;
+	height: 25px;
+}
+
+a.zhym-placemark-action-link-a:visited, 
+a.zhym-placemark-action-link-a:link
+{
+	text-decoration: none;
+}
+
+
+/* route table */
+
+.zhym-route-table
+{
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.zhym-route-tablebody
+{
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.zhym-route-table-tr
+{
+	margin: 0;
+	border: 1px solid #CDCDCD;
+	vertical-align:top;
+	padding: 5px 1px 5px 1px;
+	background: #EEEEEE;
+}
+
+.zhym-route-table-td
+{
+	margin: 0;
+	padding: 5px;
+}
+
+.zhym-route-table-td-waypoint
+{
+	margin: 0;
+	padding: 10px;
+}
+
+.zhym-route-table-tr-step
+{
+	margin: 0;
+	border-top: 1px solid #CDCDCD;	
+	vertical-align:top;
+}

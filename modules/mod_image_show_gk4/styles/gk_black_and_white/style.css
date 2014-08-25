@@ -1,0 +1,29 @@
+/**
+* GK Image Show - CSS style
+* @package Joomla!
+* @Copyright (C) 2009-2011 Gavick.com
+* @ All rights reserved
+* @ Joomla! is Free Software
+* @ Released under GNU/GPL License : http://www.gnu.org/copyleft/gpl.html
+* @ version $Revision: GK4 1.0 $
+**/
+ 
+.gkIsWrapper-gk_black_and_white { position:relative; width:auto; float:left; overflow:hidden; }
+.gkIsWrapper-gk_black_and_white .gkIsSlides { position:relative; overflow:hidden; }
+.gkIsWrapper-gk_black_and_white .gkIsSlide { position:absolute; left:0; top:0; }
+.gkIsWrapper-gk_black_and_white.slide-links .gkIsSlide,
+.gkIsWrapper-gk_black_and_white.slide-links .gkIsStripe { cursor:pointer; }
+.gkIsWrapper-gk_black_and_white .gkIsTextData { /*unvisible*/ display:none; }
+.gkIsWrapper-gk_black_and_white .gkIsPreloader { position:absolute; z-index:128; top:0; left:0; background:#fff url('images/loader.gif') no-repeat center center; width:100%; height:100%; text-indent:-999em; }
+.gkIsWrapper-gk_black_and_white .gkIsText { position: absolute; z-index:100; background: transparent url('images/gk_is_bg.png') repeat 0 0; }
+.gkIsWrapper-gk_black_and_white .gkIsText h4 { padding:20px 15px 15px; font-size:28px; line-height: 28px; font-family: Georgia, "Times New Roman", Times, serif !important; font-weight: normal; font-style: italic }
+.gkIsWrapper-gk_black_and_white .gkIsText h4 a { color: #373737; }
+.gkIsWrapper-gk_black_and_white .gkIsText h4 a span { color: #999 }
+.gkIsWrapper-gk_black_and_white .gkIsText h4 a:hover { color: #858585; }
+.gkIsWrapper-gk_black_and_white .gkIsText p { padding:0 15px 15px 15px; }
+.gkIsWrapper-gk_black_and_white .gkIsText .readon { border:none; background:transparent url('images/gk_is_readon.png') no-repeat center center; text-indent:-999em; display:inline-block; float:none; }
+.gkIsWrapper-gk_black_and_white .gkIsText .readon:hover { background:transparent url('images/gk_is_readon.png') no-repeat center center; }
+.gkIsWrapper-gk_black_and_white .gkIsStripe { position: absolute; top: 0; float: left; height: 100%; z-index: 99; }
+.gkIsWrapper-gk_black_and_white .gkIsPagination { position:absolute; z-index:101; list-style-type:none; }
+.gkIsWrapper-gk_black_and_white .gkIsPagination li { width:auto; cursor:pointer; float:left; margin-right:15px; border:none!important; color:#fff; font-size:20px; font-family: Georgia, "Times New Roman", Times, serif !important; }
+.gkIsWrapper-gk_black_and_white .gkIsPagination li.active { color:#ddd; }

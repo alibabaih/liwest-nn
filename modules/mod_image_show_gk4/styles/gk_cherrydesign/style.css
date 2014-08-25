@@ -1,0 +1,40 @@
+/**
+* GK Image Show - CSS style
+* @package Joomla!
+* @Copyright (C) 2009-2011 Gavick.com
+* @ All rights reserved
+* @ Joomla! is Free Software
+* @ Released under GNU/GPL License : http://www.gnu.org/copyleft/gpl.html
+* @ version $Revision: GK4 1.0 $
+**/
+ 
+.gkIsWrapper-gk_cherrydesign { position:relative; }
+.gkIsWrapper-gk_cherrydesign .gkIsImage { position:relative; }
+.gkIsWrapper-gk_cherrydesign .gkIsImage.left,
+.gkIsWrapper-gk_cherrydesign .gkIsPagination.left{float:left;}
+.gkIsWrapper-gk_cherrydesign .gkIsImage.right,
+.gkIsWrapper-gk_cherrydesign .gkIsPagination.right{float:right;}
+.gkIsWrapper-gk_cherrydesign .gkIsOverlay{ position:absolute; z-index:999; width:100%; height:100%; background:transparent url('images/gk_is_overlay.png') repeat 0 0; margin:7px; display:none;}
+.gkIsWrapper-gk_cherrydesign .gkIsOverlay .gkIsTextover { padding: 90px 60px; float: right; width: 70%; }
+.gkIsWrapper-gk_cherrydesign .gkIsOverlay h4 { font-size:48px; line-height: 56px;font-weight:normal; float:right; text-align:right; color:#fff;margin-bottom: 20px; }
+.gkIsWrapper-gk_cherrydesign .gkIsOverlay p { font-size:18px; color:#fff; width:100%; text-align:right; float:right; margin:0 0 20px 0; }
+.gkIsWrapper-gk_cherrydesign .gkIsOverlay .readmore { color:#a44040; font-size:18px; font-style:italic;  width:100%; text-align:right; float:right; clear:both; display:block; background: none!important; border: none!important; }
+.gkIsWrapper-gk_cherrydesign .gkIsOverlay .readmore:hover { color:#fff; }
+.gkIsWrapper-gk_cherrydesign .gkIsOverlay .gk_is_textover { padding:90px 60px; float:right; width:70%; }
+.gkIsWrapper-gk_cherrydesign .gkIsImage.right { left:-14px; }
+.gkIsWrapper-gk_cherrydesign .gkIsPreloader,
+.gkIsWrapper-gk_cherrydesign .gkIsPreloader div { position:absolute; z-index:999; width:100%; height:100%; }
+.gkIsWrapper-gk_cherrydesign .gkIsPreloader div { position:relative; }
+.gkIsWrapper-gk_cherrydesign .gkIsPreloader p { font-size:32px; position:absolute; right:50px; bottom:20px; }
+.gkIsWrapper-gk_cherrydesign .gkIsPreloader { background:#dadada url('images/loader.gif') no-repeat center center; margin:7px; }
+.gkIsWrapper-gk_cherrydesign .gkIsSlide { position:absolute; visibility: hidden; }
+.gkIsWrapper-gk_cherrydesign .gkIsSlide:first-child { visibility: visible; }
+
+.gkIsWrapper-gk_cherrydesign .gkIsText h4 { font-size:34px; font-weight:normal; margin:-10px 100px 0 0; padding:0 20px; }
+.gkIsWrapper-gk_cherrydesign .gkIsText a.readon { position:absolute; z-index:998; right:20px; }
+.gkIsWrapper-gk_cherrydesign .gkIsText { position:absolute; z-index:997; padding:10px 0 20px 0; width:100%; font-size:12px; font-weight:normal; font-family:Arial, sans-serif; margin-right:10px; }
+.gkIsWrapper-gk_cherrydesign .gkIsTextData { display:none; }
+.gkIsWrapper-gk_cherrydesign .gkIsPagination li{ width:33px; height:33px; margin-bottom:10px!important; background:transparent url('images/gk_is_btns.png') no-repeat 0 0; padding:0; font-size:24px; line-height:28px!important; text-align:center; font-size:13px; list-style-type:none; font-family: Georgia, serif; }
+.gkIsWrapper-gk_cherrydesign .gkIsPagination li.active,
+.gkIsWrapper-gk_cherrydesign .gkIsPagination li:hover { background:transparent url('images/gk_is_btns.png') no-repeat 0 bottom; cursor:pointer;  color:#a44040; }
+.gkIsWrapper-gk_cherrydesign .gkIsSlide { padding:6px; border:1px solid #dadada; }

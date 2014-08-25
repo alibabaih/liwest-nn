@@ -1,0 +1,28 @@
+/**
+* GK Image Show - CSS style
+* @package Joomla!
+* @Copyright (C) 2009-2011 Gavick.com
+* @ All rights reserved
+* @ Joomla! is Free Software
+* @ Released under GNU/GPL License : http://www.gnu.org/copyleft/gpl.html
+* @ version $Revision: GK4 1.0 $
+**/
+ 
+.gkIsWrapper-gk_mystore { position:relative; padding: 20px; overflow:hidden; }
+.gkIsWrapper-gk_mystore .gkIsImages { position: relative; overflow: hidden!important; }
+.gkIsWrapper-gk_mystore .gkIsSlides { overflow: hidden; position: absolute; top: 0; left: 0; visibility:hidden; padding: 0; }
+.gkIsWrapper-gk_mystore .gkIsSlides:first-child { visibility:visible; position: relative; }
+.gkIsWrapper-gk_mystore .gkIsSlide { position:relative; float: left; overflow: hidden; }
+
+.gkIsWrapper-gk_mystore .gkIsPreloader { position:absolute; z-index:128; top:0; left:0; background: #fff url('images/loader.gif') no-repeat center center; width:100%; height:100%; text-indent:-999em; }
+
+.gkIsWrapper-gk_mystore .gkIsSlide { border: 1px solid #ebebeb; background: #fff; margin-left: 16px; }
+.gkIsWrapper-gk_mystore .gkIsSlide:first-child { margin-left: 0; }
+.gkIsWrapper-gk_mystore .gkIsSlide:hover { border: 1px solid #e2012d; }
+.gkIsWrapper-gk_mystore .gkIsSlide { -webkit-transition: -webkit-transform 0.5s ease-in-out; -moz-transition: -moz-transform 0.5s ease-in-out; transition: transform 0.5s ease-in; -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); transform: rotate(0deg); }
+.gkIsWrapper-gk_mystore .gkIsSlide.gkIsHidden { -webkit-transform: rotate(15deg); -moz-transform: rotate(15deg); transform: rotate(15deg); }
+
+.gkIsWrapper-gk_mystore .gkIsPagination { list-style-type: none; margin: 14px 0 0 0; padding: 0; text-align: center; width: 100%; }
+.gkIsWrapper-gk_mystore .gkIsPagination li { list-style-type: none; margin: 0 0 0 10px; padding: 0;
+ width: 14px; height: 14px; text-indent: -9999px; background: transparent url('images/is_bullets.png') no-repeat right top; cursor: pointer; display: inline-block; }
+.gkIsWrapper-gk_mystore .gkIsPagination li.active { background-position: left top; }

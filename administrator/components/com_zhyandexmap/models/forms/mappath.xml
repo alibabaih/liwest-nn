@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form
+	addrulepath="/administrator/components/com_zhyandexmap/models/rules"
+>
+        <fieldset name="details">
+                <field
+                        name="id"
+                        type="hidden"
+                />
+                <field
+                        name="title"
+                        type="text"
+                        label="COM_ZHYANDEXMAP_MAPPATH_DETAIL_TITLE_LABEL"
+                        description="COM_ZHYANDEXMAP_MAPPATH_DETAIL_TITLE_DESC"
+                        size="60"
+                        class="inputbox"
+						required="true"
+                        default=""
+                />
+                <field
+                        name="description"
+                        type="text"
+                        label="COM_ZHYANDEXMAP_MAPPATH_DETAIL_DESCRIPTION_LABEL"
+                        description="COM_ZHYANDEXMAP_MAPPATH_DETAIL_DESCRIPTION_DESC"
+                        size="100"
+                        class="inputbox"
+						required="false"
+                        default=""
+                />
+				<field 
+					type="spacer" 
+					name="spacer1" 
+					label=""
+					hr="false" 
+				/>
+                <field
+                        name="descriptionhtml"
+                        type="editor"
+                        label="COM_ZHYANDEXMAP_MAPPATH_DETAIL_DESCRIPTIONHTML_LABEL"
+                        description="COM_ZHYANDEXMAP_MAPPATH_DETAIL_DESCRIPTIONHTML_DESC"
+                        rows="10"
+						size="100"
+                        class="inputbox"
+						required="false"
+                        default=""
+						filter="raw"
+                />
+				<field 
+					type="spacer" 
+					name="spacer2" 
+					label=""
+					hr="false" 
+				/>
+                <field
+                        name="published"
+						type="radio"
+                        label="COM_ZHYANDEXMAP_MAPPATH_DETAIL_PUBLISHED_LABEL"
+                        description="COM_ZHYANDEXMAP_MAPPATH_DETAIL_PUBLISHED_DESC"
+                        size="30"
+						required="true"
+                        default="1"
+				>
+					<option	value="0">JNO</option>
+					<option	value="1">JYES</option>
+                </field>
+                <field
+                        name="path"
+                        type="text"
+                        label="COM_ZHYANDEXMAP_MAPPATH_DETAIL_PATH_LABEL"
+                        description="COM_ZHYANDEXMAP_MAPPATH_DETAIL_PATH_DESC"
+                        size="100"
+                        class="inputbox"
+						required="true"
+                        default=""
+                />
+                <field
+                        name="objecttype"
+						type="list"
+                        label="COM_ZHYANDEXMAP_MAPPATH_DETAIL_OBJECTTYPE_LABEL"
+                        description="COM_ZHYANDEXMAP_MAPPATH_DETAIL_OBJECTTYPE_DESC"
+                        size="1"
+						required="true"
+                        default="0"
+					>
+					<option	value="0">COM_ZHYANDEXMAP_MAPPATH_DETAIL_OBJECTTYPE_LINE</option>
+					<option	value="1">COM_ZHYANDEXMAP_MAPPATH_DETAIL_OBJECTTYPE_POLYGON</option>
+					<option	value="2">COM_ZHYANDEXMAP_MAPPATH_DETAIL_OBJECTTYPE_CIRCLE</option>
+                </field>
+                <field
+                        name="geodesic"
+						type="radio"
+                        label="COM_ZHYANDEXMAP_MAPPATH_DETAIL_GEODESIC_LABEL"
+                        description="COM_ZHYANDEXMAP_MAPPATH_DETAIL_GEODESIC_DESC"
+                        size="30"
+						required="true"
+                        default="0"
+					>
+					<option	value="0">JNO</option>
+					<option	value="1">JYES</option>
+                </field>
+                <field
+					name="width"
+					type="list"
+					label="COM_ZHYANDEXMAP_MAPPATH_DETAIL_WIDTH_LABEL"
+					description="COM_ZHYANDEXMAP_MAPPATH_DETAIL_WIDTH_DESC"
+					size="1"
+					required="true"
+					default="5"
+				>
+					<option	value="1">1</option>
+					<option	value="2">2</option>
+					<option	value="3">3</option>
+					<option	value="4">4</option>
+					<option	value="5">5</option>
+					<option	value="6">6</option>
+					<option	value="7">7</option>
+					<option	value="8">8</option>
+					<option	value="9">9</option>
+                </field>
+                <field
+                        name="color"
+                        type="text"
+                        label="COM_ZHYANDEXMAP_MAPPATH_DETAIL_COLOR_LABEL"
+                        description="COM_ZHYANDEXMAP_MAPPATH_DETAIL_COLOR_DESC"
+                        size="30"
+                        class="inputbox"
+						required="true"
+                        default="FF0000FF"
+                />
+                <field
+                        name="opacity"
+                        type="text"
+                        label="COM_ZHYANDEXMAP_MAPPATH_DETAIL_OPACITY_LABEL"
+                        description="COM_ZHYANDEXMAP_MAPPATH_DETAIL_OPACITY_DESC"
+                        size="30"
+                        class="inputbox"
+						required="true"
+                        default="1"
+                />
+                <field
+                        name="fillcolor"
+                        type="text"
+                        label="COM_ZHYANDEXMAP_MAPPATH_DETAIL_FILLCOLOR_LABEL"
+                        description="COM_ZHYANDEXMAP_MAPPATH_DETAIL_FILLCOLOR_DESC"
+                        size="30"
+                        class="inputbox"
+						required="false"
+                        default=""
+					/>
+                <field
+                        name="fillopacity"
+                        type="text"
+                        label="COM_ZHYANDEXMAP_MAPPATH_DETAIL_FILLOPACITY_LABEL"
+                        description="COM_ZHYANDEXMAP_MAPPATH_DETAIL_FILLOPACITY_DESC"
+                        size="30"
+                        class="inputbox"
+						required="false"
+                        default=""
+                />
+                <field
+                        name="radius"
+                        type="text"
+                        label="COM_ZHYANDEXMAP_MAPPATH_DETAIL_RADIUS_LABEL"
+                        description="COM_ZHYANDEXMAP_MAPPATH_DETAIL_RADIUS_DESC"
+                        size="30"
+                        class="inputbox"
+						required="false"
+                        default=""
+                />
+		<field
+			name="mapid"
+			type="text"
+			class="inputbox"
+			default=""
+			label="COM_ZHYANDEXMAP_MAPPATH_DETAIL_MAPID_LABEL"
+			description="COM_ZHYANDEXMAP_MAPPATH_DETAIL_MAPID_DESC"
+			required="true"
+		/>
+		<field
+			name="catid"
+			type="category"
+			extension="com_zhyandexmap"
+			class="inputbox"
+			default=""
+			label="COM_ZHYANDEXMAP_MAPPATH_DETAIL_CATEGORY_LABEL"
+			description="COM_ZHYANDEXMAP_MAPPATH_DETAIL_CATEGORY_DESC"
+			required="false"
+		>
+			<option value="0">JOPTION_SELECT_CATEGORY</option>
+		</field>
+                <field
+                        name="helpitem"
+                        type="text"
+                        label="COM_ZHYANDEXMAP_MAPPATH_DETAIL_HELPITEM_LABEL"
+                        description="COM_ZHYANDEXMAP_MAPPATH_DETAIL_HELPITEM_DESC"
+                        size="60"
+                        class="inputbox"
+			required="false"
+                        default=""
+                />
+        </fieldset>
+		
+		<fieldset name="pathadvanced">
+                <field
+                        name="infowincontent"
+						type="list"
+                        label="COM_ZHYANDEXMAP_MAPPATH_DETAIL_CONTENT_LABEL"
+                        description="COM_ZHYANDEXMAP_MAPPATH_DETAIL_CONTENT_DESC"
+                        size="1"
+						required="true"
+                        default="0"
+					>
+					<option	value="0">COM_ZHYANDEXMAP_MAPPATH_DETAIL_CONTENT_TITLE_DESC</option>
+					<option	value="1">COM_ZHYANDEXMAP_MAPPATH_DETAIL_CONTENT_TITLE</option>
+					<option	value="2">COM_ZHYANDEXMAP_MAPPATH_DETAIL_CONTENT_DESCRIPTION</option>
+					<option	value="100">COM_ZHYANDEXMAP_MAPPATH_DETAIL_CONTENT_NONE</option>
+                </field>
+                <field
+                        name="actionbyclick"
+						type="list"
+                        label="COM_ZHYANDEXMAP_MAPPATH_DETAIL_ACTIONBYCLICK_LABEL"
+                        description="COM_ZHYANDEXMAP_MAPPATH_DETAIL_ACTIONBYCLICK_DESC"
+                        size="1"
+						required="true"
+                        default="0"
+					>
+					<option	value="0">COM_ZHYANDEXMAP_MAPPATH_DETAIL_ACTIONBYCLICK_NONE</option>
+					<option	value="1">COM_ZHYANDEXMAP_MAPPATH_DETAIL_ACTIONBYCLICK_INFO</option>
+                </field>
+        </fieldset>
+		
+	<fields name="params">
+		<fieldset
+			name="params"
+			label="JGLOBAL_FIELDSET_DISPLAY_OPTIONS"
+		>
+			<field
+				name="show_category"
+				type="list"
+				label="COM_ZHYANDEXMAP_MAPPATH_DETAIL_SHOW_CATEGORY_LABEL"
+				description="COM_ZHYANDEXMAP_MAPPATH_DETAIL_SHOW_CATEGORY_DESC"
+				default=""
+			>
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+		</fieldset>
+	</fields>
+
+</form>

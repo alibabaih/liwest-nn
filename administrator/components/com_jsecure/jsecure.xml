@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.7.0">
+	<name>jsecure</name>
+	<author>Ajay Lulia</author>
+	<authorEmail>ajay.lulia@joomlaserviceprovider.com</authorEmail>
+	<creationDate>2008-08-28</creationDate>
+	<copyright>This component is released under the GNU/GPL License</copyright>
+	<authorUrl>www.joomlaserviceprovider.com</authorUrl>
+	<version>2.1.10</version>
+	<description>jSecure Authentication has been successfully installed.</description>
+  	<installfile>install.jsecure.php</installfile>
+	<uninstallfile>uninstall.jsecure.php</uninstallfile>
+	<install>
+       <sql>
+             <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+       </sql>
+    </install>
+	<files folder="site">
+		<filename>index.html</filename>
+		<filename>jsecure.php</filename>
+	</files>
+	<administration>
+		<menu img="components/com_jsecure/images/jSecure_icon_16x16.png">COM_JSECURE_AUTHENTICATION</menu>
+		<submenu>
+			<menu link="option=com_jsecure&amp;task=basic" view="basic" alt="BASIC_CONFIGURATION">BASIC_CONFIGURATION</menu>
+			<menu link="option=com_jsecure&amp;task=advanced" view="advanced" alt="ADVANCED_CONFIGURATION">ADVANCED_CONFIGURATION</menu>
+			<menu link="option=com_jsecure&amp;task=log" view="log" alt="VIEW_LOG">VIEW_LOG</menu>
+			<menu link="option=com_jsecure&amp;task=help" view="help" alt="HELP">HELP</menu>
+		</submenu>
+		<files folder="admin">
+			<folder>css</folder>
+			<folder>images</folder>
+			<folder>js</folder>
+			<folder>views</folder>
+			<folder>models</folder>
+			<folder>language</folder>
+			<folder>sysplugin</folder>
+			<folder>sql</folder>
+			<filename>install.jsecure.php</filename>
+			<filename>common.php</filename>
+			<filename>uninstall.jsecure.php</filename>
+			<filename>admin.jsecure.php</filename>
+			<filename>controller.php</filename>
+			<filename>index.html</filename>			
+			<filename>params.php</filename>
+			<filename>toolbar.jsecure.html.php</filename>
+			<filename>toolbar.jsecure.php</filename>
+		</files>
+		<languages folder="admin">
+			<language tag="en-GB">language/en-GB.com_jsecure.ini</language>
+			<language tag="en-GB">language/en-GB.com_jsecure.sys.ini</language>
+		</languages>
+	</administration>
+	<params />
+</install>		

@@ -1,0 +1,581 @@
+/*Блок с меню и логотипом*/
+.navbar-wrapper { z-index: 500; position: absolute; width: 100%; }
+.navbar-wrapper-contacts { z-index: 500; position: absolute; height: 90px; width: 100%; background-image: url(img/top-slider.jpg); }
+
+/*Стилизация логотипа*/
+.text-logo-other { margin-top: -5px; }
+h1.name-logo a {color:#FFF500;}
+h1.name-logo a:hover {color: #ccc;}
+
+@media (min-width: 1400px) and (max-width: 9999px) {
+    .logo { margin-top: 45px; position: relative; margin-bottom: 30px; }
+        .img-logo {/* margin-left: 100px; */}
+        .text-logo { position: absolute; margin-top: -85px; /*margin-left: 175px;*/margin-left: 70px; min-width: 240px; }
+            .name-logo { font-family: "Lobster"; font-size: 30px; color: #FFF500; line-height: 22px; text-shadow: -2px -2px 0 #333, 2px -2px 0 #333, -2px 2px 0 #333, 2px 2px 0 #333; }
+            .slog-logo { font-family: "Lobster"; font-size: 16px; color: #FFF500; line-height: 16px; padding-left: 15px; text-shadow: -1px -1px 0 #333, 1px -1px 0 #333, -1px 1px 0 #333, 1px 1px 0 #333; }
+}
+
+@media (min-width: 768px) and (max-width: 1399px) {
+    .logo { margin-top: 45px; position: relative; margin-bottom: 30px; }
+        .img-logo {display: none;}
+        .text-logo { position: absolute; /*margin-left: 70px;*/ margin-top: 10px; min-width: 220px;}
+            .name-logo { font-family: "Lobster"; font-size: 30px; color: #FFF500; line-height: 22px; text-shadow: -2px -2px 0 #333, 2px -2px 0 #333, -2px 2px 0 #333, 2px 2px 0 #333; }
+            .slog-logo { font-family: "Lobster"; font-size: 16px; color: #FFF500; line-height: 16px; padding-left: 15px; text-shadow: -1px -1px 0 #333, 1px -1px 0 #333, -1px 1px 0 #333, 1px 1px 0 #333; }
+}
+
+@media (max-width: 768px) {
+    .logo { position: relative; margin-bottom: 10px; margin-top: 10px; }
+        .img-logo {display: none;}
+        .text-logo { margin: 0 auto; }
+            .name-logo { font-family: "Lobster"; text-align: center; font-size: 30px; color: #d44c2c; line-height: 22px; text-shadow: -2px -2px 0 #333, 2px -2px 0 #333, -2px 2px 0 #333, 2px 2px 0 #333; }
+            .slog-logo { font-family: "Lobster"; text-align: center; font-size: 16px; color: #d44c2c; line-height: 16px; text-shadow: -1px -1px 0 #333, 1px -1px 0 #333, -1px 1px 0 #333, 1px 1px 0 #333; }
+}
+/*Стоп стилизация логотипа*/
+
+/*Стилизация меню*/
+
+/*Стили для не индексной страницы*/
+.main-menu-other li a { color: #fff; font-family: "Intro"; }
+.main-menu-other li a:hover { color: #e3e3e3; text-decoration: none; }
+.main-menu-other { margin-top: 20px; }
+.main-menu-other li a { color: #fff; font-family: "Intro"; }
+.main-menu-other li a:hover { color: #e3e3e3; text-decoration: none; }
+
+/*Фикс для IE*/
+.title-main-menu { font-family: 'Intro'; }
+
+@media (min-width: 768px) and (max-width: 9999px) {
+    .main-menu { margin-top: 40px; }
+    .main-menu li a { color: #FFF500; font-family: "Intro"; text-shadow: 1px 2px #000; }
+    .main-menu li a:hover { color: #FFFF27; text-decoration: underline; }
+}
+
+@media (max-width: 768px) {
+    .main-menu { margin-top: 0px; text-align: center; }
+    .main-menu li a { color: #fff; font-family: "Intro"; }
+    .main-menu li a:hover { color: #e3e3e3; text-decoration: none; }
+}
+/*Стоп стилизация меню*/
+
+
+/*Cтилизация подложки под меню*/
+div.top-line { height: 100px; }
+img.top-line-img { display: block; height: 100px; width: 100%; }
+
+/*Cтилизация слайдера*/
+div.slider img { border-bottom: 1px solid #535353; box-shadow: 0px 1px 3px rgba(0,0,0, 0.4); }
+
+/*Стилизация кругов*/
+.ch-info1 { margin-top: 25px; }
+.teaser-text-1 { font-family: "Lobster"; text-align: center; padding-top: 15%; color: #181818; font-size: 26px; }
+h3.teaser-text-1 a { color: #181818;    text-decoration: none; }
+
+.ch-info2 {}
+.teaser-text-2 { font-family: "Lobster"; text-align: center; padding-top: 30%; color: #a41f00; font-size: 24px; line-height: 38px; }
+h3.teaser-text-2 a { color: #a41f00; text-decoration: none; }
+
+.ch-info3 {}
+.teaser-text-3 { font-family: "Lobster"; text-align: center; padding-top: 30%; color: #371d17;   font-size: 46px; line-height: 56px; }
+h3.teaser-text-3 a { color: #371d17; text-decoration: none; }
+
+.ch-info4 {}
+.teaser-text-4 { font-family: "Lobster"; text-align: center; padding-top: 30%; color: #fff; }
+h3.teaser-text-4 a { color: #fff; text-decoration: none; }
+
+.ch-info5 { margin-top: 10px; }
+.teaser-text-5 { font-family: "Lobster"; text-align: center; padding-top: 30%; color: #000; font-size: 22px; line-height: 26px; }
+h3.teaser-text-5 a { color: #000; text-decoration: none; }  
+h3.teaser-text-5 a:hover { color: #3A3636; text-decoration: underline; }  
+
+/*Фоновые картинки под текстом*/
+.ch-img-1 { background-image: url(img/circle-1.png); }
+.ch-img-2 { background-image: url(img/circle-2.png); }
+.ch-img-3 { background-image: url(img/circle-3.png); }
+.ch-img-4 { background-image: url(img/circle-4.png); }
+.ch-img-5 { background-image: url(img/circle-5.png); }
+
+/*Изменяем дизайн кругов*/
+@media (min-width: 1720px) {
+    /*Обёртка всех кругов*/
+    .teaser { z-index: 500; position: absolute; top: 20%; width: 100%; }
+    /*Обёртка каждого круга*/
+    .circle-1 { float: left; margin-top: 20px; }
+    .circle-2 { float: left; margin-top: 150px; margin-left: -30px; }
+    .circle-3 { float: left; }
+    .circle-4 { float: left; margin-top: 160px; }
+    .circle-5 { float: left; }
+    /*Примагничиваем каждый блок друг к другу*/
+    .ch-grid1 li { width: 270px; height: 270px; display: inline-block; margin: 10px 0px 0px 0px; }
+    .ch-grid2 li { width: 200px; height: 200px; display: inline-block; margin: 60px 0px 0px 58px; }
+    .ch-grid3 li { width: 300px; height: 300px; display: inline-block; margin: 0px 0px 0px -8px; }
+    .ch-grid4 li { width: 220px; height: 220px; display: inline-block; margin: 10px 0px 0px 36px; }
+    .ch-grid5 li { width: 180px; height: 180px; display: inline-block; margin: 40px 0px 0px -29px; }
+    /*Внешняя окружность*/
+    .ch-inside-item-1 { width: 350px; height: 350px; border-radius: 50%; position: relative; background-color: #4fae99; border: 1px solid #faf26e; }
+    .ch-inside-item-2 { width: 250px; height: 250px; margin-left: -1px; border-radius: 50%; position: relative; background-color: #1b617f; border: 1px solid #faf26e; }
+    .ch-inside-item-3 { width: 380px; height: 380px; margin-left: -1px; border-radius: 50%; position: relative; background-color: #cf4942; border: 1px solid #faf26e; }
+    .ch-inside-item-4 { width: 270px; height: 270px; margin-left: -1px; border-radius: 50%; position: relative; background-color: #72b25d; border: 1px solid #faf26e; }
+    .ch-inside-item-5 { width: 220px; height: 220px; margin-left: -1px; border-radius: 50%; position: relative; background-color: #62367d; border: 1px solid #faf26e; }
+    /*Внутренняя окружность*/
+    .ch-item-1 { width: 270px; height: 270px; border-radius: 50%; position: absolute; cursor: default; margin: 40px; box-shadow: 0 0 80px rgba(0, 0, 0, 0.5); }
+    .ch-item-2 { width: 200px; height: 200px; border-radius: 50%; position: absolute; cursor: default; margin: 25px; box-shadow: 0 0 30px rgba(0, 0, 0, 0.5); }
+    .ch-item-3 { width: 300px; height: 300px; border-radius: 50%; position: absolute; cursor: default; margin: 40px; box-shadow: 0 0 120px rgba(0, 0, 0, 0.5); }
+    .ch-item-4 { width: 220px; height: 220px; border-radius: 50%; position: absolute; cursor: default; margin: 25px; box-shadow: 0 0 120px rgba(0, 0, 0, 0.5); }
+    .ch-item-5 { width: 180px; height: 180px; border-radius: 50%; position: absolute; cursor: default; margin: 20px; box-shadow: 0 0 120px rgba(0, 0, 0, 0.5); }
+}
+
+@media (min-width: 1400px) and (max-width: 1719px) {
+    /*Обёртка всех кругов*/
+    .teaser { z-index: 500; position: absolute; top: 35%; width: 100%; }
+    /*Обёртка каждого круга*/
+    .circle-1 { float: left; margin-top: 20px; }
+    .circle-2 { float: left; margin-top: 150px; margin-left: -30px; }
+    .circle-3 { float: left; }
+    .circle-4 { float: left; margin-top: 160px; }
+    .circle-5 { float: left; }
+    /*Примагничиваем каждый блок друг к другу*/
+    .ch-grid1 li { width: 270px; height: 270px; display: inline-block; margin: 10px 0px 0px 0px; }
+    .ch-grid2 li { width: 200px; height: 200px; display: inline-block; margin: 60px 0px 0px 58px; }
+    .ch-grid3 li { width: 300px; height: 300px; display: inline-block; margin: 0px 0px 0px -8px; }
+    .ch-grid4 li { width: 220px; height: 220px; display: inline-block; margin: 10px 0px 0px 36px; }
+    .ch-grid5 li { width: 180px; height: 180px; display: inline-block; margin: 40px 0px 0px -29px; }
+    /*Внешняя окружность*/
+    .ch-inside-item-1 { width: 350px; height: 350px; border-radius: 50%; position: relative; background-color: #4fae99; border: 1px solid #faf26e; }
+    .ch-inside-item-2 { width: 250px; height: 250px; margin-left: -1px; border-radius: 50%; position: relative; background-color: #1b617f; border: 1px solid #faf26e; }
+    .ch-inside-item-3 { width: 380px; height: 380px; margin-left: -1px; border-radius: 50%; position: relative; background-color: #cf4942; border: 1px solid #faf26e; }
+    .ch-inside-item-4 { width: 270px; height: 270px; margin-left: -1px; border-radius: 50%; position: relative; background-color: #72b25d; border: 1px solid #faf26e; }
+    .ch-inside-item-5 { width: 220px; height: 220px; margin-left: -1px; border-radius: 50%; position: relative; background-color: #62367d; border: 1px solid #faf26e; }
+    /*Внутренняя окружность*/
+    .ch-item-1 { width: 270px; height: 270px; border-radius: 50%; position: absolute; cursor: default; margin: 40px; box-shadow: 0 0 80px rgba(0, 0, 0, 0.5); }
+    .ch-item-2 { width: 200px; height: 200px; border-radius: 50%; position: absolute; cursor: default; margin: 25px; box-shadow: 0 0 30px rgba(0, 0, 0, 0.5); }
+    .ch-item-3 { width: 300px; height: 300px; border-radius: 50%; position: absolute; cursor: default; margin: 40px; box-shadow: 0 0 120px rgba(0, 0, 0, 0.5); }
+    .ch-item-4 { width: 220px; height: 220px; border-radius: 50%; position: absolute; cursor: default; margin: 25px; box-shadow: 0 0 120px rgba(0, 0, 0, 0.5); }
+    .ch-item-5 { width: 180px; height: 180px; border-radius: 50%; position: absolute; cursor: default; margin: 20px; box-shadow: 0 0 120px rgba(0, 0, 0, 0.5); }
+}
+
+@media (min-width: 1050px) and (max-width: 1399px) {
+    /*Обёртка всех кругов*/
+    .teaser { z-index: 500; position: absolute; top: 15%; width: 100%; }
+    /*Обёртка каждого круга*/
+    .circle-1 { float: left; margin: 0px 0px 0px 0px; }
+    .circle-2 { float: left; margin: 180px 0px 0px -3px }
+    .circle-3 { float: left; margin: -60px 0px 0px -65px; }
+    .circle-4 { float: left; margin: 142px 0px 0px -12px; }
+    .circle-5 { display: none; }
+    /*Примагничиваем каждый блок друг к другу*/
+    .ch-grid1 li { width: 230px; height: 230px; display: inline-block; }
+    .ch-grid2 li { width: 160px; height: 160px; display: inline-block; }
+    .ch-grid3 li { width: 260px; height: 260px; display: inline-block; }
+    .ch-grid4 li { width: 190px; height: 190px; display: inline-block; }
+    .ch-grid5 li { width: 130px; height: 130px; display: inline-block; }
+    /*Внешняя окружность*/
+    .ch-inside-item-1 { width: 290px; height: 290px; margin-left: 0px; border-radius: 50%; position: relative; background-color: #4fae99; }
+    .ch-inside-item-2 { width: 190px; height: 190px; margin-left: 0px; border-radius: 50%; position: relative; background-color: #1b617f; }
+    .ch-inside-item-3 { width: 320px; height: 320px; margin-left: 0px; border-radius: 50%; position: relative; background-color: #cf4942; }
+    .ch-inside-item-4 { width: 220px; height: 220px; margin-left: 0px; border-radius: 50%; position: relative; background-color: #72b25d; }
+    .ch-inside-item-5 { width: 150px; height: 150px; margin-left: 0px; border-radius: 50%; position: relative; background-color: #62367d; }
+    /*Внутренняя окружность*/
+    .ch-item-1 { width: 230px; height: 230px; border-radius: 50%; position: absolute; cursor: default; margin: 30px; box-shadow: 0 0 80px rgba(0, 0, 0, 0.5); }
+    .ch-item-2 { width: 160px; height: 160px; border-radius: 50%; position: absolute; cursor: default; margin: 15px; box-shadow: 0 0 30px rgba(0, 0, 0, 0.5); }
+    .ch-item-3 { width: 260px; height: 260px; border-radius: 50%; position: absolute; cursor: default; margin: 30px; box-shadow: 0 0 120px rgba(0, 0, 0, 0.5); }
+    .ch-item-4 { width: 190px; height: 190px; border-radius: 50%; position: absolute; cursor: default; margin: 15px; box-shadow: 0 0 120px rgba(0, 0, 0, 0.5); }
+    .ch-item-5 { width: 130px; height: 130px; border-radius: 50%; position: absolute; cursor: default; margin: 10px; box-shadow: 0 0 120px rgba(0, 0, 0, 0.5); }
+}
+
+@media (min-width: 767px) and (max-width: 1049px) {
+    /*Обёртка всех кругов*/
+    .teaser { z-index: 500; position: absolute; top: 28%; width: 100%; }
+    /*Обёртка каждого круга*/
+    .circle-1 { display: none; }
+    .circle-2 { float: left; margin-top: 150px; margin-left: -30px; }
+    .circle-3 { float: left; }
+    .circle-4 { float: left; margin-top: 160px; }
+    .circle-5 { display: none; }
+    /*Примагничиваем каждый блок друг к другу*/
+    .ch-grid1 li { width: 270px; height: 270px; display: inline-block; margin: 10px 0px 0px 0px; }
+    .ch-grid2 li { width: 200px; height: 200px; display: inline-block; margin: 0px 0px 0px 58px; }
+    .ch-grid3 li { width: 300px; height: 300px; display: inline-block; margin: 0px 0px 0px -45px; }
+    .ch-grid4 li { width: 220px; height: 220px; display: inline-block; margin: 0px 0px 0px -52px; }
+    .ch-grid5 li { width: 180px; height: 180px; display: inline-block; margin: 40px 0px 0px -29px; }
+    /*Внешняя окружность*/
+    .ch-inside-item-1 { width: 270px; height: 270px; border-radius: 50%; position: relative; background-color: #4fae99; border: 1px solid #4fae99; }
+    .ch-inside-item-2 { width: 200px; height: 200px; border-radius: 50%; position: relative; background-color: #1b617f; border: 1px solid #1b617f; }
+    .ch-inside-item-3 { width: 300px; height: 300px; border-radius: 50%; position: relative; background-color: #cf4942; border: 1px solid #cf4942; }
+    .ch-inside-item-4 { width: 220px; height: 220px; border-radius: 50%; position: relative; background-color: #72b25d; border: 1px solid #72b25d; }
+    .ch-inside-item-5 { width: 180px; height: 180px; border-radius: 50%; position: relative; background-color: #62367d; border: 1px solid #62367d; }
+    /*Внутренняя окружность*/
+    .ch-item-1 { width: 270px; height: 270px; border-radius: 50%; position: absolute; cursor: default; margin: 0px; box-shadow: inset 0 0 80px rgba(0, 0, 0, 0.5); }
+    .ch-item-2 { width: 200px; height: 200px; border-radius: 50%; position: absolute; cursor: default; margin: 0px; box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.2); }
+    .ch-item-3 { width: 300px; height: 300px; border-radius: 50%; position: absolute; cursor: default; margin: 0px; box-shadow: inset 0 0 120px rgba(0, 0, 0, 0.4); }
+    .ch-item-4 { width: 220px; height: 220px; border-radius: 50%; position: absolute; cursor: default; margin: 0px; box-shadow: inset 0 0 120px rgba(0, 0, 0, 0.5); }
+    .ch-item-5 { width: 180px; height: 180px; border-radius: 50%; position: absolute; cursor: default; margin: 0px; box-shadow: inset 0 0 120px rgba(0, 0, 0, 0.5); }
+}
+
+/*additional-menu*/
+.additional-menu { padding-top: 20px; padding-bottom: 20px; }
+.inside-circle { width: 290px; height: 290px; border-radius: 50%; background-color: #e23b3b; border: 1px solid #faf26e; margin: 0 auto; }
+.circle-block { padding: 35px; width: 220px; height: 220px; }
+img.img-circle { box-shadow: 0 0 30px rgba(0, 0, 0, 0.5); }
+
+/*Статьи и события*/
+.white-bg { border-top: 1px solid #fff; box-shadow: 0px 1px 3px rgba(0,0,0, 0.4); background-image: url(img/white-bg.png); padding-bottom: 30px; }
+.bottom-white-bg { background-image: url(img/bottom-white-bg.png); height: 35px; position: relative; }
+.news-ribbon {background-image: url(img/ribbon.png); background-position: left top; background-repeat: no-repeat;}
+/*Название модуля*/
+.block-name { font-family: "Arctika script"; padding-bottom: 20px; text-shadow: 1px 2px rgba(255, 255, 255, 1); font-size: 30px; }
+
+
+
+/*Особенности китайской продукции для здоровья*/
+.chines-production { font-family: "Intro"; padding-top: 20px; padding-bottom: 15px; line-height: 45px; font-size: 35px; text-align: left; }
+.scrollblock-inside { overflow-y: auto; }
+.scrollblock { height: 200px; text-align: left;  line-height: 22px; }
+.tree-bg { background-image: url(img/test.png); background-repeat: no-repeat; background-position: right top; height: 475px; }
+
+
+/*Подвал*/
+.footer-bg { background-image: url(img/footer-bg.png); margin-top: -10px; position: relative; background-repeat: repeat-x;}
+.footer-menu{ padding-top: 40px; padding-bottom: 30px; padding-left: 20px; color: #fff; }
+.name-company { color: #fff; padding-top: 40px; padding-bottom: 30px; padding-right: 20px; }
+.debag-bg { background-image: url(img/debag-bg.png); }
+
+/*Стилизация страницы с контактной информацией*/
+.contacts-information { background-color: rgba(255, 255, 255, 0.9); border: 1px solid #bbbbbb; padding: 30px 20px 30px 20px; position: absolute; z-index: 500; float: right; margin-top: -500px; margin-left: 15%; }
+.map-page { position: relative; margin-left: -300px; margin-right: -300px; margin-bottom: -10px; }
+dl.article-info{margin-bottom: 0px;}
+
+
+
+.hot-news { border-top: 1px solid #fff; box-shadow: 0px 1px 3px rgba(0,0,0, 0.4); background-image: url(img/white-bg.png); padding-bottom: 0px; }
+.hot-news-bg { background-image: url(img/bottom-white-bg.png); height: 35px; position: relative; }
+.hot-news-img {
+    border: 1px solid #ccc;
+}
+
+/*Раздел с продукцией*/
+a > .blue-link  {color: #2f7cd4;}
+blue-link  a:hover {color: darkred;}
+.item-579 a {color: #2f7cd4;}
+.item-579 a:hover {color: #2664a9;}
+.item-581 a {color: #2f7cd4;}
+.item-581 a:hover {color: #2664a9;}
+.menu-unoded {list-style: none;}
+
+.white-font {
+    box-shadow: 0px 1px 3px rgba(0,0,0, 0.4);
+    background-image: url(img/white-bg.png);
+    padding-bottom: 30px;
+}
+.inline-contacts {
+    list-style: none;
+    margin-left: 0;
+}
+.inline-contacts > li {
+    display: inline-block;
+    *display: inline;
+    padding-right: 15px;
+    padding-left: 15px;
+    *zoom: 1;
+}
+.location-separater {
+
+
+}
+
+.festival {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.snowfall-flakes {
+    background-image: url('img/flake.png');
+    background-size: 100% 100%;
+}
+@media (min-width: 768px) and (max-width: 1399px) {
+    .new-year {
+        font-family: 'Lobster';
+        font-size: 36px;
+        line-height: 50px;
+        color: #FFF500;
+        text-shadow: 2px 3px #000;
+    }
+}
+@media (min-width: 1400px) {
+    .new-year {
+        font-family: 'Lobster';
+        font-size: 55px;
+        line-height: 70px;
+        color: #FFF500;
+        text-shadow: 2px 3px #000;
+    }
+}
+
+.scrollblock-inside-new-year { overflow-y: auto; }
+.scrollblock-new-year { margin-top: 40px; height: 450px; text-align: left; }
+
+
+
+/*slider*/
+.ui-carousel {
+    height: 100px;
+    margin: 0;
+    overflow: auto;
+    padding: 0;
+    position: relative; /*for ie7 to work e.g in html carousels*/
+    width: 300px
+}
+
+.ui-carousel > .wrapper {
+    margin: 0;
+    padding: 0;
+    width: 9999px;
+}
+
+.ui-carousel > .wrapper > * {
+    border: 0;
+    display: block;
+    float: left;
+    height: 100px;
+    overflow: hidden;
+    width: 100px;
+}
+
+
+#container {
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+#carousel {
+    width: 780px;
+    margin: 0 auto;
+}
+
+#ui-carousel-next, #ui-carousel-prev {
+    width: 60px;
+    height: 240px;
+    background: url(img/arrow-left.png) center center no-repeat;
+    display: block;
+    position: absolute;
+    top: 0;
+    z-index: 100;
+}
+
+#ui-carousel-next {
+    right: 0;
+    background-image: url(img/arrow-right.png);
+}
+
+#ui-carousel-prev {
+    left: 0;
+}
+
+#ui-carousel-next > span, #ui-carousel-prev > span {
+    display: none;
+}
+
+.slide {
+    margin: 0;
+    position: relative;
+}
+
+.slide  h1 { }
+
+.slide  p { }
+
+#slide01 > img.slide-img-1 {
+    position: absolute;
+    bottom: 35px;
+    left: 60px;
+}
+#slide01 > img.slide-img-2 {
+    position: absolute;
+    bottom: 35px;
+    left: 300px;
+}
+#slide01 > img.slide-img-3 {
+    position: absolute;
+    bottom: 35px;
+    left: 540px;
+}
+
+#slide01 > .text {
+    position: absolute;
+    left: 290px;
+    bottom: 50px;
+}
+
+#slide02 > img {
+    position: absolute;
+    bottom: 35px;
+    left: 30px;
+}
+
+#slide02 > .text {
+    position: absolute;
+    left: 290px;
+    bottom: 50px;
+}
+
+#slide03 > img {
+    position: absolute;
+    bottom: 35px;
+    left: 30px;
+}
+
+#slide03 > .text {
+    position: absolute;
+    left: 290px;
+    bottom: 50px;
+}
+
+#slide04 > img {
+    position: absolute;
+    bottom: 35px;
+    left: 30px;
+}
+
+#slide04 > .text {
+    position: absolute;
+    left: 290px;
+    bottom: 50px;
+}
+
+#slide05 > img {
+    position: absolute;
+    bottom: 35px;
+    left: 30px;
+}
+
+#slide05 > .text {
+    position: absolute;
+    left: 290px;
+    bottom: 50px;
+}
+
+#slide06 > img {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+}
+
+#slide06 > .text {
+    position: absolute;
+    left: 280px;
+    bottom: 35px;
+}
+
+#pages {
+    width: 150px;
+    margin: 0 auto;
+}
+
+.bullet {
+    background: url(img/page-off.png) center center no-repeat;
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    margin-right: 5px;
+    float: left;
+}
+
+
+
+/*lightbox style*/
+#sb-title-inner,#sb-info-inner,#sb-loading-inner,div.sb-message{font-family:"HelveticaNeue-Light","Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:200;color:#fff;}
+#sb-container{position:fixed;margin:0;padding:0;top:0;left:0;z-index:999;text-align:left;visibility:hidden;display:none;}
+#sb-overlay{position:relative;height:100%;width:100%;}
+#sb-wrapper{position:absolute;visibility:hidden;width:100px;}
+#sb-wrapper-inner{position:relative;border:1px solid #303030;overflow:hidden;height:100px;}
+#sb-body{position:relative;height:100%;}
+#sb-body-inner{position:absolute;height:100%;width:100%;}
+#sb-player.html{height:100%;overflow:auto;}
+#sb-body img{border:none;}
+#sb-loading{position:relative;height:100%;}
+#sb-loading-inner{position:absolute;font-size:14px;line-height:24px;height:24px;top:50%;margin-top:-12px;width:100%;text-align:center;}
+#sb-loading-inner span{background:url(loading.gif) no-repeat;padding-left:34px;display:inline-block;}
+#sb-body,#sb-loading{background-color:#060606;}
+#sb-title,#sb-info{position:relative;margin:0;padding:0;overflow:hidden;}
+#sb-title,#sb-title-inner{height:26px;line-height:26px;}
+#sb-title-inner{font-size:16px;}
+#sb-info,#sb-info-inner{height:20px;line-height:20px;}
+#sb-info-inner{font-size:12px;}
+#sb-nav{float:right;height:16px;padding:2px 0;width:45%;}
+#sb-nav a{display:block;float:right;height:16px;width:16px;margin-left:3px;cursor:pointer;background-repeat:no-repeat;}
+#sb-nav-close{background-image:url(close.png);}
+#sb-nav-next{background-image:url(next.png);}
+#sb-nav-previous{background-image:url(previous.png);}
+#sb-nav-play{background-image:url(play.png);}
+#sb-nav-pause{background-image:url(pause.png);}
+#sb-counter{float:left;width:45%;}
+#sb-counter a{padding:0 4px 0 0;text-decoration:none;cursor:pointer;color:#fff;}
+#sb-counter a.sb-counter-current{text-decoration:underline;}
+div.sb-message{font-size:12px;padding:10px;text-align:center;}
+div.sb-message a:link,div.sb-message a:visited{color:#fff;text-decoration:underline;}
+/*end lightbox style*/
+/*кнопка пролистать страницу вверх вниз*/
+#up
+{
+    width:30px;
+    height:30px;
+    position:fixed;
+    bottom:50px;
+    left:20px;
+
+    border-radius:30px;
+    cursor: pointer;
+}
+#down
+{
+    width:30px;
+    height:30px;
+    position:fixed;
+    bottom:50px;
+    left:60px;
+    background-color:#000000;
+    border-radius:30px;
+    cursor: pointer;
+}
+.pPageScroll
+{
+    color:#FFFFFF;
+    text-align:center;
+}
+
+.top-wiget {
+    position: fixed;
+    top: 200px;
+    left: 0px;
+    background-color: darkseagreen;
+  }
+
+.add-menu {font-family: Intro;
+color: #EBEBEB;
+font-style: italic;
+background-color: #307436;
+    }
+
+.otstup {
+line-height: 30px;
+}
+.otstup-u {
+    list-style-image: url('img/logo-bullet.png');
+    margin-left: 45px;
+}
+.tcm {
+    font-style: normal;
+}
+.page-without-footer {min-height: 100%;
+height: auto !important;
+height: 100%;
+margin: 0 0 -100px 0; /* отрицательный нижний отступ на высоту футера */
+padding: 0;
+}
+.footer-fuck .footer-start  {
+    height: 100px;
+    margin: 0;
+    padding: 0;
+}

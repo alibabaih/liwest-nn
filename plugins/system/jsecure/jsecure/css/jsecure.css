@@ -1,0 +1,15 @@
+.fieldset {
+	width: 400px;
+	height: 150px;
+	font-family: arial;
+	font-size: 12px;
+}
+
+.innerTable {
+	font-family: arial;
+	font-size: 12px;
+}
+
+.pad {
+	padding-top: 50px;
+}

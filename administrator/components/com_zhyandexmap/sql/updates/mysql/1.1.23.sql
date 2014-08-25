@@ -1,0 +1,1 @@
+ALTER TABLE `#__zhyandexmaps_maps` ADD `markergroupcss` int(5) NOT NULL default '0';

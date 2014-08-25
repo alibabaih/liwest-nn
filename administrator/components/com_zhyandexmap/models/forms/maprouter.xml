@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form
+	addrulepath="/administrator/components/com_zhyandexmap/models/rules"
+>
+        <fieldset name="details">
+                <field
+                        name="id"
+                        type="hidden"
+                />
+                <field
+                        name="title"
+                        type="text"
+                        label="COM_ZHYANDEXMAP_MAPROUTER_DETAIL_TITLE_LABEL"
+                        description="COM_ZHYANDEXMAP_MAPROUTER_DETAIL_TITLE_DESC"
+                        size="60"
+                        class="inputbox"
+			required="true"
+                        default=""
+                />
+                <field
+                        name="description"
+                        type="text"
+                        label="COM_ZHYANDEXMAP_MAPROUTER_DETAIL_DESCRIPTION_LABEL"
+                        description="COM_ZHYANDEXMAP_MAPROUTER_DETAIL_DESCRIPTION_DESC"
+                        size="100"
+                        class="inputbox"
+			required="false"
+                        default=""
+                />
+                <field
+                        name="descriptionhtml"
+                        type="editor"
+                        label="COM_ZHYANDEXMAP_MAPROUTER_DETAIL_DESCRIPTIONHTML_LABEL"
+                        description="COM_ZHYANDEXMAP_MAPROUTER_DETAIL_DESCRIPTIONHTML_DESC"
+                        rows="10"
+						size="100"
+                        class="inputbox"
+						required="false"
+                        default=""
+						filter="raw"
+                />
+                <field
+                        name="published"
+			type="radio"
+                        label="COM_ZHYANDEXMAP_MAPROUTER_DETAIL_PUBLISHED_LABEL"
+                        description="COM_ZHYANDEXMAP_MAPROUTER_DETAIL_PUBLISHED_DESC"
+                        size="30"
+			required="true"
+                        default="1"
+		>
+			<option	value="0">JNO</option>
+			<option	value="1">JYES</option>
+                </field>
+                <field
+                        name="route"
+                        type="text"
+                        label="COM_ZHYANDEXMAP_MAPROUTER_DETAIL_ROUTE_LABEL"
+                        description="COM_ZHYANDEXMAP_MAPROUTER_DETAIL_ROUTE_DESC"
+                        size="100"
+                        class="inputbox"
+						required="false"
+                        default=""
+                />
+                <field
+                        name="routebymarker"
+                        type="text"
+                        label="COM_ZHYANDEXMAP_MAPROUTER_DETAIL_ROUTEMARKER_LABEL"
+                        description="COM_ZHYANDEXMAP_MAPROUTER_DETAIL_ROUTEMARKER_DESC"
+                        size="100"
+                        class="inputbox"
+						required="false"
+                        default=""
+                />
+                <field
+                        name="showtype"
+                        type="list"
+                        label="COM_ZHYANDEXMAP_MAPROUTER_DETAIL_SHOWTYPE_LABEL"
+                        description="COM_ZHYANDEXMAP_MAPROUTER_DETAIL_SHOWTYPE_DESC"
+                        size="1"
+                        class="inputbox"
+						required="true"
+                        default="0"
+					>
+						<option	value="0">COM_ZHYANDEXMAP_MAPROUTER_DETAIL_SHOWTYPE_ZOOM</option>
+						<option	value="1">COM_ZHYANDEXMAP_MAPROUTER_DETAIL_SHOWTYPE_UNCHANGE</option>
+                </field>
+                <field
+                        name="checktraffic"
+                        type="radio"
+                        label="COM_ZHYANDEXMAP_MAPROUTER_DETAIL_CHECKTRAFFIC_LABEL"
+                        description="COM_ZHYANDEXMAP_MAPROUTER_DETAIL_CHECKTRAFFIC_DESC"
+                        size="1"
+                        class="inputbox"
+						required="true"
+                        default="0"
+					>
+						<option	value="0">JNO</option>
+						<option	value="1">JYES</option>
+                </field>
+                <field
+                        name="showpanel"
+                        type="list"
+                        label="COM_ZHYANDEXMAP_MAPROUTER_DETAIL_SHOWPANEL_LABEL"
+                        description="COM_ZHYANDEXMAP_MAPROUTER_DETAIL_SHOWPANEL_DESC"
+                        size="1"
+                        class="inputbox"
+						required="true"
+                        default="0"
+					>
+					<option	value="0">COM_ZHYANDEXMAP_MAPROUTER_DETAIL_SHOWPANEL_NONE</option>
+					<option	value="1">COM_ZHYANDEXMAP_MAPROUTER_DETAIL_SHOWPANEL_BOTTOM</option>
+                </field>
+                <field
+                        name="showpaneltotal"
+                        type="radio"
+                        label="COM_ZHYANDEXMAP_MAPROUTER_DETAIL_SHOWPANELTOTAL_LABEL"
+                        description="COM_ZHYANDEXMAP_MAPROUTER_DETAIL_SHOWPANELTOTAL_DESC"
+                        size="1"
+                        class="inputbox"
+						required="true"
+                        default="0"
+					>
+						<option	value="0">JNO</option>
+						<option	value="1">JYES</option>
+                </field>
+                <field
+                        name="showdescription"
+                        type="list"
+                        label="COM_ZHYANDEXMAP_MAPROUTER_DETAIL_SHOWDESCRIPTION_LABEL"
+                        description="COM_ZHYANDEXMAP_MAPROUTER_DETAIL_SHOWDESCRIPTION_DESC"
+                        size="1"
+                        class="inputbox"
+						required="true"
+                        default="0"
+					>
+						<option	value="0">JNO</option>
+						<option	value="1">JYES</option>
+                </field>
+                <field
+                        name="kmllayerymapsml"
+                        type="text"
+                        label="COM_ZHYANDEXMAP_MAPROUTER_DETAIL_KMLLAYERYMAPSML_LABEL"
+                        description="COM_ZHYANDEXMAP_MAPROUTER_DETAIL_KMLLAYERYMAPSML_DESC"
+                        size="100"
+                        class="inputbox"
+			required="false"
+                        default=""
+                />
+                <field
+                        name="kmllayerkml"
+                        type="text"
+                        label="COM_ZHYANDEXMAP_MAPROUTER_DETAIL_KMLLAYERKML_LABEL"
+                        description="COM_ZHYANDEXMAP_MAPROUTER_DETAIL_KMLLAYERKML_DESC"
+                        size="100"
+                        class="inputbox"
+			required="false"
+                        default=""
+                />
+                <field
+                        name="kmllayergpx"
+                        type="text"
+                        label="COM_ZHYANDEXMAP_MAPROUTER_DETAIL_KMLLAYERGPX_LABEL"
+                        description="COM_ZHYANDEXMAP_MAPROUTER_DETAIL_KMLLAYERGPX_DESC"
+                        size="100"
+                        class="inputbox"
+			required="false"
+                        default=""
+                />
+		<field
+			name="mapid"
+			type="text"
+			class="inputbox"
+			default=""
+			label="COM_ZHYANDEXMAP_MAPROUTER_DETAIL_MAPID_LABEL"
+			description="COM_ZHYANDEXMAP_MAPROUTER_DETAIL_MAPID_DESC"
+			required="true"
+		/>
+		<field
+			name="catid"
+			type="category"
+			extension="com_zhyandexmap"
+			class="inputbox"
+			default=""
+			label="COM_ZHYANDEXMAP_MAPROUTER_DETAIL_CATEGORY_LABEL"
+			description="COM_ZHYANDEXMAP_MAPROUTER_DETAIL_CATEGORY_DESC"
+			required="false"
+		>
+			<option value="0">JOPTION_SELECT_CATEGORY</option>
+		</field>
+        </fieldset>
+	<fields name="params">
+		<fieldset
+			name="params"
+			label="JGLOBAL_FIELDSET_DISPLAY_OPTIONS"
+		>
+			<field
+				name="show_category"
+				type="list"
+				label="COM_ZHYANDEXMAP_MAPROUTER_DETAIL_SHOW_CATEGORY_LABEL"
+				description="COM_ZHYANDEXMAP_MAPROUTER_DETAIL_SHOW_CATEGORY_DESC"
+				default=""
+			>
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+		</fieldset>
+	</fields>
+
+</form>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fieldset
+		name="Map"
+		label="COM_ZHYANDEXMAP_CONFIG_MAP_LABEL"
+		description="COM_ZHYANDEXMAP_CONFIG_MAP_DESC"
+	>
+		<field
+			name="show_category"
+			type="radio"
+			label="COM_ZHYANDEXMAP_CONFIG_MAP_FIELD_SHOW_CATEGORY_LABEL"
+			description="COM_ZHYANDEXMAP_CONFIG_MAP_FIELD_SHOW_CATEGORY_DESC"
+			default="0"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		<field
+			name="map_api_version"
+			type="list"
+			label="COM_ZHYANDEXMAP_CONFIG_MAP_FIELD_MAPAPIVERSION_LABEL"
+			description="COM_ZHYANDEXMAP_CONFIG_MAP_FIELD_MAPAPIVERSION_DESC"
+			size="1"
+			default="2.x"
+		>
+			<option	value="1.x">1.x</option>
+			<option	value="2.x">2.x</option>
+		</field>		
+		<field
+			name="map_key"
+			type="text"
+			label="COM_ZHYANDEXMAP_CONFIG_MAP_FIELD_MAPKEY_LABEL"
+			description="COM_ZHYANDEXMAP_CONFIG_MAP_FIELD_MAPKEY_DESC"
+            size="150"
+			default=""
+		/>
+		<field
+			name="map_lat"
+			type="text"
+			label="COM_ZHYANDEXMAP_CONFIG_MAP_FIELD_MAPDEFLAT_LABEL"
+			description="COM_ZHYANDEXMAP_CONFIG_MAP_FIELD_MAPDEFLAT_DESC"
+            size="60"
+			default=""
+		/>
+		<field
+			name="map_lng"
+			type="text"
+			label="COM_ZHYANDEXMAP_CONFIG_MAP_FIELD_MAPDEFLNG_LABEL"
+			description="COM_ZHYANDEXMAP_CONFIG_MAP_FIELD_MAPDEFLNG_DESC"
+            size="60"
+			default=""
+		/>
+		<field
+			name="map_compatiblemode"
+			type="radio"
+			label="COM_ZHYANDEXMAP_CONFIG_MAP_FIELD_COMPATIBLEMODE_LABEL"
+			description="COM_ZHYANDEXMAP_CONFIG_MAP_FIELD_COMPATIBLEMODE_DESC"
+			default="0"
+		>
+			<option	value="0">JNO</option>
+			<option	value="1">JYES</option>
+		</field>
+		<field
+			name="map_compatiblemode_rsf"
+			type="radio"
+			label="COM_ZHYANDEXMAP_CONFIG_MAP_FIELD_COMPATIBLEMODE_RSF_LABEL"
+			description="COM_ZHYANDEXMAP_CONFIG_MAP_FIELD_COMPATIBLEMODE_RSF_DESC"
+			default="0"
+		>
+			<option	value="0">JNO</option>
+			<option	value="1">JYES</option>
+		</field>		
+		<field
+			name="map_type_yandex"
+			type="list"
+			label="COM_ZHYANDEXMAP_CONFIG_MAP_FIELD_MAPTYPE_YANDEX_LABEL"
+			description="COM_ZHYANDEXMAP_CONFIG_MAP_FIELD_MAPTYPE_YANDEX_DESC"
+			default="1"
+		>
+			<option	value="0">JNO</option>
+			<option	value="1">JYES</option>
+		</field>
+		<field
+			name="map_type_osm"
+			type="list"
+			label="COM_ZHYANDEXMAP_CONFIG_MAP_FIELD_MAPTYPE_OSM_LABEL"
+			description="COM_ZHYANDEXMAP_CONFIG_MAP_FIELD_MAPTYPE_OSM_DESC"
+			default="1"
+		>
+			<option	value="0">JNO</option>
+			<option	value="1">JYES</option>
+			<option	value="2">COM_ZHYANDEXMAP_CONFIG_MAP_FIELD_MAPTYPE_DEFAULT</option>
+		</field>
+		<field
+			name="map_type_custom"
+			type="list"
+			label="COM_ZHYANDEXMAP_CONFIG_MAP_FIELD_MAPTYPE_CUSTOM_LABEL"
+			description="COM_ZHYANDEXMAP_CONFIG_MAP_FIELD_MAPTYPE_CUSTOM_DESC"
+			default="1"
+		>
+			<option	value="0">JNO</option>
+			<option	value="1">JYES</option>
+			<option	value="2">COM_ZHYANDEXMAP_CONFIG_MAP_FIELD_MAPTYPE_DEFAULT</option>
+		</field>
+		<field
+			name="spacer1"
+			type="spacer"
+			label=""
+			description=""
+			hr="true"
+		/>
+		<field
+			name="spacer2"
+			type="spacer"
+			label="COM_ZHYANDEXMAP_CONFIG_MAP_LICENSE_LABEL"
+			description="COM_ZHYANDEXMAP_CONFIG_MAP_LICENSE_DESC"
+			hr="false"
+		/>
+		<field
+			name="licenseinfo"
+			type="list"
+			label="COM_ZHYANDEXMAP_MAP_POWEREDBY"
+			description="COM_ZHYANDEXMAP_CONFIG_MAP_LICENSE_LABEL"
+			default="102"
+		>
+					<option	value="0">COM_ZHYANDEXMAP_MAP_DETAIL_PLACEMARKLISTPOS_NONE</option>					
+					<option	value="102">COM_ZHYANDEXMAP_MAP_MAPPOSITION_MAPBOTTOM</option>
+		</field>
+		<field
+			name="spacer3"
+			type="spacer"
+			label="Visit &lt;a href=&quot;http://joomla.zhuk.cc/index.php/donate &quot; target=&quot;_blank&quot; &gt;zhuk.cc&lt;/a&gt; for donation "
+			description=""
+			hr="false"
+		/>
+		<field
+			name="spacer4"
+			type="spacer"
+			label=""
+			description=""
+			hr="true"
+		/>
+	</fieldset>
+	<fieldset
+		name="permissions"
+		label="JCONFIG_PERMISSIONS_LABEL"
+		description="JCONFIG_PERMISSIONS_DESC"
+	>
+		<field
+			name="rules"
+			type="rules"
+			label="JCONFIG_PERMISSIONS_LABEL"
+			class="inputbox"
+			validate="rules"
+			filter="rules"
+			component="com_zhyandexmap"
+			section="component"
+		/>
+	</fieldset>
+</config>
+

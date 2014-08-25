@@ -1,0 +1,45 @@
+/*------------------------------------------------------------------------
+# mod_jo_k2_slideshow - JO k2 slide show item for Joomla 1.6, 1.7, 2.5 Module
+# -----------------------------------------------------------------------
+# author: http://www.joomcore.com
+# copyright Copyright (C) 2011 Joomcore.com. All Rights Reserved.
+# @license - http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+# Websites: http://www.joomcore.com
+# Technical Support:  Forum - http://www.joomcore.com/Support
+-------------------------------------------------------------------------*/
+.jo-k2-snleft  .jo-k2-main-outer{
+		float:right;
+	}
+	/* move the main wapper to the right side */
+	.jo-k2-snleft .jo-k2-main-wapper{
+		margin-left:auto;
+		margin-right:inherit;
+		clear:both;
+		height:300px;
+	}
+	/* move the navigator to the left  side */
+	.jo-k2-snleft .jo-k2-navigator-outer{
+		left:0;
+		top:0;
+		right:inherit;
+		
+	}
+	
+	ul.jo-k2-main-wapper li {
+		position:relative;	
+	}
+	.jo-k2-snleft .jo-k2-navigator .active{
+		background:url(../images/arrow-bg1.png) center right no-repeat;
+	}
+	.jo-k2-snleft .jo-k2-navigator li div{
+		margin-left:0px;
+		margin-right:18px;
+	}
+	
+	.jo-k2-snleft .jo-k2-navigator li.active div{
+		margin-left:inherit;
+		margin-right:18px;
+		background:url(../images/grad-bg.png);
+		
+	}
+	

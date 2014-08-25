@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.6//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="2.5" type="template" client="site">
+	<name>LiWest</name>
+	<creationDate>09-06-2014</creationDate>
+	<author>Василий Щитов</author>
+	<authorEmail>alibabaih@gmail.com</authorEmail>
+	<authorUrl>http://the-longest-domain-name-for-the-books.com</authorUrl>
+	<copyright>Copyright (C) 2014</copyright>
+	<license>GNU General Public License version 2</license>
+	<version>1.7.3</version>
+	<description></description>
+
+	<files>
+		<folder>css</folder>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+	</files>
+
+	<positions>
+        <position>logo</position>
+        <position>top1</position>
+        <position>top2</position>
+        <position>main_menu</position>
+        <position>main_slider</position>
+        <position>breadcrumbs</position>
+        <position>right_banner</position>
+        <position>right</position>
+        <position>last_news</position>
+        <position>content_1</position>
+        <position>content_2</position>
+        <position>content_3</position>
+        <position>content_4</position>
+        <position>carousel</position>
+        <position>footer</position>
+        <position>lower_footer</position>
+        <position>footer_1</position>
+        <position>footer_2</position>
+        <position>footer_3</position>
+        <position>footer_4</position>
+        <position>footer_5</position>
+        <position>footer_6</position>
+	</positions>
+</extension>

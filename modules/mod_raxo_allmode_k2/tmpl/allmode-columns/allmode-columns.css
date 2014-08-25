@@ -1,0 +1,188 @@
+/*
+ * =============================================================
+ * RAXO All-mode K2 J2.5 - Template CSS
+ * -------------------------------------------------------------
+ * @package		RAXO All-mode K2
+ * @subpackage	All-mode Columns Template
+ * @copyright	Copyright (C) 2009-2012 RAXO Group
+ * @license		RAXO Commercial Licence
+ * 				This file is forbidden for redistribution
+ * @link		http://raxo.org
+ * =============================================================
+ */
+
+
+/* ----- RESET Styles ----- */
+.allmode-columns .allmode-name, .allmode-columns .allmode-showall,
+.allmode-columns .allmode-topitem, .allmode-columns .allmode-item,
+.allmode-columns .allmode-title, .allmode-columns img {
+	margin: 0; padding: 0;
+	background: none; border: 0 none;
+}
+.allmode-columns .allmode-clear {
+	clear: both;
+}
+
+
+/* ----- MODULE BOX Styles ----- */
+.allmode-columns {
+	margin-bottom: 8px;
+	border-bottom: 4px solid #d5e6f7;
+}
+.allmode-columns .allmode-name {												/* Module Block NAME */
+	margin: 5px 0 0 0; padding: 0 10px 0 15px;
+	font-size: 13px; font-weight: bold;
+	text-transform: uppercase;
+	color: #0a4580;
+	border-bottom: 5px solid #d5e6f7;
+}
+.allmode-columns .allmode-name a {
+	font-weight: bold;
+	text-decoration: none;
+}
+.allmode-columns .allmode-showall {												/* "Show All" TEXT */
+	padding-right: 10px;
+	text-align: right !important;
+}
+
+
+/* ----- INFO FIELDS Styles ----- */
+.allmode-columns .allmode-category, .allmode-columns .allmode-hits,
+.allmode-columns .allmode-author, .allmode-columns .allmode-item .allmode-date {
+	padding: 0 10px 0 17px;
+	font-size: 11px;
+	color: #18324b;
+	background: url(icons.png) no-repeat 0 0;
+}
+.allmode-columns .allmode-category {background-position: 0 -200px;}
+.allmode-columns .allmode-hits {background-position: 0 -300px;}
+.allmode-columns .allmode-author {background-position: 0 -400px;}
+.allmode-columns .allmode-readmore {
+	float: right;
+	margin-right: 8px;
+	font-size: 11px; line-height: 15px;
+	text-align: right;
+}
+.allmode-columns .allmode-rating {												/* Item RATING */
+	white-space: nowrap;
+}
+	.allmode-columns .allmode-star {
+		display: inline-block;
+		margin: 0 1px;
+		width: 11px; height: 11px;
+		background: url(rating.png) no-repeat 0 0;
+		zoom: 1; *display: inline; /*IE7 Hack*/
+	}
+	.allmode-columns .allmode-star span {
+		display: inline-block;
+		width: 100%; height: 100%;
+		background: url(rating.png) no-repeat 0 -20px;
+	}
+
+
+/* ----- TOP ITEMS Styles ----- */
+.allmode-columns .allmode-topbox {												/* TOP Items Box */
+	margin: 0 0 0 -32px;														/* Remove unnecessary left margin of the first column (-32px) */
+	/*width: 576px;*/															/* TOP box width (32 + 256 + 32 + 256 = 576px) */
+	overflow: hidden;
+}
+.allmode-columns .allmode-topitem {												/* TOP Item DIV */
+	float: left;																/* Assign float property */
+	margin: 16px 0 0 32px;														/* TOP column spacing (32px) */
+	padding-bottom: 6px;
+	width: 256px;																/* TOP column width (256px) */
+	border-bottom: 3px solid #d5e6f7;
+}
+.allmode-columns .allmode-topitem .allmode-img img {							/* TOP Item IMAGE */
+	border: 5px solid #d5e6f7;
+		-moz-box-shadow: 0 0 3px #d6d6d6;
+		-webkit-box-shadow: 0 0 3px #d6d6d6;
+	box-shadow: 0 0 3px #d6d6d6;
+}
+.allmode-columns .allmode-topitem .allmode-title {								/* TOP Item TITLE */
+	margin: 10px 0 8px 0; padding: 0 4px;
+	font-size: 17px; font-weight: bold;
+	color: #0a4580;
+}
+.allmode-columns .allmode-topitem .allmode-title a {
+	font-weight: bold;
+}
+.allmode-columns .allmode-topitem .allmode-text {								/* TOP Item TEXT */
+	margin: 6px 4px 0;
+	overflow: hidden;
+	font-size: 14px; line-height: 17px;
+	color: #505050;
+}
+
+
+/* ----- TOP FIELDS Styles ----- */
+.allmode-columns .allmode-topitem .allmode-info {								/* TOP Item Info DIV */
+	padding: 6px 12px 4px;
+	line-height: 15px;
+	background-color: #f0f4f6;
+	border-top: 1px solid #e3e7e9;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+.allmode-columns .allmode-topitem .allmode-date {								/* TOP Item DATE */
+	margin: 0 4px 3px 0;
+	font-size: 12px; font-weight: bold; font-style: italic;
+	line-height: 20px; text-align: right !important;
+	color: #0a4580;
+}
+.allmode-columns .allmode-topitem .allmode-comments {							/* TOP Item COMMENTS */
+	font-size: 14px; font-weight: normal;
+	color: #505050;
+}
+.allmode-columns .allmode-topitem .allmode-comments a {
+	font-weight: normal;
+}
+
+
+/* ----- ITEMS Styles ----- */
+.allmode-columns .allmode-itemsbox {
+	margin: 0 0 2px -32px;														/* Remove unnecessary left margin of the first column (-32px) */
+	padding-bottom: 8px;
+	overflow: hidden;
+}
+.allmode-columns .allmode-item {
+	float: left;																/* Assign float property */
+	margin: 12px 0 0 32px;														/* Column spacing (32px) */
+	width: 256px;																/* Column width (256px) */
+	overflow: hidden;
+}
+.allmode-columns .allmode-item .allmode-title {									/* Item TITLE */
+	margin: 5px 0 4px 0; padding: 0 4px;
+	font-size: 13px; font-weight: bold;
+	color: #0a4580;
+}
+.allmode-columns .allmode-item .allmode-title a {
+	font-weight: bold;
+}
+.allmode-columns .allmode-item .allmode-img {									/* Item IMAGE */
+	float: left;
+	margin: 2px 16px 8px 0;
+	border: 3px solid #d5e6f7;
+}
+.allmode-columns .allmode-item .allmode-img img {
+	display: block;
+}
+.allmode-columns .allmode-item .allmode-text {									/* Item TEXT */
+	font-size: 13px; line-height: 16px;
+	color: #505050;
+}
+
+
+/* ----- FIELDS Styles ----- */
+.allmode-columns .allmode-item .allmode-info {									/* Item Info DIV */
+	margin-bottom: 8px;
+	padding: 2px 6px;
+	background-color: #f0f4f6;
+}
+.allmode-columns .allmode-item .allmode-comments {								/* Item COMMENTS */
+	font-size: 12px; font-weight: normal;
+	color: #505050;
+}
+.allmode-columns .allmode-item .allmode-comments a {
+	font-weight: normal;
+}

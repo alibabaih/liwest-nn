@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<style>
+	<info>
+		<name>gk_eSport</name>
+		<author>GavickPro</author>
+		<desc>Image Show GK4 style for eSport template.</desc>
+		<version>1.0</version>
+	</info>
+	<config>	
+		<field type="text" name="image_w" label="Image width" desc="" default="1000" unit="px" />
+		<field type="text" name="image_h" label="Image height" desc="" default="550" unit="px" />
+		
+		<field type="text" name="thumb_w" label="Thumbnail width" desc="" default="200" unit="px" />
+		<field type="text" name="thumb_h" label="Thumbnail height" desc="" default="120" unit="px" />
+		
+		<field type="text" name="image_bg" label="Image background color" desc="Slide image background as hexdecimal value" default="#000000" unit="" />	
+		
+		<field type="text" name="quality" label="Image quality" desc="Quality of images (used in the JPG images) - percentage value between 0 and 100." default="95" unit="%" />
+		
+		<field type="switch" name="thumbnails" label="Thumbnails" desc="You can enable showing thumbnails." default="1" class="gk_switch" />	
+		<field type="select" name="thumbnails_position" label="Thumbnails position" desc="Position of the thumbnails" default="bottom" class="">
+			<option value="gkThumbsBottom">Bottom</option>
+			<option value="gkThumbsTop">Top</option>
+		</field>
+		
+		<field type="switch" name="text_block" label="Text block" desc="You can enable showing text block with the slide title." default="1" class="gk_switch" />
+		
+		<field type="switch" name="slide_links" label="Slide links" desc="You can enable links in the slides." default="1" class="gk_switch" />
+		
+		<field type="select" name="anim_type" label="Animation type" desc="Animation type used in the slideshow" default="gkDrops" class="">
+			<option value="gkDrops">Drop animation</option>
+			<option value="gkOpacity">Opacity</option>
+		</field>
+		
+		<field type="text" name="animation_speed" label="Animation speed" desc="Animation speed in miliseconds" default="750" unit="ms" />
+		<field type="text" name="animation_interval" label="Animation interval" desc="Animation interval in miliseconds" default="35" unit="ms" />
+		<field type="text" name="row_amount" label="Amount of bubble rows" desc="Amount of rows with bubbles" default="4" unit="" />
+		<field type="text" name="lvl2_divider" label="Amount of divided bubbles" desc="Amount of bubbles which will be divided to smaller bubbles. It cannot be bigger than total amount of bubbles." default="4" unit="" />
+		<field type="text" name="max_anim" label="Max. animations amount" desc="Maximal amount of animations started on the same time." default="5" unit="" />
+		
+		<field type="text" name="slide_interval" label="Slide interval" desc="Slide interval in miliseconds" default="5000" unit="ms" />
+		<field type="switch" name="autoanimation" label="Autoanimation" desc="Autoanimation of the slides" default="1" class="gk_switch" />
+	</config>
+</style>
